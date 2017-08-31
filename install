@@ -45,7 +45,7 @@ dotfiles() {
     install -m 644 git/.gitignore_global $HOME/.gitignore_global
 }
 
-#packages function
+# packages function
 packages() {
     if [[ $OS == "linux" ]]; then
         if (pacman -Q yaourt >/dev/null); then
