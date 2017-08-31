@@ -1,0 +1,67 @@
+#!/bin/bash
+
+# Usage function
+function usage() {
+cat <<_EOT_
+Usage:
+    $0 ...
+Description:
+    A way to manage my dotfiles for POSIX env.
+Operations:
+    packages
+    dotfiles
+_EOT_
+exit 0
+}
+
+# action_exists function
+action_exists() {
+    local a="$1"
+    local actions=(packages dotfiles)
+    for key in ${!actions[@]}; do
+        if [[ $a == ${actions[$key]} ]]; then
+            return 0
+        fi
+    done
+
+    return 1
+}
+
+# os function
+os() {
+    if [[ "$OSTYPE" == "linux-gnu" ]]; then
+        echo "linux"
+    else
+        echo "mac"
+    fi
+}
+
+OS="$(os)"
+
+# dotfiles function
+dotfiles() {
+    local user=$HOME
+    install -m 644 git/.gitconfig $HOME/.gitconfig
+    install -m 644 git/.gitignore_global $HOME/.gitignore_global
+}
+
+#packages function
+packages() {
+    if [[ $OS == "linux" ]]; then
+        if (pacman -Q yaourt >/dev/null); then
+            xargs -d '\n' -a packages/archlinux/package.list yaourt -S
+        else
+            exit 0
+        fi
+    else
+        echo "Todo on MacOS"
+    fi
+}
+
+[[ $# -eq 0 ]] && usage
+
+if ( action_exists "$1" ); then
+    $1
+else
+    usage
+fi

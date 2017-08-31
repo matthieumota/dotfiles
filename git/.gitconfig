@@ -1,0 +1,6 @@
+[user]
+	email = matthieumota@gmail.com
+	name = Matthieu Mota
+[core]
+	autocrlf = input
+	excludesfile = ~/.gitignore_global
