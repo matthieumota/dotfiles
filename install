@@ -41,8 +41,9 @@ OS="$(os)"
 # dotfiles function
 dotfiles() {
     local user=$HOME
-    install -m 644 git/.gitconfig $HOME/.gitconfig
-    install -m 644 git/.gitignore_global $HOME/.gitignore_global
+    local git=config/git
+    install -m 644 $git/.gitconfig $user/.gitconfig
+    install -m 644 $git/.gitignore_global $user/.gitignore_global
 }
 
 # packages function
