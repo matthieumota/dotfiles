@@ -42,8 +42,8 @@ gvfs-mtp
 gvfs-smb
 heroku-toolbelt
 hplip
-i3-gaps
 i3blocks
+i3-gaps
 i3lock
 i3status
 intel-ucode
@@ -64,8 +64,8 @@ lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 mariadb-clients
 mousepad
-network-manager-applet
 networkmanager
+network-manager-applet
 networkmanager-openvpn
 nodejs
 noto-fonts
@@ -100,7 +100,6 @@ ristretto
 rofi
 rsync
 ruby
-s-nail
 scaleway-cli
 screenfetch
 simple-scan
