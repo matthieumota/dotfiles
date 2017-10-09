@@ -183,6 +183,8 @@ assign [class="Thunderbird"] 4
 for_window [class="Spotify"] move to workspace 6
 
 exec --no-startup-id compton
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
 exec_always --no-startup-id ~/.config/i3/unsplash.sh
 
 exec_always --no-startup-id "killall polybar; polybar -r monitor1 & polybar -r monitor2"
