@@ -69,6 +69,7 @@ tray-padding = 2
 
 [bar/monitor1]
 inherit = bar/default
+;monitor = ${env:MONITOR:eDP-1}
 monitor = ${env:MONITOR:DVI-D-0}
 
 [bar/monitor2]
@@ -233,7 +234,7 @@ label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = net1
+interface = wlp5s0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
@@ -246,11 +247,11 @@ format-disconnected =
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
 
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
 ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/eth]
