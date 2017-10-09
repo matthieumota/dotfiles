@@ -43,7 +43,7 @@ module-margin-left = 1
 module-margin-right = 2
 
 font-0 = fixed:pixelsize=10;1
-#font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+;font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-1 = FontAwesome:pixelsize=10;0
 font-2 = siji:pixelsize=10;1
 
@@ -160,25 +160,15 @@ label-urgent = %index% %icon%
 label-urgent-background = ${module/bspwm.label-urgent-background}
 label-urgent-padding = ${module/bspwm.label-urgent-padding}
 
-# Code
 ws-icon-0 = 1;
-# Terminal
 ws-icon-1 = 2;
-# Chrome
 ws-icon-2 = 3;
-# Mail
 ws-icon-3 = 4;
-# Folder
 ws-icon-4 = 5;
-# Spotify
 ws-icon-5 = 6;
-# Chrome
 ws-icon-6 = 7;
-# Git
 ws-icon-7 = 8;
-# Chat
 ws-icon-8 = 9;
-# Folder
 ws-icon-9 = 10;
 
 [module/mpd]
