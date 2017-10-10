@@ -89,7 +89,6 @@ php-intl
 php-sqlite
 phpstorm
 phpstorm-jre
-playonlinux
 polybar
 pulseaudio
 pulseaudio-jack
@@ -106,7 +105,6 @@ spotify
 strace
 symfony-installer
 synergy
-teamviewer
 termite
 thunar
 thunar-archive-plugin
