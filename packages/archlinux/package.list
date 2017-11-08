@@ -3,6 +3,7 @@ arch-install-scripts
 baobab
 beep
 bind-tools
+blackfire-agent
 bleachbit
 cmus
 composer
@@ -10,6 +11,7 @@ compton
 conky
 cups
 debian-whois-mkpasswd
+discord
 dmenu
 docker
 docker-compose
@@ -45,6 +47,7 @@ heroku-toolbelt
 hplip
 i3-gaps
 i3lock
+intellij-idea-ultimate-edition
 intel-ucode
 intltool
 jdk8-openjdk
@@ -81,11 +84,12 @@ pavucontrol
 pdftk-bin
 pepper-flash
 php
+php-blackfire
 php-gd
 php-intl
 php-sqlite
 phpstorm
-phpstorm-jre
+phpunit
 polybar
 pulseaudio
 pulseaudio-jack
@@ -134,6 +138,7 @@ wget
 wp-cli
 xarchiver
 xcursor-osx-elcap
+xdebug
 xdg-user-dirs
 xf86-video-intel
 xfce4-appfinder
