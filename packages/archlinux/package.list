@@ -76,7 +76,7 @@ obs-studio
 oh-my-zsh-git
 openssh
 os-prober
-osx-el-capitan-theme-git
+otf-san-francisco
 p7zip
 pamac-aur
 paper-icon-theme
@@ -122,6 +122,7 @@ traceroute
 transmission-gtk
 tree
 ttf-font-awesome
+ttf-monaco
 tumbler
 ubuntu-sounds
 unrar
