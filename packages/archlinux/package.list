@@ -1,5 +1,6 @@
 ansible
 arch-install-scripts
+asciinema
 baobab
 beep
 bind-tools
@@ -27,6 +28,7 @@ figlet
 filezilla
 firefox
 firefox-i18n-fr
+fish
 garcon
 gimp
 git
@@ -68,6 +70,7 @@ network-manager-applet
 networkmanager-openvpn
 nodejs
 noto-fonts
+noto-fonts-emoji
 npm
 ntfs-3g
 nvidia
