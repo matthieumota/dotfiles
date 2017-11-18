@@ -6,6 +6,7 @@ beep
 bind-tools
 blackfire-agent
 bleachbit
+chromedriver
 cmus
 composer
 compton
@@ -50,6 +51,7 @@ hplip
 i3-gaps
 i3lock
 intellij-idea-ultimate-edition
+intellij-idea-ultimate-edition-jre
 intel-ucode
 intltool
 jdk8-openjdk
@@ -85,13 +87,13 @@ pamac-aur
 paper-icon-theme
 pavucontrol
 pdftk-bin
-pepper-flash
 php
 php-blackfire
 php-gd
 php-intl
 php-sqlite
 phpstorm
+phpstorm-jre
 phpunit
 polybar
 pulseaudio
@@ -103,6 +105,7 @@ rsync
 ruby
 scaleway-cli
 screenfetch
+selenium-server-standalone
 simple-scan
 skypeforlinux-bin
 spotify
