@@ -2,6 +2,8 @@ ansible
 homebrew/php/composer
 mariadb
 node
+homebrew/php/php72-xdebug
+homebrew/php/phpunit
 pkg-config
 ruby
 screenfetch
