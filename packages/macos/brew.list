@@ -2,7 +2,6 @@ ansible
 homebrew/php/composer
 figlet
 mariadb
-node
 homebrew/php/php72-xdebug
 homebrew/php/phpunit
 pkg-config
@@ -10,6 +9,7 @@ ruby
 screenfetch
 homebrew/php/symfony-installer
 wget
+yarn
 zsh
 zsh-autosuggestions
 zsh-completions
