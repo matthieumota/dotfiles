@@ -156,8 +156,8 @@ bindsym $mod+r mode "resize"
 # }
 
 # Link monitor to workspace
-set $monitor1 DVI-D-0 # eDP-1
-set $monitor2 HDMI-0
+set $monitor1 HDMI-0 # eDP-1
+set $monitor2 DVI-D-0
 
 workspace 1 output $monitor1
 workspace 2 output $monitor1
