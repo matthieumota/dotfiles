@@ -178,7 +178,7 @@ smart_gaps on
 smart_borders on
 
 assign [class="Code|jetbrains-phpstorm"] 1
-assign [class="Google-chrome"] 3
+assign [class="Google-chrome|Firefox"] 3
 assign [class="Thunderbird"] 4
 for_window [class="Spotify"] move to workspace 6
 
