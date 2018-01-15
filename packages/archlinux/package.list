@@ -17,6 +17,7 @@ cups
 debian-whois-mkpasswd
 discord
 dmenu
+dmidecode
 docker
 docker-compose
 dos2unix
