@@ -4,10 +4,13 @@ arch-install-scripts
 asciinema
 atom
 baobab
+bbswitch
 beep
 bind-tools
 blackfire-agent
 bleachbit
+blueman
+bumblebee
 chromedriver
 cmus
 composer
@@ -149,9 +152,10 @@ xarchiver
 xcursor-osx-elcap
 xdebug
 xdg-user-dirs
-xf86-video-intel
+xfburn
 xfce4-appfinder
 xfce4-artwork
+xfce4-battery-plugin
 xfce4-clipman-plugin
 xfce4-cpufreq-plugin
 xfce4-cpugraph-plugin
