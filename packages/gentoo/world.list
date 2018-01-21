@@ -46,6 +46,7 @@ net-p2p/jdownloader
 net-p2p/transmission
 sys-apps/baobab
 sys-apps/bleachbit
+sys-apps/gnome-disk-utility
 sys-block/gparted
 sys-boot/grub:2
 sys-boot/os-prober
@@ -74,5 +75,6 @@ xfce-extra/thunar-archive-plugin
 xfce-extra/thunar-shares-plugin
 xfce-extra/tumbler
 xfce-extra/xfce4-notifyd
+xfce-extra/xfce4-power-manager
 xfce-extra/xfce4-pulseaudio-plugin
 xfce-extra/xfce4-whiskermenu-plugin
