@@ -60,6 +60,8 @@ sys-kernel/genkernel
 sys-kernel/gentoo-sources
 www-client/firefox-bin
 www-client/google-chrome
+x11-apps/mesa-progs
+x11-misc/bumblebee
 x11-misc/compton
 x11-misc/dmenu
 x11-misc/i3lock
@@ -79,6 +81,7 @@ xfce-base/xfce4-meta
 xfce-extra/thunar-archive-plugin
 xfce-extra/thunar-shares-plugin
 xfce-extra/tumbler
+xfce-extra/xfce4-battery-plugin
 xfce-extra/xfce4-notifyd
 xfce-extra/xfce4-power-manager
 xfce-extra/xfce4-pulseaudio-plugin
