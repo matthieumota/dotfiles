@@ -5,6 +5,7 @@ app-admin/sysklogd
 app-arch/p7zip
 app-arch/unrar
 app-arch/xarchiver
+app-crypt/seahorse
 app-editors/algobox
 app-editors/nano
 app-editors/vim
