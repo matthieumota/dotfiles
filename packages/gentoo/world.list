@@ -13,6 +13,7 @@ app-emulation/docker
 app-emulation/docker-compose
 app-emulation/vagrant
 app-emulation/virtualbox-bin
+app-i18n/poedit
 app-misc/beep
 app-misc/screenfetch
 app-office/libreoffice-bin
@@ -27,11 +28,14 @@ dev-php/symfony-installer
 dev-util/android-studio
 dev-util/phpstorm
 dev-vcs/gitkraken
+gnome-extra/gnome-calculator
 gnome-extra/nm-applet
 mail-client/thunderbird-bin
 media-fonts/fontawesome
+media-fonts/monaco
 media-fonts/noto
 media-gfx/feh
+media-gfx/gimp
 media-sound/cmus
 media-sound/pavucontrol
 media-sound/spotify
