@@ -32,6 +32,7 @@ dev-util/phpstorm
 dev-vcs/gitkraken
 gnome-extra/gnome-calculator
 gnome-extra/nm-applet
+lxde-base/lxappearance
 mail-client/thunderbird-bin
 media-fonts/fontawesome
 media-fonts/monaco
@@ -63,6 +64,7 @@ www-client/firefox-bin
 www-client/google-chrome
 x11-apps/mesa-progs
 x11-misc/bumblebee
+x11-apps/xrandr
 x11-misc/compton
 x11-misc/dmenu
 x11-misc/i3lock
