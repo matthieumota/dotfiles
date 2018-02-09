@@ -7,6 +7,7 @@ app-arch/unrar
 app-arch/xarchiver
 app-crypt/seahorse
 app-editors/algobox
+app-editors/atom
 app-editors/nano
 app-editors/vim
 app-editors/visual-studio-code-bin
