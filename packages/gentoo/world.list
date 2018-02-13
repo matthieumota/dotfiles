@@ -29,6 +29,7 @@ dev-php/composer
 dev-php/symfony-installer
 dev-php/xdebug
 dev-util/android-studio
+dev-util/idea-ultimate
 dev-util/phpstorm
 dev-vcs/gitkraken
 gnome-extra/gnome-calculator
@@ -64,8 +65,8 @@ sys-kernel/gentoo-sources
 www-client/firefox-bin
 www-client/google-chrome
 x11-apps/mesa-progs
-x11-misc/bumblebee
 x11-apps/xrandr
+x11-misc/bumblebee
 x11-misc/compton
 x11-misc/dmenu
 x11-misc/i3lock
