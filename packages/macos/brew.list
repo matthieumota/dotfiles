@@ -4,7 +4,6 @@ figlet
 mariadb
 homebrew/php/php72-xdebug
 homebrew/php/phpunit
-pkg-config
 ruby
 screenfetch
 homebrew/php/symfony-installer
