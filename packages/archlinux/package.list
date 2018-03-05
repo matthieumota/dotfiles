@@ -94,6 +94,7 @@ paper-icon-theme
 pavucontrol
 pdftk-bin
 php
+php-apcu
 php-blackfire
 php-gd
 php-intl
