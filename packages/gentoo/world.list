@@ -26,9 +26,9 @@ app-portage/layman
 app-shells/oh-my-zsh
 app-shells/zsh-autosuggestions
 dev-php/composer
+dev-php/pecl-apcu
 dev-php/symfony-installer
 dev-php/xdebug
-dev-util/android-studio
 dev-util/idea-ultimate
 dev-util/phpstorm
 dev-vcs/gitkraken
