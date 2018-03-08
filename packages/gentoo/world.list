@@ -49,6 +49,7 @@ media-video/vlc
 net-dns/bind-tools
 net-ftp/filezilla
 net-ftp/lftp
+net-im/discord-bin
 net-im/skypeforlinux
 net-libs/nodejs
 net-misc/tigervnc
