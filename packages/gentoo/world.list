@@ -36,6 +36,7 @@ gnome-extra/gnome-calculator
 gnome-extra/nm-applet
 lxde-base/lxappearance
 mail-client/thunderbird-bin
+mate-base/mate
 media-fonts/fontawesome
 media-fonts/monaco
 media-fonts/noto
@@ -65,15 +66,14 @@ sys-kernel/gentoo-sources
 www-client/firefox-bin
 www-client/google-chrome
 x11-apps/mesa-progs
-x11-apps/xrandr
 x11-misc/bumblebee
 x11-misc/compton
 x11-misc/dmenu
 x11-misc/i3lock
 x11-misc/i3status
+x11-misc/lightdm
 x11-misc/polybar
 x11-misc/rofi
-x11-misc/sddm
 x11-misc/synergy
 x11-terms/termite
 x11-terms/xfce4-terminal
