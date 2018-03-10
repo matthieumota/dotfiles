@@ -81,6 +81,7 @@ lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 lxappearance
+makepasswd
 marco
 mariadb-clients
 mate-applets
@@ -235,6 +236,7 @@ xfwm4
 xfwm4-themes
 xorg-xrandr
 yaourt
+yarn
 zip
 zoom
 zsh
