@@ -35,6 +35,7 @@ docker-compose
 dos2unix
 dosfstools
 dropbox
+duplicity
 easytag
 efibootmgr
 engrampa
