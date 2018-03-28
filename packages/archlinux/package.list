@@ -132,6 +132,7 @@ pamac-aur
 paper-icon-theme
 pavucontrol
 pdftk-bin
+pencil
 php
 php-apcu
 php-blackfire
@@ -145,6 +146,7 @@ pluma
 polybar
 pulseaudio
 pulseaudio-jack
+putty
 python-pip
 reflector
 ristretto
