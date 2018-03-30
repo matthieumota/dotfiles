@@ -11,6 +11,7 @@ bind-tools
 blackfire-agent
 bleachbit
 blueman
+budgie-desktop
 bumblebee
 caja
 caja-gksu
@@ -26,6 +27,7 @@ composer
 compton
 conky
 cups
+dconf-editor
 debian-whois-mkpasswd
 discord
 dmenu
@@ -50,9 +52,13 @@ fish
 gimp
 git
 gitkraken
+gnome-backgrounds
 gnome-calculator
+gnome-control-center
 gnome-disk-utility
 gnome-keyring
+gnome-screensaver
+gnome-terminal
 google-chrome
 gparted
 graphviz
@@ -111,6 +117,7 @@ mate-user-share
 mate-utils
 mousepad
 mozo
+nautilus
 networkmanager
 network-manager-applet
 networkmanager-openvpn
@@ -142,6 +149,7 @@ php-sqlite
 phpstorm
 phpstorm-jre
 phpunit
+plank
 pluma
 polybar
 pulseaudio
