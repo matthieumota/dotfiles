@@ -1,12 +1,12 @@
 ansible
-homebrew/php/composer
+composer
+dnsmasq
 figlet
 mariadb
-homebrew/php/php72-xdebug
-homebrew/php/phpunit
+php
+phpunit
 ruby
 screenfetch
-homebrew/php/symfony-installer
 wget
 yarn
 zsh
