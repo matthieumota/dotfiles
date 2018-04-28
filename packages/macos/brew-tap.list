@@ -2,4 +2,4 @@ buo/cask-upgrade
 caskroom/cask
 caskroom/drivers
 homebrew/core
-homebrew/php
+homebrew/services
