@@ -13,6 +13,7 @@ php@7.1
 phpunit
 ruby
 screenfetch
+selenium-server-standalone
 telnet
 tmux
 tree
