@@ -4,8 +4,10 @@ dnsmasq
 duplicity
 figlet
 fish
+ghostscript
 git
 httpd
+kubernetes-cli
 links
 mysql@5.7
 php
@@ -20,6 +22,7 @@ telnet
 tmux
 tree
 wget
+xpdf
 yarn
 zsh
 zsh-autosuggestions
