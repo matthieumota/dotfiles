@@ -7,6 +7,7 @@ fish
 ghostscript
 git
 httpd
+imagemagick
 kubernetes-cli
 links
 mysql@5.7
