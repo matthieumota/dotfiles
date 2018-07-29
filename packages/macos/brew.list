@@ -1,4 +1,6 @@
 ansible
+blackfireio/blackfire/blackfire-agent
+blackfireio/blackfire/blackfire-php71
 composer
 dnsmasq
 duplicity
