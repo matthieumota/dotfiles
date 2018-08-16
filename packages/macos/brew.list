@@ -2,7 +2,9 @@ ansible
 blackfireio/blackfire/blackfire-agent
 blackfireio/blackfire/blackfire-php71
 composer
+codekitchen/dinghy/dinghy
 dnsmasq
+docker-compose
 duplicity
 figlet
 fish
