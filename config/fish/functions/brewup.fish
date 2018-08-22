@@ -12,8 +12,6 @@ function brewup
   brew prune
   echo "▶️  Running brew cleanup"\n
   brew cleanup
-  echo "▶️  Running brew cask cleanup"\n
-  brew cask cleanup
   echo "▶️  Running brew doctor"\n
   brew doctor
   echo "▶️  Running brew cask doctor"\n
