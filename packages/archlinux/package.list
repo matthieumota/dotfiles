@@ -32,7 +32,6 @@ cups
 dbeaver
 dconf-editor
 debian-whois-mkpasswd
-discord
 dmenu
 dmidecode
 dnsmasq
@@ -40,7 +39,6 @@ docker
 docker-compose
 dos2unix
 dosfstools
-dropbox
 duplicity
 easytag
 efibootmgr
