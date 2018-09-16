@@ -4,7 +4,10 @@ blackfireio/blackfire/blackfire-php71
 composer
 codekitchen/dinghy/dinghy
 dnsmasq
+docker
 docker-compose
+docker-machine
+drone/drone/drone
 duplicity
 figlet
 fish
