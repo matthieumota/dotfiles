@@ -1,6 +1,6 @@
 # Dotfiles
 
-Dotfiles works only for Arch Linux at the moment. You need Git for clone the repo and Yaourt to install all packages.
+Dotfiles works only for Arch Linux / macOS at the moment. You need Git for clone the repo and Yaourt to install all packages.
 
 ## Usage
 
