@@ -1,1 +1,2 @@
-set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
+set PATH /usr/local/sbin $PATH
+set PATH $HOME/.composer/vendor/bin $PATH
