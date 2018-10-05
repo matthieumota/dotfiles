@@ -17,6 +17,7 @@ httpd
 imagemagick
 kubernetes-cli
 links
+mas
 mysql@5.7
 php
 php@5.6
@@ -26,6 +27,7 @@ python
 ruby
 screenfetch
 selenium-server-standalone
+subversion
 telnet
 tmux
 tree
