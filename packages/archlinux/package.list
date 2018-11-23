@@ -1,8 +1,6 @@
-algobox
 ansible
 arch-install-scripts
 asciinema
-atom
 atril
 baobab
 bbswitch
@@ -75,12 +73,9 @@ heroku-toolbelt
 hplip
 i3-gaps
 i3lock
-intellij-idea-ultimate-edition
-intellij-idea-ultimate-edition-jre
 intel-ucode
 intltool
 jdk8-openjdk
-jdownloader2
 keepassx2
 krita
 la-capitaine-icon-theme
@@ -173,11 +168,8 @@ selenium-server-standalone
 simple-scan
 skypeforlinux-bin
 spotify
-staruml
 strace
-sweethome3d
 symfony-installer
-synergy
 termite
 thunar
 thunar-archive-plugin
