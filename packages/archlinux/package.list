@@ -84,6 +84,7 @@ nautilus
 networkmanager
 network-manager-applet
 networkmanager-openvpn
+ngrok
 nmap
 nodejs
 noto-fonts
@@ -130,8 +131,10 @@ seahorse
 selenium-server-standalone
 simple-scan
 skypeforlinux-bin
+slack-desktop
 spotify
 strace
+sublime-text-dev
 symfony-installer
 termite
 thunar
