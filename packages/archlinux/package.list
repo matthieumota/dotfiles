@@ -97,6 +97,7 @@ obs-studio
 oh-my-zsh-git
 openssh
 os-prober
+otf-operator-mono
 otf-san-francisco
 p7zip
 pamac-aur
@@ -135,6 +136,7 @@ slack-desktop
 spotify
 strace
 sublime-text-dev
+subversion
 symfony-installer
 termite
 thunar
