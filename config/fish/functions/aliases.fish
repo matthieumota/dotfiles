@@ -18,4 +18,3 @@ function bx-switch-php --description "bx-switch-php <php-version>"
 
   brew link --force php
 end
-
