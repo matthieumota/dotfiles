@@ -121,6 +121,7 @@ pulseaudio
 pulseaudio-jack
 putty
 python2-pip
+python-fonttools
 python-pip
 reflector
 ristretto
