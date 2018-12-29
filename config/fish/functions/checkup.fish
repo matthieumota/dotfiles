@@ -6,7 +6,7 @@ function checkup
   ncu -g
   echo "▶️  Check gem update"\n
   # On Arch Linux, we can remove full path
-  /usr/local/bin/gem outdated
+  /usr/local/opt/ruby/bin/gem outdated
   echo "▶️  Check python 2 update"\n
   /usr/local/bin/python -m pip list --outdated
   echo "▶️  Check python 3 update"\n
