@@ -1,0 +1,23 @@
+#!/bin/bash
+
+BACKUP_FOLDER="$HOME/backups/repositories"
+BACKUP_ENTITIES="matthieumota"
+
+# # If we need to add a new repository to keep sync
+# git clone --mirror git@PROVIDER:ENTITY/REPOSITORY.git
+# cd REPOSITORY.git
+# git remote set-url --push origin git@PROVIDER:ENTITY/MIRROR.git
+# # Repeat on each backup but this script do this
+# git fetch -p origin
+# git push --mirror
+
+for entity in $BACKUP_ENTITIES; do
+    cd $BACKUP_FOLDER/$entity
+    for repository in */; do
+        cd $repository
+        git fetch -p origin
+        git push --mirror
+        echo "in $BACKUP_FOLDER/$entity/$repository"
+        cd $BACKUP_FOLDER/$entity
+    done
+done
