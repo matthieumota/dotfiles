@@ -51,6 +51,7 @@ gnome-keyring
 gnome-screensaver
 gnome-terminal
 google-chrome
+google-chrome-dev
 gparted
 graphviz
 grub
@@ -108,6 +109,7 @@ pencil
 php
 php-apcu
 php-blackfire
+php-cs-fixer
 php-gd
 php-intl
 php-sqlite
@@ -170,6 +172,7 @@ visual-studio-code-bin
 vlc
 weechat
 wget
+wkhtmltopdf
 wp-cli
 xarchiver
 xcursor-osx-elcap
