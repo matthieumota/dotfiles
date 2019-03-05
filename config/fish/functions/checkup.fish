@@ -16,7 +16,7 @@ function checkup
   # macOS
   find /usr/local -name "*.default"
   # Arch Linux
-  find / -regextype posix-extended -regex ".+\.pac(new|save)" 2> /dev/null
+  # find / -regextype posix-extended -regex ".+\.pac(new|save)" 2> /dev/null
 
   echo \n"Finished! 🎉"\n
 
