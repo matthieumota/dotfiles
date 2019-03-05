@@ -7,7 +7,7 @@ function checkup
   echo "▶️  Check gem update"\n
   gem outdated
   echo "▶️  Check python 2 update"\n
-  python -m pip list --outdated
+  python2 -m pip list --outdated
   echo "▶️  Check python 3 update"\n
   python3 -m pip list --outdated
   echo "▶️  Check composer update"\n
