@@ -5,12 +5,11 @@ function checkup
   echo "▶️  Check npm update"\n
   ncu -g
   echo "▶️  Check gem update"\n
-  # On Arch Linux, we can remove full path
-  /usr/local/opt/ruby/bin/gem outdated
+  gem outdated
   echo "▶️  Check python 2 update"\n
-  /usr/local/bin/python -m pip list --outdated
+  python -m pip list --outdated
   echo "▶️  Check python 3 update"\n
-  /usr/local/bin/python3.7 -m pip list --outdated
+  python3 -m pip list --outdated
   echo "▶️  Check composer update"\n
   composer global outdated
   echo "▶️  Check default config"\n
