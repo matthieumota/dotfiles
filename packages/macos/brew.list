@@ -1,4 +1,5 @@
 ansible
+bfg
 blackfireio/blackfire/blackfire-agent
 blackfireio/blackfire/blackfire-php72
 composer
