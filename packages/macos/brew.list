@@ -20,6 +20,7 @@ kubernetes-cli
 links
 mas
 mysql@5.7
+nginx
 php
 php-cs-fixer
 php@7.1
