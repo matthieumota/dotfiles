@@ -9,7 +9,7 @@ function brewup
   echo "▶️  Running brew cask upgrade"\n
   brew cask upgrade
   echo "▶️  Running brew cleanup"\n
-  brew cleanup
+  brew cleanup -s && rm -rf (brew --cache)
   echo "▶️  Running brew doctor"\n
   brew doctor
   echo "▶️  Running brew cask doctor"\n
