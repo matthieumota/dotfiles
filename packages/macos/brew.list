@@ -21,6 +21,7 @@ links
 mas
 mysql@5.7
 nginx
+p7zip
 php
 php-cs-fixer
 php@7.1
