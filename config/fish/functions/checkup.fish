@@ -12,6 +12,8 @@ function checkup
   python3 -m pip list --outdated
   echo "▶️  Check composer update"\n
   composer global outdated
+  echo "▶️  Check Mac App Store update"\n
+  mas outdated
   echo "▶️  Check default config"\n
   # macOS
   find /usr/local -name "*.default"
