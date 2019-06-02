@@ -84,7 +84,6 @@ nautilus
 networkmanager
 network-manager-applet
 networkmanager-openvpn
-ngrok
 nmap
 nodejs
 noto-fonts
@@ -93,7 +92,6 @@ npm
 ntfs-3g
 nvidia
 nvidia-settings
-obs-studio
 oh-my-zsh-git
 openssh
 os-prober
@@ -220,6 +218,5 @@ xorg-xrandr
 yaourt
 yarn
 zip
-zoom
 zsh
 zsh-autosuggestions
