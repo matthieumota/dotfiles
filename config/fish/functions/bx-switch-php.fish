@@ -3,13 +3,17 @@ function bx-switch-php --description "bx-switch-php <php-version>"
 
   if [ "71" = "$argv[1]" ]
     brew link --force php@7.1
+    # Arch Linux
+    # sudo ln -sf /usr/bin/php71 /usr/local/bin/php
     return 1
   end
 
   if [ "72" = "$argv[1]" ]
     brew link --force php@7.2
+    # sudo ln -sf /usr/bin/php72 /usr/local/bin/php
     return 1
   end
 
   brew link --force php
+  # sudo ln -sf /usr/bin/php /usr/local/bin/php
 end
