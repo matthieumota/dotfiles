@@ -1,4 +1,5 @@
 ansible
+apache
 arch-install-scripts
 asciinema
 atril
@@ -107,6 +108,7 @@ php
 php-apcu
 php-blackfire
 php-cs-fixer
+php-fpm
 php-gd
 php-intl
 php-sqlite
