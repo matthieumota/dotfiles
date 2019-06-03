@@ -5,6 +5,8 @@ function bx-switch-php --description "bx-switch-php <php-version>"
     brew link --force php@7.1
     # Arch Linux
     # sudo ln -sf /usr/bin/php71 /usr/local/bin/php
+    # If want to switch pecl
+    # pecl -d php_suffix=71 install <package>
     return 1
   end
 
