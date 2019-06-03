@@ -148,7 +148,9 @@ php-blackfire
 php-cs-fixer
 php-fpm
 php-gd
+php-imagick
 php-intl
+php-pear
 php-sqlite
 phpstorm
 phpstorm-jre
