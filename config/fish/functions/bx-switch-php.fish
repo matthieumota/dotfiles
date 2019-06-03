@@ -15,7 +15,7 @@ function bx-switch-php --description "bx-switch-php <php-version>"
     # ./configure --with-php-config=php-config
     # make
     
-    return 1
+    return 0
   end
 
   if [ "72" = "$argv[1]" ]
@@ -23,7 +23,7 @@ function bx-switch-php --description "bx-switch-php <php-version>"
     # sudo ln -sf /usr/bin/php72 /usr/local/bin/php
     # sudo ln -sf /usr/bin/php-config72 /usr/local/bin/php-config
     # sudo ln -sf /usr/bin/phpize72 /usr/local/bin/phpize
-    return 1
+    return 0
   end
 
   brew link --force php
