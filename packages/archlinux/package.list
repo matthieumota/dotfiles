@@ -79,7 +79,7 @@ lightdm-gtk-greeter-settings
 links
 lxappearance
 makepasswd
-mariadb-clients
+mariadb
 mousepad
 nautilus
 networkmanager
