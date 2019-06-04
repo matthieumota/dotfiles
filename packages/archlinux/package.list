@@ -155,6 +155,7 @@ php-sqlite
 phpstorm
 phpstorm-jre
 phpunit
+php-xsl
 plank
 polybar
 postfix
