@@ -2,7 +2,6 @@ ansible
 apache
 arch-install-scripts
 asciinema
-atril
 baobab
 bbswitch
 beep
@@ -33,6 +32,7 @@ dosfstools
 duplicity
 easytag
 efibootmgr
+evince
 exfat-utils
 feh
 ffmpegthumbnailer
