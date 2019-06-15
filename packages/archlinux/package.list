@@ -151,6 +151,7 @@ php-fpm
 php-gd
 php-imagick
 php-intl
+phploc
 php-pear
 php-sqlite
 phpstorm
