@@ -52,11 +52,13 @@ gnome-disk-utility
 gnome-keyring
 gnome-screensaver
 gnome-screenshot
+gnome-shell
 gnome-terminal
 google-chrome
 gparted
 graphviz
 grub
+gtk-arc-flatabulous-theme-git
 gvfs
 gvfs-mtp
 gvfs-smb
@@ -64,6 +66,7 @@ heroku-toolbelt
 hplip
 i3-gaps
 i3lock
+inkscape
 intel-ucode
 intltool
 jdk8-openjdk
