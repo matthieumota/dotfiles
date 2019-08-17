@@ -1,6 +1,6 @@
 # Dotfiles
 
-Dotfiles works for Arch Linux / macOS / Gentoo.
+Dotfiles works for Arch Linux / macOS / Gentoo.  
 You need Brew for macOS and Yaourt for Arch Linux.
 
 ## Usage
