@@ -4,14 +4,16 @@ Dotfiles works only for Arch Linux / macOS at the moment. You need Git for clone
 
 ## Usage
 
-Install dotfiles :
+To use Dotfiles, you need to install it manually. It provide a more flexible way to choose things.
 
-```
-make dotfiles
-```
+For config files :
 
-Install packages :
+- ```/bin/*``` need to go to ```/usr/local/bin/*```
+- ```config/fish/*``` need to go to ```~/.config/fish/*```
+- ```config/git/*``` need to go to ```~/*```
 
-```
-make packages
-```
+For packages :
+
+- ```brew install *``` where ```*``` is in ```packages/macos/brew.list```
+- ```brew cask install *``` where ```*``` is in ```packages/macos/brew-cask.list```
+- ```brew tap *``` where ```*``` is in ```packages/macos/brew-tap.list```
