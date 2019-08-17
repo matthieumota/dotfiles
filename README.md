@@ -8,7 +8,7 @@ To use Dotfiles, you need to install it manually. It provide a more flexible way
 
 For config files :
 
-- ```/bin/*``` need to go to ```/usr/local/bin/*```
+- ```bin/*``` need to go to ```/usr/local/bin/*```
 - ```config/fish/*``` need to go to ```~/.config/fish/*```
 - ```config/git/*``` need to go to ```~/*```
 
