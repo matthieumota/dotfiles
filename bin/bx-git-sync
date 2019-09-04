@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BACKUP_FOLDER="$HOME/Documents/Backups/repositories"
+BACKUP_FOLDER="$HOME/repositories"
 BACKUP_OWNERS="matthieumota"
 
 # # If we need to add a new repository to keep sync
