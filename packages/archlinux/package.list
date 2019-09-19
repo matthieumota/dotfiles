@@ -61,7 +61,6 @@ gtk-arc-flatabulous-theme-git
 gvfs
 gvfs-mtp
 gvfs-smb
-heroku-toolbelt
 hplip
 i3-gaps
 i3lock
@@ -181,7 +180,7 @@ screenfetch
 seahorse
 selenium-server-standalone
 simple-scan
-skypeforlinux-bin
+skypeforlinux-stable-bin
 slack-desktop
 spotify
 strace
@@ -221,8 +220,8 @@ xdebug
 xdg-user-dirs
 xf86-input-evdev-debounce
 xorg-xrandr
-yaourt
 yarn
+yay
 zip
 zsh
 zsh-autosuggestions

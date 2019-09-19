@@ -1,5 +1,5 @@
 function pacmanup
 
-    yaourt -Suya --devel
+    yay -Suy --devel --timeupdate
 
 end
