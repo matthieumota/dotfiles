@@ -16,7 +16,15 @@ function checkup
   mas outdated
   echo "▶️  Check default config"\n
   # macOS
-  find /usr/local -name "*.default"
+  for file in (find /usr/local -name "*.default")
+    set defaultFile (echo $file | sed 's/.default//' | sed 's/.default//')
+    diff "$file" "$defaultFile" > /dev/null
+    if test $status -eq 1
+      echo "diff : $defaultFile"
+    else
+      echo "nodiff : $defaultFile"
+    end
+  end
   # Arch Linux
   # find / -regextype posix-extended -regex ".+\.pac(new|save)" 2> /dev/null
 
