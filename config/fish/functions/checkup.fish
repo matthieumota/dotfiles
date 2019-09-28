@@ -17,7 +17,7 @@ function checkup
   echo "▶️  Check default config"\n
   # macOS
   for file in (find /usr/local -name "*.default")
-    set defaultFile (echo $file | sed 's/.default//' | sed 's/.default//')
+    set defaultFile (echo $file | sed 's/.default//')
     diff "$file" "$defaultFile" > /dev/null
     if test $status -eq 1
       echo "diff : $defaultFile"
