@@ -1,5 +1,5 @@
 function bx-switch-php --description "bx-switch-php <php-version>"
-  brew unlink php@7.1; brew unlink php@7.2; brew unlink php;
+  brew unlink php@7.1; brew unlink php@7.2; brew unlink php@7.3; brew unlink php;
 
   if [ "71" = "$argv[1]" ]
     brew link --force php@7.1
@@ -23,6 +23,14 @@ function bx-switch-php --description "bx-switch-php <php-version>"
     # sudo ln -sf /usr/bin/php72 /usr/local/bin/php
     # sudo ln -sf /usr/bin/php-config72 /usr/local/bin/php-config
     # sudo ln -sf /usr/bin/phpize72 /usr/local/bin/phpize
+    return 0
+  end
+
+  if [ "73" = "$argv[1]" ]
+    brew link --force php@7.3
+    # sudo ln -sf /usr/bin/php73 /usr/local/bin/php
+    # sudo ln -sf /usr/bin/php-config73 /usr/local/bin/php-config
+    # sudo ln -sf /usr/bin/phpize73 /usr/local/bin/phpize
     return 0
   end
 
