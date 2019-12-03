@@ -16,7 +16,6 @@ ghostscript
 git
 httpd
 imagemagick
-kubernetes-cli
 links
 mariadb
 mas
@@ -24,8 +23,8 @@ nginx
 p7zip
 php
 php-cs-fixer
-php@7.1
 php@7.2
+php@7.3
 phpunit
 pkg-config
 python@2
