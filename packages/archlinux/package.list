@@ -152,6 +152,7 @@ putty
 python2-pip
 python-fonttools
 python-pip
+redis
 reflector
 rofi
 rsync
