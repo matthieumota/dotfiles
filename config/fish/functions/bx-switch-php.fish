@@ -7,6 +7,7 @@ function bx-switch-php --description "bx-switch-php <php-version>"
     # sudo ln -sf /usr/bin/php72 /usr/local/bin/php
     # sudo ln -sf /usr/bin/php-config72 /usr/local/bin/php-config
     # sudo ln -sf /usr/bin/phpize72 /usr/local/bin/phpize
+    # sudo ln -sf /usr/bin/php-fpm72 /usr/local/bin/php-fpm
 
     # wget https://pecl.php.net/get/imagick-3.4.4.tgz
     # tar xf imagick-3.4.4.tgz
@@ -23,6 +24,7 @@ function bx-switch-php --description "bx-switch-php <php-version>"
     # sudo ln -sf /usr/bin/php73 /usr/local/bin/php
     # sudo ln -sf /usr/bin/php-config73 /usr/local/bin/php-config
     # sudo ln -sf /usr/bin/phpize73 /usr/local/bin/phpize
+    # sudo ln -sf /usr/bin/php-fpm73 /usr/local/bin/php-fpm
     return 0
   end
 
@@ -30,4 +32,5 @@ function bx-switch-php --description "bx-switch-php <php-version>"
   # sudo ln -sf /usr/bin/php /usr/local/bin/php
   # sudo ln -sf /usr/bin/php-config /usr/local/bin/php-config
   # sudo ln -sf /usr/bin/phpize /usr/local/bin/phpize
+  # sudo ln -sf /usr/bin/php-fpm /usr/local/bin/php-fpm
 end
