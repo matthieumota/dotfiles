@@ -115,6 +115,7 @@ php72-fpm
 php72-gd
 php72-imagick
 php72-intl
+php72-redis
 php72-sqlite
 php72-xdebug
 php72-xsl
@@ -124,6 +125,7 @@ php73-fpm
 php73-gd
 php73-imagick
 php73-intl
+php73-redis
 php73-sqlite
 php73-xdebug
 php73-xsl
