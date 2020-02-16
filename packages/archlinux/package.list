@@ -131,6 +131,7 @@ php73-sodium
 php73-sqlite
 php73-xdebug
 php73-xsl
+php-amqp
 php-apcu
 php-blackfire
 php-cs-fixer
