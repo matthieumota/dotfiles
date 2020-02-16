@@ -116,6 +116,7 @@ php72-gd
 php72-imagick
 php72-intl
 php72-redis
+php72-sodium
 php72-sqlite
 php72-xdebug
 php72-xsl
@@ -126,6 +127,7 @@ php73-gd
 php73-imagick
 php73-intl
 php73-redis
+php73-sodium
 php73-sqlite
 php73-xdebug
 php73-xsl
@@ -138,6 +140,7 @@ php-imagick
 php-intl
 phploc
 php-pear
+php-sodium
 php-sqlite
 phpstorm
 phpstorm-jre
