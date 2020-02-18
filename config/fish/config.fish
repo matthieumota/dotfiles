@@ -1,3 +1,4 @@
+set PATH /usr/local/bin $PATH
 set PATH /usr/local/sbin $PATH
 set PATH $HOME/.composer/vendor/bin $PATH
 set PATH /usr/local/opt/ruby/bin $PATH
