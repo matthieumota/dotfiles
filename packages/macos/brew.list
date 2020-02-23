@@ -28,6 +28,7 @@ php@7.3
 phpunit
 pkg-config
 python@2
+rabbitmq-c
 redis
 ruby
 screenfetch
