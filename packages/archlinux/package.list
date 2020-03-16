@@ -7,7 +7,6 @@ bbswitch
 beep
 bfg
 bind-tools
-blackfire-agent
 bleachbit
 blueman
 budgie-desktop
@@ -133,7 +132,6 @@ php73-xdebug
 php73-xsl
 php-amqp
 php-apcu
-php-blackfire
 php-cs-fixer
 php-fpm
 php-gd
