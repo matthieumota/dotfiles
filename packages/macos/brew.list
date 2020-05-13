@@ -5,12 +5,12 @@ codekitchen/dinghy/dinghy
 dnsmasq
 docker
 docker-compose
+docker-credential-helper
 docker-machine
 drone-cli
 duplicity
 figlet
 fish
-ghostscript
 git
 graphviz
 httpd
