@@ -1,6 +1,6 @@
 # Dotfiles
 
-Dotfiles works for Arch Linux / macOS / Gentoo.  
+Dotfiles works for Arch Linux / macOS.  
 You need Brew for macOS and Yay for Arch Linux.
 
 ## Usage
@@ -18,3 +18,5 @@ For packages :
 - ```brew install *``` where ```*``` is in ```packages/macos/brew.list```
 - ```brew cask install *``` where ```*``` is in ```packages/macos/brew-cask.list```
 - ```brew tap *``` where ```*``` is in ```packages/macos/brew-tap.list```
+
+- ```yay -S *``` where ```*``` is in ```packages/archlinux/package.list```
