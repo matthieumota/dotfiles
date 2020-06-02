@@ -1,22 +1,27 @@
-# Dotfiles
+# Matthieu's Dotfiles
 
-Dotfiles works for Arch Linux / macOS.  
-You need Brew for macOS and Yay for Arch Linux.
+This project serves me to install, configure and maintain my development workflow on macOS or Ubuntu. Like that, I can easily reset a Mac or Linux machine and start fresh without installing manually !
+
+I previously use Arch Linux and Gentoo but it was too time consuming and I'm back to simplicity.
+
+## A fresh macOS or Ubuntu
+
+Before begin to re-install your machine, please check this steps :
+
+- Did you commit and push on all your repositories ?
+- Did you save all your documents not present in Cloud.
+
+You can now install a clean macOS or Ubuntu.
 
 ## Usage
 
-To use Dotfiles, you need to install it manually. It provide a more flexible way to choose things.
+You can now clone this repository :
 
-For config files :
-
-- ```bin/*``` need to go to ```/usr/local/bin/*```
-- ```config/fish/*``` need to go to ```~/.config/fish/*```
-- ```config/git/*``` need to go to ```~/*```
-
-For packages :
-
-- ```brew install *``` where ```*``` is in ```packages/macos/brew.list```
-- ```brew cask install *``` where ```*``` is in ```packages/macos/brew-cask.list```
-- ```brew tap *``` where ```*``` is in ```packages/macos/brew-tap.list```
-
-- ```yay -S *``` where ```*``` is in ```packages/archlinux/package.list```
+```bash
+git clone git@github.com:matthieumota/dotfiles.git .dotfiles
+cd .dotfiles
+# On your Mac
+./setup-mac.sh
+# On your Ubuntu
+./setup-ubuntu.sh
+```

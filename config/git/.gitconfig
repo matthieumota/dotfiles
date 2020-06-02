@@ -3,5 +3,4 @@
     name = Matthieu Mota
 [core]
     autocrlf = input
-    filemode = false
     excludesfile = ~/.gitignore_global

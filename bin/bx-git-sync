@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 BACKUP_FOLDER="$HOME/repositories"
 BACKUP_OWNERS="matthieumota"
