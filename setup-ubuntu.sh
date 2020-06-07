@@ -54,8 +54,8 @@ sudo apt-get install -y \
      zsh
 
 # Oh My Zsh & Fish
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-curl -L https://get.oh-my.fish | fish
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+curl -L https://get.oh-my.fish | fish /dev/stdin --noninteractive
 
 # Scaleway
 wget https://github.com/scaleway/scaleway-cli/releases/download/v1.20/scw_1.20_amd64.deb -O scw.deb

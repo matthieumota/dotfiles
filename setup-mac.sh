@@ -28,8 +28,8 @@ brew install \
      scw
 
 # Oh My Zsh & Fish
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-curl -L https://get.oh-my.fish | fish
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+curl -L https://get.oh-my.fish | fish /dev/stdin --noninteractive
 
 # Development
 brew install \
@@ -49,6 +49,9 @@ brew install \
 
 # NPM dependencies
 npm install -g npm-check-updates
+
+# MySQL configuration
+sudo mysql -u root -e "ALTER USER root@localhost IDENTIFIED BY ''; FLUSH PRIVILEGES;"
 
 # PHP Dependencies
 composer global require laravel/installer
