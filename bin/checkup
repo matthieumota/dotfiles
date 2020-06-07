@@ -1,0 +1,26 @@
+#!/bin/bash
+
+echo -e "\nReady? 🍻\n"
+
+echo -e "▶️  Check npm update\n"
+ncu -g
+echo -e "▶️  Check python 3 update\n"
+python3 -m pip list --outdated
+echo -e "▶️  Check composer update\n"
+composer global outdated
+if [ "$(uname)" == "Darwin" ]; then
+    echo -e "▶️  Check Mac App Store update\n"
+    mas outdated
+    echo -e "▶️  Check default config\n"
+    for file in $(find /usr/local -name "*.default"); do
+        defaultFile=$(echo $file | sed 's/.default//')
+        diff "$file" "$defaultFile" > /dev/null
+        if [ $? -eq 1 ]; then
+            echo "diff : $defaultFile"
+        else
+            echo "nodiff : $defaultFile"
+        fi
+    done
+fi
+
+echo -e "\nFinished! 🎉\n"
