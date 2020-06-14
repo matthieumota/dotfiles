@@ -4,8 +4,6 @@ echo -e "\nReady? 🍻\n"
 
 echo -e "▶️  Check npm update\n"
 ncu -g
-echo -e "▶️  Check python 3 update\n"
-python3 -m pip list --outdated
 echo -e "▶️  Check composer update\n"
 composer global outdated
 if [ "$(uname)" == "Darwin" ]; then
