@@ -63,12 +63,12 @@ sudo apt-get install -y ./scw.deb && rm scw.deb
 
 # Development
 sudo apt-get install -y \
-     php7.4-cli php7.4-curl php7.4-fpm php7.4-gd php7.4-intl \
-     php7.4-mbstring php7.4-mysql php7.4-sqlite3 php7.4-xml php7.4-zip \
-     php7.3-cli php7.3-curl php7.3-fpm php7.3-gd php7.3-intl \
-     php7.3-mbstring php7.3-mysql php7.3-sqlite3 php7.3-xml php7.3-zip \
-     php7.2-cli php7.2-curl php7.2-fpm php7.2-gd php7.2-intl \
-     php7.2-mbstring php7.2-mysql php7.2-sqlite3 php7.2-xml php7.2-zip \
+     php7.4-bcmatch php7.4-cli php7.4-curl php7.4-fpm php7.4-gd php7.4-intl \
+     php7.4-mbstring php7.4-mysql php7.4-soap php7.4-sqlite3 php7.4-xml php7.4-zip \
+     php7.3-bcmatch php7.3-cli php7.3-curl php7.3-fpm php7.3-gd php7.3-intl \
+     php7.3-mbstring php7.3-mysql php7.3-soap php7.3-sqlite3 php7.3-xml php7.3-zip \
+     php7.2-bcmatch php7.2-cli php7.2-curl php7.2-fpm php7.2-gd php7.2-intl \
+     php7.2-mbstring php7.2-mysql php7.2-soap php7.2-sqlite3 php7.2-xml php7.2-zip \
      php-amqp php-apcu php-imagick php-redis php-xdebug \
      apache2 \
      mariadb-server \
