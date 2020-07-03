@@ -8,14 +8,15 @@ fi
 
 # Taps
 brew tap buo/cask-upgrade
-brew tap codekitchen/dinghy
 brew tap homebrew/cask-drivers
+brew tap nektos/tap
 
 # Update
 brew update
 
 # Binaries
 brew install \
+     act \
      ansible \
      dnsmasq \
      figlet \
@@ -83,6 +84,7 @@ mv $HOME/.symfony/bin/symfony /usr/local/bin/symfony
 brew cask install \
      cyberduck \
      discord \
+     docker \
      firefox \
      google-chrome \
      google-backup-and-sync \
@@ -104,15 +106,6 @@ brew cask install \
      virtualbox \
      visual-studio-code \
      vlc
-
-# Docker
-brew install \
-     docker \
-     docker-compose \
-     docker-credential-helper \
-     docker-machine \
-     dinghy \
-     drone-cli
 
 # Dotfiles
 ln -s $HOME/.dotfiles/config/fish/aliases.fish $HOME/.config/fish/conf.d/aliases.fish
