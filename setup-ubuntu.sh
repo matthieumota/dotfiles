@@ -128,9 +128,8 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 sudo usermod -aG docker $USER
 
-# Drone CLI
-curl -L https://github.com/drone/drone-cli/releases/latest/download/drone_linux_amd64.tar.gz | tar zx
-sudo install -t /usr/local/bin drone && rm drone
+# Act
+curl https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash
 
 # Ngrok
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
