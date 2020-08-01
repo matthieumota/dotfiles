@@ -4,7 +4,7 @@ echo "Setting Linux..."
 
 export DEBIAN_FRONTEND=noninteractive
 
-## PPAs
+# PPAs
 sudo apt-add-repository ppa:chris-lea/redis-server -y
 sudo apt-add-repository ppa:ondrej/apache2 -y
 sudo apt-add-repository ppa:ondrej/php -y
@@ -84,7 +84,7 @@ sudo a2enmod http2 proxy_fcgi ssl vhost_alias
 sudo npm install -g npm-check-updates
 
 # MySQL configuration
-sudo mysql -u root -e "ALTER USER root@localhost IDENTIFIED BY ''; FLUSH PRIVILEGES;"
+sudo mysql -u root -e "SET PASSWORD = PASSWORD('');"
 
 # Composer
 curl -sS https://getcomposer.org/installer | php

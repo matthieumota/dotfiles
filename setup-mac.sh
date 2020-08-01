@@ -52,7 +52,7 @@ brew install \
 npm install -g npm-check-updates
 
 # MySQL configuration
-sudo mysql -u root -e "ALTER USER root@localhost IDENTIFIED BY ''; FLUSH PRIVILEGES;"
+sudo mysql -u root -e "SET PASSWORD = PASSWORD('');"
 
 # PHP Dependencies
 composer global require laravel/installer
