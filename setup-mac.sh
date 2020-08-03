@@ -54,9 +54,6 @@ npm install -g npm-check-updates
 # MySQL configuration
 sudo mysql -u root -e "SET PASSWORD = PASSWORD('');"
 
-# PHP Dependencies
-composer global require laravel/installer
-
 # PHP modules
 /usr/local/opt/php/bin/pecl install amqp apcu imagick redis xdebug
 /usr/local/opt/php@7.3/bin/pecl install amqp apcu imagick redis xdebug
@@ -76,6 +73,9 @@ cat > /usr/local/etc/php/"$Php"/conf.d/ext-xdebug.ini << EOF
 EOF
 done
 
+# PHP Dependencies
+composer global require laravel/installer
+
 # Symfony
 curl -sS https://get.symfony.com/cli/installer | bash
 mv $HOME/.symfony/bin/symfony /usr/local/bin/symfony
@@ -86,8 +86,8 @@ brew cask install \
      discord \
      docker \
      firefox \
-     google-chrome \
      google-backup-and-sync \
+     google-chrome \
      hp-easy-start \
      insomnia \
      iterm2 \
