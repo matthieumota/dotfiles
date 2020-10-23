@@ -38,6 +38,9 @@ echo "deb https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list
 sudo apt-key adv --fetch-keys https://mariadb.org/mariadb_release_signing_key.asc
 echo "deb [arch=amd64,arm64,ppc64el] http://mirrors.supportex.net/mariadb/repo/10.4/ubuntu focal main" | sudo tee /etc/apt/sources.list.d/mariadb.list
 
+sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net:80 --recv-keys 379CE192D401AB61
+echo "deb https://dl.bintray.com/stripe/stripe-cli-deb stable main" | sudo tee /etc/apt/sources.list.d/stripe.list
+
 # Update
 sudo apt-get update
 sudo apt-get upgrade -y
@@ -51,6 +54,7 @@ sudo apt-get install -y \
      git \
      graphviz \
      screenfetch \
+     stripe \
      zsh
 
 # Oh My Zsh & Fish

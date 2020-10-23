@@ -10,6 +10,7 @@ fi
 brew tap buo/cask-upgrade
 brew tap homebrew/cask-drivers
 brew tap nektos/tap
+brew tap stripe/stripe-cli
 
 # Update
 brew update
@@ -26,7 +27,8 @@ brew install \
      mas \
      pkg-config \
      screenfetch \
-     scw
+     scw \
+     stripe
 
 # Oh My Zsh & Fish
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
