@@ -17,7 +17,7 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 curl -sS https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 echo "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
 
-curl -sS https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add - 
+curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add -
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
 
 curl -sS https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
