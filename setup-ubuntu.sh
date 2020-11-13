@@ -82,7 +82,7 @@ sudo apt-get install -y \
      yarn
 
 # Apache
-sudo a2enmod http2 proxy_fcgi ssl vhost_alias
+sudo a2enmod http2 proxy_fcgi rewrite ssl vhost_alias
 
 # NPM dependencies
 sudo npm install -g npm-check-updates
