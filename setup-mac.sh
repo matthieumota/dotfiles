@@ -54,6 +54,7 @@ brew install \
 npm install -g npm-check-updates
 
 # MySQL configuration
+brew services start mariadb
 sudo mysql -u root -e "SET PASSWORD = PASSWORD('');"
 
 # PHP modules
@@ -93,7 +94,6 @@ brew cask install \
      hp-easy-start \
      insomnia \
      iterm2 \
-     java \
      keepassx \
      microsoft-office \
      ngrok \
