@@ -37,6 +37,7 @@ curl -L https://get.oh-my.fish | fish /dev/stdin --noninteractive
 # Development
 brew install \
      php \
+     php@7.4 \
      php@7.3 \
      php@7.2 \
      composer \
@@ -59,10 +60,11 @@ sudo mysql -u root -e "SET PASSWORD = PASSWORD('');"
 
 # PHP modules
 /usr/local/opt/php/bin/pecl install amqp apcu imagick redis xdebug
+/usr/local/opt/php@7.4/bin/pecl install amqp apcu imagick redis xdebug
 /usr/local/opt/php@7.3/bin/pecl install amqp apcu imagick redis xdebug
 /usr/local/opt/php@7.2/bin/pecl install amqp apcu imagick redis xdebug
 
-for Php in '7.2' '7.3' '7.4'; do
+for Php in '7.2' '7.3' '7.4' '8.0'; do
     for Module in 'amqp' 'apcu' 'imagick' 'redis'; do
 cat > /usr/local/etc/php/"$Php"/conf.d/ext-"$Module".ini << EOF
 [$Module]

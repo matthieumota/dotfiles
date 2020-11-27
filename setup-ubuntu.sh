@@ -67,6 +67,8 @@ sudo apt-get install -y ./scw.deb && rm scw.deb
 
 # Development
 sudo apt-get install -y \
+     php8.0-bcmath php8.0-cli php8.0-curl php8.0-fpm php8.0-gd php8.0-intl \
+     php8.0-mbstring php8.0-mysql php8.0-soap php8.0-sqlite3 php8.0-xml php8.0-zip \
      php7.4-bcmath php7.4-cli php7.4-curl php7.4-fpm php7.4-gd php7.4-intl \
      php7.4-mbstring php7.4-mysql php7.4-soap php7.4-sqlite3 php7.4-xml php7.4-zip \
      php7.3-bcmath php7.3-cli php7.3-curl php7.3-fpm php7.3-gd php7.3-intl \
@@ -82,7 +84,7 @@ sudo apt-get install -y \
      yarn
 
 # Apache
-sudo a2enmod http2 proxy_fcgi rewrite ssl vhost_alias
+sudo a2enmod brotli http2 proxy_fcgi rewrite ssl vhost_alias
 
 # NPM dependencies
 sudo npm install -g npm-check-updates
