@@ -79,6 +79,7 @@ EOF
 done
 
 # PHP Dependencies
+composer global require beyondcode/expose
 composer global require laravel/installer
 
 # Symfony
