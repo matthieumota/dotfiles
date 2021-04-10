@@ -99,7 +99,6 @@ brew cask install \
      iterm2 \
      keepassx \
      microsoft-office \
-     ngrok \
      phpstorm \
      slack \
      sourcetree \

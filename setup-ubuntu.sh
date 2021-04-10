@@ -138,10 +138,6 @@ sudo usermod -aG docker $USER
 # Act
 curl https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash
 
-# Ngrok
-wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
-sudo unzip ngrok-stable-linux-amd64.zip -d /usr/local/bin/ && rm ngrok-stable-linux-amd64.zip
-
 # Slack
 wget https://downloads.slack-edge.com/linux_releases/slack-desktop-4.4.3-amd64.deb -O slack.deb
 sudo apt-get install -y ./slack.deb && rm slack.deb
