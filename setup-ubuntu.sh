@@ -138,14 +138,10 @@ sudo usermod -aG docker $USER
 # Act
 curl https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash
 
-# Slack
-wget https://downloads.slack-edge.com/linux_releases/slack-desktop-4.4.3-amd64.deb -O slack.deb
-sudo apt-get install -y ./slack.deb && rm slack.deb
-
 # PhpStorm
 if test ! $(which pstorm); then
-  wget https://download-cf.jetbrains.com/webide/PhpStorm-2020.1.2.tar.gz
-  sudo tar xvf PhpStorm-2020.1.2.tar.gz --directory /opt/ && rm PhpStorm-2020.1.2.tar.gz
+  wget https://download-cf.jetbrains.com/webide/PhpStorm-2021.1.2.tar.gz
+  sudo tar xvf PhpStorm-2021.1.2.tar.gz --directory /opt/ && rm PhpStorm-2021.1.2.tar.gz
 fi
 
 # Postfix
