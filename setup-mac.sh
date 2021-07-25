@@ -100,7 +100,6 @@ brew cask install \
      keepassx \
      microsoft-office \
      phpstorm \
-     sourcetree \
      spotify \
      sublime-text \
      tableplus \
