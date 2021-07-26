@@ -26,8 +26,7 @@ echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 echo "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list
 
-wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc | sudo apt-key add -
-echo "deb https://dl.bintray.com/getinsomnia/Insomnia /" | sudo tee /etc/apt/sources.list.d/insomnia.list
+echo "deb [trusted=yes arch=amd64] https://download.konghq.com/insomnia-ubuntu/ default all" | sudo tee /etc/apt/sources.list.d/insomnia.list
 
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
@@ -37,9 +36,6 @@ echo "deb https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list
 
 sudo apt-key adv --fetch-keys https://mariadb.org/mariadb_release_signing_key.asc
 echo "deb [arch=amd64,arm64,ppc64el] http://mirrors.supportex.net/mariadb/repo/10.4/ubuntu focal main" | sudo tee /etc/apt/sources.list.d/mariadb.list
-
-sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net:80 --recv-keys 379CE192D401AB61
-echo "deb https://dl.bintray.com/stripe/stripe-cli-deb stable main" | sudo tee /etc/apt/sources.list.d/stripe.list
 
 # Update
 sudo apt-get update
@@ -54,7 +50,6 @@ sudo apt-get install -y \
      git \
      graphviz \
      screenfetch \
-     stripe \
      zsh
 
 # Oh My Zsh & Fish
@@ -143,6 +138,10 @@ if test ! $(which pstorm); then
   wget https://download-cf.jetbrains.com/webide/PhpStorm-2021.1.2.tar.gz
   sudo tar xvf PhpStorm-2021.1.2.tar.gz --directory /opt/ && rm PhpStorm-2021.1.2.tar.gz
 fi
+
+# Stripe
+wget https://github.com/stripe/stripe-cli/releases/download/v1.7.0/stripe_1.7.0_linux_x86_64.tar.gz
+sudo tar xvf stripe_1.7.0_linux_x86_64.tar.gz --directory /usr/local/bin/ && rm stripe_1.7.0_linux_x86_64.tar.gz
 
 # Postfix
 sudo debconf-set-selections <<< "postfix postfix/mailname string localhost"
