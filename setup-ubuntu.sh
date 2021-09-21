@@ -92,8 +92,7 @@ curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 
 # PHP Dependencies
-composer global require beyondcode/expose
-composer global require laravel/installer
+composer global require beyondcode/expose laravel/installer
 
 # Symfony
 wget https://get.symfony.com/cli/installer -O - | bash

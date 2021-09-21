@@ -79,8 +79,7 @@ EOF
 done
 
 # PHP Dependencies
-composer global require beyondcode/expose
-composer global require laravel/installer
+composer global require beyondcode/expose laravel/installer
 
 # Symfony
 curl -sS https://get.symfony.com/cli/installer | bash
