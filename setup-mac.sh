@@ -91,8 +91,8 @@ brew cask install \
      discord \
      docker \
      firefox \
-     google-backup-and-sync \
      google-chrome \
+     google-drive \
      hp-easy-start \
      insomnia \
      iterm2 \
