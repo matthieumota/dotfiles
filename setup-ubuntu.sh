@@ -62,6 +62,8 @@ sudo apt-get install -y ./scw.deb && rm scw.deb
 
 # Development
 sudo apt-get install -y \
+     php8.1-bcmath php8.1-cli php8.1-curl php8.1-fpm php8.1-gd php8.1-intl \
+     php8.1-mbstring php8.1-mysql php8.1-soap php8.1-sqlite3 php8.1-xml php8.1-zip \
      php8.0-bcmath php8.0-cli php8.0-curl php8.0-fpm php8.0-gd php8.0-intl \
      php8.0-mbstring php8.0-mysql php8.0-soap php8.0-sqlite3 php8.0-xml php8.0-zip \
      php7.4-bcmath php7.4-cli php7.4-curl php7.4-fpm php7.4-gd php7.4-intl \
