@@ -11,6 +11,7 @@ brew tap buo/cask-upgrade
 brew tap homebrew/cask-drivers
 brew tap nektos/tap
 brew tap stripe/stripe-cli
+brew tap symfony-cli/tap
 
 # Update
 brew update
@@ -28,7 +29,8 @@ brew install \
      pkg-config \
      screenfetch \
      scw \
-     stripe
+     stripe \
+     symfony-cli
 
 # Oh My Zsh & Fish
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
@@ -82,10 +84,6 @@ done
 
 # PHP Dependencies
 composer global require beyondcode/expose laravel/installer
-
-# Symfony
-curl -sS https://get.symfony.com/cli/installer | bash
-mv $HOME/.symfony/bin/symfony /usr/local/bin/symfony
 
 # Apps
 brew cask install \

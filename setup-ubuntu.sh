@@ -37,6 +37,8 @@ echo "deb https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list
 sudo apt-key adv --fetch-keys https://mariadb.org/mariadb_release_signing_key.asc
 echo "deb [arch=amd64,arm64,ppc64el] http://mirrors.supportex.net/mariadb/repo/10.4/ubuntu focal main" | sudo tee /etc/apt/sources.list.d/mariadb.list
 
+echo "deb [trusted=yes] https://repo.symfony.com/apt/ /" | sudo tee /etc/apt/sources.list.d/symfony-cli.list
+
 # Update
 sudo apt-get update
 sudo apt-get upgrade -y
@@ -50,6 +52,7 @@ sudo apt-get install -y \
      git \
      graphviz \
      screenfetch \
+     symfony-cli \
      zsh
 
 # Oh My Zsh & Fish
@@ -95,10 +98,6 @@ sudo mv composer.phar /usr/local/bin/composer
 
 # PHP Dependencies
 composer global require beyondcode/expose laravel/installer
-
-# Symfony
-wget https://get.symfony.com/cli/installer -O - | bash
-sudo mv $HOME/.symfony/bin/symfony /usr/local/bin/symfony
 
 # WP-CLI
 curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
