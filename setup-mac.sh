@@ -10,6 +10,7 @@ fi
 brew tap buo/cask-upgrade
 brew tap homebrew/cask-drivers
 brew tap nektos/tap
+brew tap shivammathur/php
 brew tap stripe/stripe-cli
 brew tap symfony-cli/tap
 
@@ -40,9 +41,9 @@ curl -L https://get.oh-my.fish | fish /dev/stdin --noninteractive
 brew install \
      php \
      php@8.0 \
-     php@7.4 \
-     php@7.3 \
-     php@7.2 \
+     shivammathur/php/php@7.4 \
+     shivammathur/php/php@7.3 \
+     shivammathur/php/php@7.2 \
      composer \
      httpd \
      imagemagick \
@@ -62,8 +63,8 @@ brew services start mariadb
 sudo mysql -u root -e "SET PASSWORD = PASSWORD('');"
 
 # PHP modules
-/usr/local/opt/php/bin/pecl install amqp-beta apcu imagick redis xdebug
-/usr/local/opt/php@8.0/bin/pecl install amqp-beta apcu imagick redis xdebug
+/usr/local/opt/php/bin/pecl install amqp apcu imagick redis xdebug
+/usr/local/opt/php@8.0/bin/pecl install amqp apcu imagick redis xdebug
 /usr/local/opt/php@7.4/bin/pecl install amqp apcu imagick redis xdebug
 /usr/local/opt/php@7.3/bin/pecl install amqp apcu imagick redis xdebug
 /usr/local/opt/php@7.2/bin/pecl install amqp apcu imagick redis xdebug
