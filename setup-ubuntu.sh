@@ -65,17 +65,16 @@ sudo apt-get install -y ./scw.deb && rm scw.deb
 
 # Development
 sudo apt-get install -y \
-     php8.1-bcmath php8.1-cli php8.1-curl php8.1-fpm php8.1-gd php8.1-intl \
-     php8.1-mbstring php8.1-mysql php8.1-soap php8.1-sqlite3 php8.1-xml php8.1-zip \
-     php8.0-bcmath php8.0-cli php8.0-curl php8.0-fpm php8.0-gd php8.0-intl \
-     php8.0-mbstring php8.0-mysql php8.0-soap php8.0-sqlite3 php8.0-xml php8.0-zip \
-     php7.4-bcmath php7.4-cli php7.4-curl php7.4-fpm php7.4-gd php7.4-intl \
-     php7.4-mbstring php7.4-mysql php7.4-soap php7.4-sqlite3 php7.4-xml php7.4-zip \
-     php7.3-bcmath php7.3-cli php7.3-curl php7.3-fpm php7.3-gd php7.3-intl \
-     php7.3-mbstring php7.3-mysql php7.3-soap php7.3-sqlite3 php7.3-xml php7.3-zip \
-     php7.2-bcmath php7.2-cli php7.2-curl php7.2-fpm php7.2-gd php7.2-intl \
-     php7.2-mbstring php7.2-mysql php7.2-soap php7.2-sqlite3 php7.2-xml php7.2-zip \
-     php-amqp php-apcu php-imagick php-redis php-xdebug \
+     php8.1-amqp php8.1-apcu php8.1-bcmath php8.1-cli php8.1-curl php8.1-fpm php8.1-gd php8.1-imagick php8.1-intl \
+     php8.1-mbstring php8.1-mysql php8.1-redis php8.1-soap php8.1-sqlite3 php8.1-xdebug php8.1-xml php8.1-zip \
+     php8.0-amqp php8.0-apcu php8.0-bcmath php8.0-cli php8.0-curl php8.0-fpm php8.0-gd php8.0-imagick php8.0-intl \
+     php8.0-mbstring php8.0-mysql php8.0-redis php8.0-soap php8.0-sqlite3 php8.0-xdebug php8.0-xml php8.0-zip \
+     php7.4-amqp php7.4-apcu php7.4-bcmath php7.4-cli php7.4-curl php7.4-fpm php7.4-gd php7.4-imagick php7.4-intl \
+     php7.4-mbstring php7.4-mysql php7.4-redis php7.4-soap php7.4-sqlite3 php7.4-xdebug php7.4-xml php7.4-zip \
+     php7.3-amqp php7.3-apcu php7.3-bcmath php7.3-cli php7.3-curl php7.3-fpm php7.3-gd php7.3-imagick php7.3-intl \
+     php7.3-mbstring php7.3-mysql php7.3-redis php7.3-soap php7.3-sqlite3 php7.3-xdebug php7.3-xml php7.3-zip \
+     php7.2-amqp php7.2-apcu php7.2-bcmath php7.2-cli php7.2-curl php7.2-fpm php7.2-gd php7.2-imagick php7.2-intl \
+     php7.2-mbstring php7.2-mysql php7.2-redis php7.2-soap php7.2-sqlite3 php7.2-xdebug php7.2-xml php7.2-zip \
      apache2 \
      mariadb-server \
      nginx \
@@ -135,8 +134,8 @@ curl https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash
 
 # PhpStorm
 if test ! $(which pstorm); then
-  wget https://download-cf.jetbrains.com/webide/PhpStorm-2021.1.2.tar.gz
-  sudo tar xvf PhpStorm-2021.1.2.tar.gz --directory /opt/ && rm PhpStorm-2021.1.2.tar.gz
+  wget https://download-cdn.jetbrains.com/webide/PhpStorm-2022.3.tar.gz
+  sudo tar xvf PhpStorm-2022.3.tar.gz --directory /opt/ && rm PhpStorm-2022.3.tar.gz
 fi
 
 # Stripe
