@@ -21,6 +21,7 @@ brew update
 brew install \
      act \
      ansible \
+     cloudflared \
      dnsmasq \
      figlet \
      fish \
@@ -86,7 +87,7 @@ EOF
 done
 
 # PHP Dependencies
-composer global require beyondcode/expose laravel/installer
+composer global require laravel/installer
 
 # Apps
 brew cask install \

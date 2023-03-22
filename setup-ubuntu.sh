@@ -39,6 +39,10 @@ echo "deb [arch=amd64,arm64,ppc64el,s390x] https://mirrors.xtom.nl/mariadb/repo/
 
 echo "deb [trusted=yes] https://repo.symfony.com/apt/ /" | sudo tee /etc/apt/sources.list.d/symfony-cli.list
 
+sudo mkdir -p --mode=0755 /usr/share/keyrings
+curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | sudo tee /usr/share/keyrings/cloudflare-main.gpg >/dev/null
+echo 'deb [signed-by=/usr/share/keyrings/cloudflare-main.gpg] https://pkg.cloudflare.com/cloudflared focal main' | sudo tee /etc/apt/sources.list.d/cloudflared.list
+
 # Update
 sudo apt-get update
 sudo apt-get upgrade -y
@@ -46,6 +50,7 @@ sudo apt-get upgrade -y
 # Binaries
 sudo apt-get install -y \
      ansible \
+     cloudflared \
      curl \
      figlet \
      fish \
@@ -98,7 +103,7 @@ curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 
 # PHP Dependencies
-composer global require beyondcode/expose laravel/installer
+composer global require laravel/installer
 
 # WP-CLI
 curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
