@@ -8,7 +8,6 @@ fi
 
 # Taps
 brew tap buo/cask-upgrade
-brew tap homebrew/cask-drivers
 brew tap nektos/tap
 brew tap shivammathur/php
 brew tap stripe/stripe-cli
@@ -54,8 +53,7 @@ brew install \
      nginx \
      rabbitmq-c \
      redis \
-     wp-cli \
-     yarn
+     wp-cli
 
 # NPM dependencies
 npm install -g npm-check-updates
@@ -97,10 +95,10 @@ brew cask install \
      firefox \
      google-chrome \
      google-drive \
-     hp-easy-start \
      insomnia \
      iterm2 \
      keepassx \
+     meld \
      microsoft-office \
      phpstorm \
      spotify \
