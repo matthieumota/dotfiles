@@ -11,9 +11,6 @@ sudo apt-add-repository ppa:ondrej/php -y
 
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-
 curl -sS https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 echo "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
 
@@ -56,6 +53,7 @@ sudo apt-get install -y \
      fish \
      git \
      graphviz \
+     meld \
      screenfetch \
      symfony-cli \
      zsh
@@ -86,8 +84,7 @@ sudo apt-get install -y \
      mariadb-server \
      nginx \
      nodejs \
-     redis-server \
-     yarn
+     redis-server
 
 # Apache
 sudo a2enmod brotli http2 proxy_fcgi rewrite ssl vhost_alias
