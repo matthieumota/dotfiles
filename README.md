@@ -1,10 +1,10 @@
 # Matthieu's Dotfiles
 
-This project serves me to install, configure and maintain my development workflow on macOS or Ubuntu. Like that, I can easily reset a Mac or Linux machine and start fresh without installing manually !
+This project serves me to install, configure and maintain my development workflow on macOS / Ubuntu / Arch. Like that, I can easily reset a Mac or Linux machine and start fresh without installing manually !
 
-I previously use Arch Linux and Gentoo but it was too time consuming and I'm back to simplicity.
+I'm back to Arch Linux !
 
-## A fresh macOS or Ubuntu
+## A fresh macOS / Ubuntu / Arch
 
 Before begin to re-install your machine, please check this steps :
 
@@ -24,4 +24,6 @@ cd .dotfiles
 ./setup-mac.sh
 # On your Ubuntu
 ./setup-ubuntu.sh
+# On your Arch
+./setup-arch.sh
 ```

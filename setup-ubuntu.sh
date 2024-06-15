@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Setting Linux..."
+echo "Setting Ubuntu..."
 
 export DEBIAN_FRONTEND=noninteractive
 
