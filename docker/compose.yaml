@@ -1,4 +1,11 @@
 services:
+  database:
+    image: alpine/socat:latest
+    network_mode: host
+    command: TCP-LISTEN:3306,fork,bind=host.docker.internal TCP-CONNECT:127.0.0.1:3306
+    extra_hosts:
+      - host.docker.internal:host-gateway
+
   php82: &php
     build:
       context: ./php
@@ -9,6 +16,8 @@ services:
     user: matthieu
     volumes:
       - ~/Code:/home/matthieu/Code
+    extra_hosts:
+      - host.docker.internal:host-gateway
 
   php81:
     <<: *php
