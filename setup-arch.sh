@@ -3,16 +3,16 @@
 echo "Setting Arch..."
 
 # Update
-sudo pacman -Syu
+yay
 
 # Binaries
 sudo pacman -S \
+     btop \
      curl \
      docker \
      git \
+     gnome-bluetooth-3.0 \
      gnome-shell-extension-appindicator \
-     nodejs \
-     npm \
      screenfetch \
      ttf-dejavu \
      xorg-xdpyinfo \
@@ -24,16 +24,24 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # Development
 sudo pacman -S \
       composer \
+      mariadb \
+      nodejs \
+      npm \
       php-apcu php-fpm \
       nginx-mainline
 
 # NPM dependencies
 sudo npm install -g npm-check-updates
 
+# PHP Dependencies
+composer global require laravel/installer
+
 # Apps
 sudo pacman -S \
      code \
      discord \
+     keepassxc \
+     meld \
      remmina \
      spotify-launcher
 
@@ -44,6 +52,7 @@ sudo usermod -aG docker $USER
 yay -S \
      google-chrome \
      powerline-fonts-git \
+     stripe-cli-bin \
      symfony-cli-bin \
      visual-studio-code-bin
 
