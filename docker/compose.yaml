@@ -1,0 +1,20 @@
+services:
+  php82: &php
+    build:
+      context: ./php
+      args:
+        PHP_VERSION: 8.2
+    ports:
+      - 9082:9000
+    user: matthieu
+    volumes:
+      - ~/Code:/home/matthieu/Code
+
+  php81:
+    <<: *php
+    build:
+      context: ./php
+      args:
+        PHP_VERSION: 8.1
+    ports:
+      - 9081:9000
