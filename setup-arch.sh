@@ -10,6 +10,7 @@ sudo pacman -S \
      btop \
      curl \
      docker \
+     docker-compose \
      git \
      gnome-bluetooth-3.0 \
      gnome-shell-extension-appindicator \
@@ -25,14 +26,17 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 sudo pacman -S \
       composer \
       mariadb \
+      nginx-mainline \
       nodejs \
       npm \
       nullmailer \
-      php-apcu php-fpm \
-      nginx-mainline
+      php-apcu php-fpm
 
 # NPM dependencies
 sudo npm install -g npm-check-updates
+
+# MariaDB configuration
+sudo mariadb -u root -e "SET PASSWORD = PASSWORD('');"
 
 # PHP Dependencies
 composer global require laravel/installer
@@ -57,7 +61,9 @@ yay -S \
      symfony-cli-bin \
      visual-studio-code-bin
 
+# Clean
 yay -Yc
+yay -Sc
 
 # Dotfiles
 ln -s $HOME/.dotfiles/config/git/.gitconfig $HOME/.gitconfig
