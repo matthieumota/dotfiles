@@ -1,8 +1,0 @@
-#!/bin/sh
-
-# To create a tunnel on 3002 port on 1.2.3.4 server for domain:80
-ssh -R 3002:domain:80 -N cloud@1.2.3.4
-
-# Just need to reverse proxy with nginx
-# proxy_pass http://localhost:3002;
-# proxy_set_header Host domain;

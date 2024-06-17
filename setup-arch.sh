@@ -27,6 +27,7 @@ sudo pacman -S \
       mariadb \
       nodejs \
       npm \
+      nullmailer \
       php-apcu php-fpm \
       nginx-mainline
 

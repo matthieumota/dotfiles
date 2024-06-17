@@ -27,3 +27,20 @@ cd .dotfiles
 # On your Arch
 ./setup-arch.sh
 ```
+
+## Tunnel SSH
+
+Sometime, I need to create SSH tunnel. For instance, to create a tunnel on `3002` port on `1.2.3.4` server for `domain:80` :
+
+```bash
+ssh -R 3002:domain:80 -N cloud@1.2.3.4
+```
+
+After, we can use a nginx reverse proxy with :
+
+```
+location / {
+    proxy_pass http://localhost:3002;
+    proxy_set_header Host domain;
+}
+```
