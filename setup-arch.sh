@@ -13,6 +13,7 @@ sudo pacman -S \
      docker-compose \
      git \
      gnome-bluetooth-3.0 \
+     gnome-keyring \
      gnome-shell-extension-appindicator \
      screenfetch \
      ttf-dejavu \
