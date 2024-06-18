@@ -13,6 +13,7 @@ services:
         PHP_VERSION: 8.2
     ports:
       - 9082:9000
+      - 8082:8000
     user: matthieu
     volumes:
       - ~/Code:/home/matthieu/Code
@@ -27,3 +28,14 @@ services:
         PHP_VERSION: 8.1
     ports:
       - 9081:9000
+      - 8081:8000
+
+  php74:
+    <<: *php
+    build:
+      context: ./php
+      args:
+        PHP_VERSION: 7.4
+    ports:
+      - 9074:9000
+      - 8074:8000
