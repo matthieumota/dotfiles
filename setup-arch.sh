@@ -30,7 +30,7 @@ sudo pacman -S \
       nodejs \
       npm \
       nullmailer \
-      php-apcu php-fpm php-gd php-imagick php-redis
+      php-apcu php-fpm php-gd php-imagick php-redis php-sqlite
 
 # NPM dependencies
 sudo npm install -g npm-check-updates
