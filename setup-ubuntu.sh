@@ -117,6 +117,7 @@ sudo apt-get install -y \
      dbeaver-ce \
      filezilla \
      google-chrome-stable \
+     gthumb \
      insomnia \
      keepassx \
      openjdk-11-jdk \
