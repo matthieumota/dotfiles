@@ -8,6 +8,10 @@ services:
     volumes:
       - db-data:/var/lib/mysql
 
+  mailpit:
+    image: axllent/mailpit
+    ports: [1025:1025, 8025:8025]
+
   php82: &php
     build:
       context: ./php
