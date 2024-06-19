@@ -1,10 +1,12 @@
 services:
   database:
-    image: alpine/socat:latest
-    network_mode: host
-    command: TCP-LISTEN:3306,fork,bind=host.docker.internal TCP-CONNECT:127.0.0.1:3306
-    extra_hosts:
-      - host.docker.internal:host-gateway
+    image: mariadb:latest
+    environment:
+      MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: 1
+    ports:
+      - 3306:3306
+    volumes:
+      - db-data:/var/lib/mysql
 
   php82: &php
     build:
@@ -17,8 +19,6 @@ services:
     user: matthieu
     volumes:
       - ~/Code:/home/matthieu/Code
-    extra_hosts:
-      - host.docker.internal:host-gateway
 
   php81:
     <<: *php
@@ -39,3 +39,6 @@ services:
     ports:
       - 9074:9000
       - 8074:8000
+
+volumes:
+  db-data:
