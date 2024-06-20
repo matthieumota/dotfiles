@@ -15,9 +15,10 @@ sudo pacman -S \
      gnome-bluetooth-3.0 \
      gnome-keyring \
      gnome-shell-extension-appindicator \
+     noto-fonts \
+     noto-fonts-cjk \
      rsync \
      screenfetch \
-     ttf-dejavu \
      xorg-xdpyinfo \
      zsh
 
