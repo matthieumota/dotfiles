@@ -49,6 +49,7 @@ composer global require laravel/installer
 sudo pacman -S \
      code \
      discord \
+     gthumb \
      keepassxc \
      meld \
      remmina \
