@@ -19,6 +19,7 @@ sudo pacman -S \
      noto-fonts-cjk \
      rsync \
      screenfetch \
+     vi \
      xorg-xdpyinfo \
      zsh
 
