@@ -2,15 +2,20 @@ services:
   database:
     image: mariadb:latest
     environment:
-      MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: 1
-    ports:
-      - 3306:3306
+      MARIADB_ROOT_PASSWORD: root
+    ports: [3306:3306]
     volumes:
       - db-data:/var/lib/mysql
 
   mailpit:
     image: axllent/mailpit
     ports: [1025:1025, 8025:8025]
+
+  adminer:
+    image: adminer
+    ports: [8060:8080]
+    links:
+      - database:db
 
   php82: &php
     build:
