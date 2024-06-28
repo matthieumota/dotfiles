@@ -54,7 +54,9 @@ sudo pacman -S \
      keepassxc \
      meld \
      remmina \
-     spotify-launcher
+     spotify-launcher \
+     transmission-gtk \
+     vlc
 
 # Docker
 sudo usermod -aG docker $USER
