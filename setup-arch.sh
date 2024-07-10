@@ -15,7 +15,6 @@ sudo pacman -S \
      gnome-bluetooth-3.0 \
      gnome-keyring \
      gnome-shell-extension-appindicator \
-     gnome-terminal \
      noto-fonts \
      noto-fonts-cjk \
      rsync \
@@ -63,6 +62,7 @@ sudo usermod -aG docker $USER
 
 # Aur
 yay -S \
+     gnome-terminal-transparency \
      google-chrome \
      powerline-fonts-git \
      stripe-cli-bin \
