@@ -64,6 +64,7 @@ sudo usermod -aG docker $USER
 yay -S \
      gnome-terminal-transparency \
      google-chrome \
+     httpie-desktop-bin \
      powerline-fonts-git \
      stripe-cli-bin \
      symfony-cli-bin \
