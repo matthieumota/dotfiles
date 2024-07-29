@@ -5,7 +5,6 @@ echo "Setting Ubuntu..."
 export DEBIAN_FRONTEND=noninteractive
 
 # PPAs
-sudo apt-add-repository ppa:ondrej/apache2 -y
 sudo apt-add-repository ppa:ondrej/php -y
 sudo add-apt-repository ppa:serge-rider/dbeaver-ce -y
 
@@ -43,10 +42,10 @@ sudo apt-get upgrade -y
 
 # Binaries
 sudo apt-get install -y \
-     ansible \
      curl \
      git \
      meld \
+     nullmailer \
      screenfetch \
      symfony-cli \
      zsh
@@ -56,28 +55,23 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 # Development
 sudo apt-get install -y \
-     php8.3-amqp php8.3-apcu php8.3-bcmath php8.3-cli php8.3-curl php8.3-fpm php8.3-gd php8.3-imagick php8.3-intl \
+     php8.3-apcu php8.3-bcmath php8.3-cli php8.3-curl php8.3-fpm php8.3-gd php8.3-imagick php8.3-intl \
      php8.3-mbstring php8.3-mysql php8.3-redis php8.3-soap php8.3-sqlite3 php8.3-xdebug php8.3-xml php8.3-zip \
-     php8.2-amqp php8.2-apcu php8.2-bcmath php8.2-cli php8.2-curl php8.2-fpm php8.2-gd php8.2-imagick php8.2-intl \
+     php8.2-apcu php8.2-bcmath php8.2-cli php8.2-curl php8.2-fpm php8.2-gd php8.2-imagick php8.2-intl \
      php8.2-mbstring php8.2-mysql php8.2-redis php8.2-soap php8.2-sqlite3 php8.2-xdebug php8.2-xml php8.2-zip \
-     php8.1-amqp php8.1-apcu php8.1-bcmath php8.1-cli php8.1-curl php8.1-fpm php8.1-gd php8.1-imagick php8.1-intl \
+     php8.1-apcu php8.1-bcmath php8.1-cli php8.1-curl php8.1-fpm php8.1-gd php8.1-imagick php8.1-intl \
      php8.1-mbstring php8.1-mysql php8.1-redis php8.1-soap php8.1-sqlite3 php8.1-xdebug php8.1-xml php8.1-zip \
-     php8.0-amqp php8.0-apcu php8.0-bcmath php8.0-cli php8.0-curl php8.0-fpm php8.0-gd php8.0-imagick php8.0-intl \
+     php8.0-apcu php8.0-bcmath php8.0-cli php8.0-curl php8.0-fpm php8.0-gd php8.0-imagick php8.0-intl \
      php8.0-mbstring php8.0-mysql php8.0-redis php8.0-soap php8.0-sqlite3 php8.0-xdebug php8.0-xml php8.0-zip \
-     php7.4-amqp php7.4-apcu php7.4-bcmath php7.4-cli php7.4-curl php7.4-fpm php7.4-gd php7.4-imagick php7.4-intl \
+     php7.4-apcu php7.4-bcmath php7.4-cli php7.4-curl php7.4-fpm php7.4-gd php7.4-imagick php7.4-intl \
      php7.4-mbstring php7.4-mysql php7.4-redis php7.4-soap php7.4-sqlite3 php7.4-xdebug php7.4-xml php7.4-zip \
-     php7.3-amqp php7.3-apcu php7.3-bcmath php7.3-cli php7.3-curl php7.3-fpm php7.3-gd php7.3-imagick php7.3-intl \
+     php7.3-apcu php7.3-bcmath php7.3-cli php7.3-curl php7.3-fpm php7.3-gd php7.3-imagick php7.3-intl \
      php7.3-mbstring php7.3-mysql php7.3-redis php7.3-soap php7.3-sqlite3 php7.3-xdebug php7.3-xml php7.3-zip \
-     php7.2-amqp php7.2-apcu php7.2-bcmath php7.2-cli php7.2-curl php7.2-fpm php7.2-gd php7.2-imagick php7.2-intl \
+     php7.2-apcu php7.2-bcmath php7.2-cli php7.2-curl php7.2-fpm php7.2-gd php7.2-imagick php7.2-intl \
      php7.2-mbstring php7.2-mysql php7.2-redis php7.2-soap php7.2-sqlite3 php7.2-xdebug php7.2-xml php7.2-zip \
-     apache2 \
      mariadb-server \
      nginx \
-     nodejs \
-     redis-server
-
-# Apache
-sudo a2enmod brotli http2 proxy_fcgi rewrite ssl vhost_alias
+     nodejs
 
 # NPM dependencies
 sudo npm install -g npm-check-updates
@@ -92,17 +86,10 @@ sudo mv composer.phar /usr/local/bin/composer
 # PHP Dependencies
 composer global require laravel/installer
 
-# WP-CLI
-curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
-chmod +x wp-cli.phar
-sudo mv wp-cli.phar /usr/local/bin/wp-cli
-
 # Apps
 sudo apt-get install -y \
-     bleachbit \
      code \
      dbeaver-ce \
-     filezilla \
      google-chrome-stable \
      gthumb \
      httpie \
@@ -127,11 +114,6 @@ curl https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash
 # Stripe
 wget https://github.com/stripe/stripe-cli/releases/download/v1.19.2/stripe_1.19.2_linux_x86_64.tar.gz
 sudo tar xvf stripe_1.19.2_linux_x86_64.tar.gz --directory /usr/local/bin/ && rm stripe_1.19.2_linux_x86_64.tar.gz
-
-# Postfix
-sudo debconf-set-selections <<< "postfix postfix/mailname string localhost"
-sudo debconf-set-selections <<< "postfix postfix/main_mailer_type string 'Internet Site'"
-sudo apt-get install -y mailutils
 
 sudo chown -R root:root /usr/local/bin/
 

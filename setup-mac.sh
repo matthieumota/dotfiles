@@ -21,7 +21,6 @@ brew update
 # Binaries
 brew install \
      act \
-     ansible \
      dnsmasq \
      git \
      mas \
@@ -47,10 +46,7 @@ brew install \
      imagemagick \
      mariadb \
      node \
-     nginx \
-     rabbitmq-c \
-     redis \
-     wp-cli
+     nginx
 
 # NPM dependencies
 npm install -g npm-check-updates
@@ -60,16 +56,16 @@ brew services start mariadb
 sudo mysql -u root -e "SET PASSWORD = PASSWORD('');"
 
 # PHP modules
-$HOMEBREW_PREFIX/opt/php/bin/pecl install amqp apcu imagick redis xdebug
-$HOMEBREW_PREFIX/opt/php@8.2/bin/pecl install amqp apcu imagick redis xdebug
-$HOMEBREW_PREFIX/opt/php@8.1/bin/pecl install amqp apcu imagick redis xdebug
-$HOMEBREW_PREFIX/opt/php@8.0/bin/pecl install amqp apcu imagick redis xdebug
-$HOMEBREW_PREFIX/opt/php@7.4/bin/pecl install amqp apcu imagick redis xdebug
-$HOMEBREW_PREFIX/opt/php@7.3/bin/pecl install amqp apcu imagick redis xdebug
-$HOMEBREW_PREFIX/opt/php@7.2/bin/pecl install amqp apcu imagick redis xdebug
+$HOMEBREW_PREFIX/opt/php/bin/pecl install apcu imagick redis xdebug
+$HOMEBREW_PREFIX/opt/php@8.2/bin/pecl install apcu imagick redis xdebug
+$HOMEBREW_PREFIX/opt/php@8.1/bin/pecl install apcu imagick redis xdebug
+$HOMEBREW_PREFIX/opt/php@8.0/bin/pecl install apcu imagick redis xdebug
+$HOMEBREW_PREFIX/opt/php@7.4/bin/pecl install apcu imagick redis xdebug
+$HOMEBREW_PREFIX/opt/php@7.3/bin/pecl install apcu imagick redis xdebug
+$HOMEBREW_PREFIX/opt/php@7.2/bin/pecl install apcu imagick redis xdebug
 
 for Php in '7.2' '7.3' '7.4' '8.0' '8.1' '8.2' '8.3'; do
-    for Module in 'amqp' 'apcu' 'imagick' 'redis'; do
+    for Module in 'apcu' 'imagick' 'redis'; do
 cat > $HOMEBREW_PREFIX/etc/php/"$Php"/conf.d/ext-"$Module".ini << EOF
 [$Module]
 extension="$Module.so"
