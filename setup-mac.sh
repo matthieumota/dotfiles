@@ -86,21 +86,19 @@ done
 composer global require laravel/installer
 
 # Apps
-brew cask install \
+brew install --cask \
      cyberduck \
      discord \
      docker \
      firefox \
      google-chrome \
      google-drive \
-     insomnia \
+     httpie \
      iterm2 \
      keepassx \
      meld \
      microsoft-office \
-     phpstorm \
      spotify \
-     sublime-text \
      tableplus \
      transmission \
      vagrant \
