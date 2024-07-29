@@ -47,7 +47,6 @@ composer global require laravel/installer
 
 # Apps
 sudo pacman -S \
-     code \
      discord \
      gthumb \
      keepassxc \
