@@ -6,7 +6,6 @@ export DEBIAN_FRONTEND=noninteractive
 
 # PPAs
 sudo apt-add-repository ppa:ondrej/php -y
-sudo add-apt-repository ppa:serge-rider/dbeaver-ce -y
 
 curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
 echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_20.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list
@@ -89,12 +88,10 @@ composer global require laravel/installer
 # Apps
 sudo apt-get install -y \
      code \
-     dbeaver-ce \
      google-chrome-stable \
      gthumb \
      httpie \
      keepassx \
-     openjdk-11-jdk \
      spotify-client \
      vagrant \
      virtualbox-7.0 \
