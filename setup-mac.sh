@@ -25,9 +25,7 @@ brew install \
      cloudflared \
      dnsmasq \
      figlet \
-     fish \
      git \
-     graphviz \
      mas \
      pkg-config \
      screenfetch \
@@ -35,9 +33,8 @@ brew install \
      stripe \
      symfony-cli
 
-# Oh My Zsh & Fish
+# Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-curl -L https://get.oh-my.fish | fish /dev/stdin --noninteractive
 
 # Development
 brew install \
@@ -115,8 +112,6 @@ brew cask install \
      vlc
 
 # Dotfiles
-ln -s $HOME/.dotfiles/config/fish/aliases.fish $HOME/.config/fish/conf.d/aliases.fish
-ln -s $HOME/.dotfiles/config/fish/path.fish $HOME/.config/fish/conf.d/path.fish
 ln -s $HOME/.dotfiles/config/git/.gitconfig $HOME/.gitconfig
 ln -s $HOME/.dotfiles/config/git/.gitignore_global $HOME/.gitignore_global
 ln -s $HOME/.dotfiles/config/zsh/aliases.zsh $HOME/.oh-my-zsh/custom/aliases.zsh

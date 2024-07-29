@@ -52,17 +52,14 @@ sudo apt-get install -y \
      cloudflared \
      curl \
      figlet \
-     fish \
      git \
-     graphviz \
      meld \
      screenfetch \
      symfony-cli \
      zsh
 
-# Oh My Zsh & Fish
+# Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-curl -L https://get.oh-my.fish | fish /dev/stdin --noninteractive
 
 # Scaleway
 curl -s https://raw.githubusercontent.com/scaleway/scaleway-cli/master/scripts/get.sh | sh
@@ -156,8 +153,6 @@ sudo apt-get install -y mailutils
 sudo chown -R root:root /usr/local/bin/
 
 # Dotfiles
-ln -s $HOME/.dotfiles/config/fish/aliases.fish $HOME/.config/fish/conf.d/aliases.fish
-ln -s $HOME/.dotfiles/config/fish/path.fish $HOME/.config/fish/conf.d/path.fish
 ln -s $HOME/.dotfiles/config/git/.gitconfig $HOME/.gitconfig
 ln -s $HOME/.dotfiles/config/git/.gitignore_global $HOME/.gitignore_global
 ln -s $HOME/.dotfiles/config/zsh/aliases.zsh $HOME/.oh-my-zsh/custom/aliases.zsh
