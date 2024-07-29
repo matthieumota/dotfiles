@@ -49,9 +49,7 @@ sudo apt-get upgrade -y
 # Binaries
 sudo apt-get install -y \
      ansible \
-     cloudflared \
      curl \
-     figlet \
      git \
      meld \
      screenfetch \
@@ -60,9 +58,6 @@ sudo apt-get install -y \
 
 # Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-
-# Scaleway
-curl -s https://raw.githubusercontent.com/scaleway/scaleway-cli/master/scripts/get.sh | sh
 
 # Development
 sudo apt-get install -y \

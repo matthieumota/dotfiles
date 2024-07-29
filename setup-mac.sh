@@ -22,14 +22,11 @@ brew update
 brew install \
      act \
      ansible \
-     cloudflared \
      dnsmasq \
-     figlet \
      git \
      mas \
      pkg-config \
      screenfetch \
-     scw \
      stripe \
      symfony-cli
 
