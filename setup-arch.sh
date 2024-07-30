@@ -54,6 +54,8 @@ sudo pacman -S \
      remmina \
      spotify-launcher \
      transmission-gtk \
+     vagrant \
+     virtualbox \
      vlc
 
 # Docker
