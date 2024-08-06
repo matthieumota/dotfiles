@@ -114,9 +114,27 @@ dhcp-range=192.168.100.2,192.168.100.254
 Boot with an iso on a disk :
 
 ```bash
-qemu-system-x86_64 -cdrom Téléchargements/archlinux-2024.08.01-x86_64.iso \
+qemu-system-x86_64 -cdrom ~/Téléchargements/archlinux-2024.08.01-x86_64.iso \
     -boot order=d \
     -drive file=test,format=qcow2 \
+    -cpu host -smp 2 -m 2G \
+    -netdev tap,id=net0,ifname=tap0,script=no,downscript=no \
+    -device virtio-net,netdev=net0 \
+    -enable-kvm
+```
+
+We can also mount a partition from qcow2 image :
+
+```bash
+sudo modprobe nbd
+sudo qemu-nbd -c /dev/nbd0 test
+sudo qemu-nbd -d /dev/nbd0
+```
+
+Run guest after installation :
+
+```bash
+qemu-system-x86_64 -drive file=test,format=qcow2 \
     -cpu host -smp 2 -m 2G \
     -netdev tap,id=net0,ifname=tap0,script=no,downscript=no \
     -device virtio-net,netdev=net0 \
