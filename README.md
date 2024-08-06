@@ -76,3 +76,49 @@ docker compose up -d --build
 ```
 
 You can easily add other PHP versions.
+
+## QEMU
+
+We use QEMU for Virtualization. To create a disk :
+
+```bash
+qemu-img create -f qcow2 test 10G
+```
+
+Create a NAT for network :
+
+```bash
+# Create tap and NAT on host
+sudo ip tuntap add tap0 mode tap
+sudo ip addr add 192.168.100.1/24 dev tap0
+sudo ip link set tap0 up
+sudo iptables -t nat -A POSTROUTING -o wlp13s0 -s 192.168.100.1/24 -j MASQUERADE
+sudo iptables -I DOCKER-USER 1 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+sudo iptables -I DOCKER-USER 2 -i tap0 -o wlp13s0 -j ACCEPT
+
+# On the guest without DHCP
+sudo ip a add 192.168.100.2/24 dev ens3
+sudo ip route add default via 192.168.100.1
+```
+
+We can enable DHCP on host in `/etc/NetworkManager/dnsmasq.d/local` :
+
+```bash
+address=/bx/127.0.0.1
+
+interface=tap0
+bind-interfaces
+dhcp-range=192.168.100.2,192.168.100.254
+```
+
+Boot with an iso on a disk :
+
+```bash
+qemu-system-x86_64 -cdrom Téléchargements/archlinux-2024.08.01-x86_64.iso \
+    -boot order=d \
+    -drive file=test,format=qcow2 \
+    -cpu host -smp 2 -m 2G \
+    -netdev tap,id=net0,ifname=tap0,script=no,downscript=no \
+    -device virtio-net,netdev=net0 \
+    -enable-kvm
+```

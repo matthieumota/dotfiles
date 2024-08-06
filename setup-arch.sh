@@ -51,11 +51,10 @@ sudo pacman -S \
      gthumb \
      keepassxc \
      meld \
+     qemu \
      remmina \
      spotify-launcher \
      transmission-gtk \
-     vagrant \
-     virtualbox \
      vlc
 
 # Docker
