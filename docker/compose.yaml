@@ -17,6 +17,10 @@ services:
     links:
       - database:db
 
+  redis:
+    image: redis
+    ports: [6379:6379]
+
   php82: &php
     build:
       context: ./php
