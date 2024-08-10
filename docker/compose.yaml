@@ -1,6 +1,6 @@
 services:
   database:
-    image: mariadb:latest
+    image: mariadb
     environment:
       MARIADB_ROOT_PASSWORD: root
     ports: [3306:3306]
