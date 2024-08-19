@@ -11,12 +11,6 @@ services:
     image: axllent/mailpit
     ports: [1025:1025, 8025:8025]
 
-  adminer:
-    image: adminer
-    ports: [8060:8080]
-    links:
-      - database:db
-
   redis:
     image: redis
     ports: [6379:6379]

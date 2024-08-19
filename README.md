@@ -45,6 +45,12 @@ location / {
 }
 ```
 
+We can also make a simple tunnel to remote server :
+
+```bash
+ssh -L 3307:localhost:3306 -N cloud@1.2.3.4
+```
+
 ## Docker
 
 To manage old PHP versions, I have 2 choices :
