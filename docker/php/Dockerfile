@@ -11,7 +11,7 @@ ARG CODE_PATH=/home/${UNAME}/Code
 ENV PATH "$PATH:/home/${UNAME}/.composer/vendor/bin"
 
 ADD --chmod=0755 https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
-RUN install-php-extensions apcu bcmath exif gd imagick intl opcache pdo_mysql redis soap xdebug zip \
+RUN install-php-extensions apcu bcmath exif gd imagick intl opcache pcntl pdo_mysql redis soap xdebug zip \
     && mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini" \
     && echo "memory_limit = -1" >> /usr/local/etc/php/conf.d/custom.ini
 
