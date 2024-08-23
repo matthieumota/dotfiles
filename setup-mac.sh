@@ -22,10 +22,10 @@ brew update
 brew install \
      act \
      dnsmasq \
+     fastfetch \
      git \
      mas \
      pkg-config \
-     screenfetch \
      stripe \
      symfony-cli
 

@@ -42,10 +42,10 @@ sudo apt-get upgrade -y
 # Binaries
 sudo apt-get install -y \
      curl \
+     fastfetch \
      git \
      meld \
      nullmailer \
-     screenfetch \
      symfony-cli \
      zsh
 

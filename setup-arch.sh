@@ -11,6 +11,7 @@ sudo pacman -S \
      curl \
      docker \
      docker-compose \
+     fastfetch \
      git \
      gnome-bluetooth-3.0 \
      gnome-keyring \
@@ -18,7 +19,6 @@ sudo pacman -S \
      noto-fonts \
      noto-fonts-cjk \
      rsync \
-     screenfetch \
      vi \
      xorg-xdpyinfo \
      zsh
