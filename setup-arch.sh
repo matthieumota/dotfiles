@@ -62,6 +62,7 @@ sudo usermod -aG docker $USER
 
 # Aur
 yay -S \
+     gnome-shell-extension-dash-to-dock \
      gnome-terminal-transparency \
      google-chrome \
      httpie-desktop-bin \
