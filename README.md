@@ -30,7 +30,7 @@ cd .dotfiles
 
 ## Tunnel SSH
 
-Sometime, I need to create SSH tunnel. For instance, to create a tunnel on `3002` port on `1.2.3.4` server for `domain:80` :
+Sometimes, I need to create SSH tunnel. For instance, to create a tunnel on `3002` port on `1.2.3.4` server for `domain:80` :
 
 ```bash
 ssh -R 3002:domain:80 -N cloud@1.2.3.4
