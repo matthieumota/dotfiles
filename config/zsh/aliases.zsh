@@ -13,7 +13,7 @@ alias mfs="php artisan migrate:fresh --seed"
 alias watch="npm run watch"
 
 # PHP
-alias composer="php -d memory_limit=-1 /usr/local/bin/composer"
+alias composer="php -d memory_limit=-1 /usr/bin/composer"
 
 # Git
 alias commit="git add . && git commit -m"

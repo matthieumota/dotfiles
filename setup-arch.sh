@@ -19,7 +19,7 @@ sudo pacman -S \
      noto-fonts \
      noto-fonts-cjk \
      rsync \
-     vi \
+     vim \
      xorg-xdpyinfo \
      zsh
 
@@ -48,6 +48,7 @@ composer global require laravel/installer
 # Apps
 sudo pacman -S \
      discord \
+     firefox \
      gthumb \
      keepassxc \
      meld \
