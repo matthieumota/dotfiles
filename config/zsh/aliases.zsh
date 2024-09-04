@@ -1,5 +1,6 @@
 # Misc
 alias c="clear"
+alias e="exit"
 
 # Symfony
 alias sf="php bin/console"
