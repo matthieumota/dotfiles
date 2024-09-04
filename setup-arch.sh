@@ -16,9 +16,11 @@ sudo pacman -S \
      gnome-bluetooth-3.0 \
      gnome-keyring \
      gnome-shell-extension-appindicator \
+     neovim \
      noto-fonts \
      noto-fonts-cjk \
      rsync \
+     ttf-noto-nerd \
      vim \
      wezterm \
      xorg-xdpyinfo \
@@ -83,3 +85,4 @@ ln -s $HOME/.dotfiles/config/git/.gitignore_global $HOME/.gitignore_global
 ln -s $HOME/.dotfiles/config/zsh/aliases.zsh $HOME/.oh-my-zsh/custom/aliases.zsh
 ln -s $HOME/.dotfiles/config/zsh/path.zsh $HOME/.oh-my-zsh/custom/path.zsh
 ln -s $HOME/.dotfiles/config/.wezterm.lua $HOME/.wezterm.lua
+ln -s $HOME/.dotfiles/config/nvim $HOME/.config/nvim
