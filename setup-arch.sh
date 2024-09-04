@@ -20,6 +20,7 @@ sudo pacman -S \
      noto-fonts-cjk \
      rsync \
      vim \
+     wezterm \
      xorg-xdpyinfo \
      zsh
 
