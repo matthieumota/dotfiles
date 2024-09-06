@@ -16,9 +16,11 @@ sudo pacman -S \
      gnome-bluetooth-3.0 \
      gnome-keyring \
      gnome-shell-extension-appindicator \
+     lazygit \
      neovim \
      noto-fonts \
      noto-fonts-cjk \
+     ripgrep \
      rsync \
      ttf-noto-nerd \
      vim \
