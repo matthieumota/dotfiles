@@ -19,6 +19,7 @@ return {
         "emmet_language_server",
         "gopls",
         "html",
+        "lua_ls",
         "intelephense",
         "tailwindcss",
         "tsserver",
@@ -44,12 +45,12 @@ return {
         ["<Down>"] = cmp.mapping.select_next_item(),
         ["<CR>"] = cmp.mapping.confirm({ select = true }),
         ["<Tab>"] = cmp.mapping(function(fallback)
-					if cmp.visible() then
-						cmp.confirm({ select = true })
-					else
-						fallback()
-					end
-				end),
+          if cmp.visible() then
+            cmp.confirm({ select = true })
+          else
+            fallback()
+          end
+        end),
         ["<C-Space>"] = cmp.mapping(function(fallback)
           if vim.lsp.buf.signature_help then
             vim.lsp.buf.signature_help()

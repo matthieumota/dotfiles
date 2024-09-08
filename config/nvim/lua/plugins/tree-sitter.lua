@@ -10,6 +10,7 @@ return {
       "gitignore",
       "go",
       "html",
+      "lua",
       "javascript",
       "json",
       "markdown",
