@@ -79,7 +79,7 @@ yay -S \
 
 # Clean
 yay -Yc
-yay -Sc
+yay -Scc
 
 # Dotfiles
 ln -s $HOME/.dotfiles/config/git/.gitconfig $HOME/.gitconfig
