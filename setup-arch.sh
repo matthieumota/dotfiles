@@ -22,6 +22,7 @@ sudo pacman -S \
      noto-fonts-cjk \
      ripgrep \
      rsync \
+     starship \
      ttf-noto-nerd \
      vim \
      wezterm \
@@ -30,6 +31,7 @@ sudo pacman -S \
 
 # Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+grep -qF 'starship init zsh' ~/.zshrc || printf "\neval \"\$(starship init zsh)\"" >> ~/.zshrc
 
 # Development
 sudo pacman -S \
