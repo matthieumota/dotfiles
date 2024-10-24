@@ -29,12 +29,14 @@ return {
 
     mason_lspconfig.setup_handlers({
       function(server_name)
-        require("lspconfig")[server_name].setup({
+        local config = {
           capabilities = require("cmp_nvim_lsp").default_capabilities(),
           root_dir = function(fname)
             return vim.fn.getcwd()
           end,
-        })
+        }
+
+        require("lspconfig")[server_name].setup(config)
       end,
     })
 
