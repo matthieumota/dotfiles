@@ -41,7 +41,7 @@ sudo pacman -S \
       nodejs \
       npm \
       nullmailer \
-      php-apcu php-fpm php-gd php-imagick php-redis php-sqlite xdebug
+      php-apcu php-fpm php-gd php-imagick php-pgsql php-redis php-sqlite xdebug
 
 # NPM dependencies
 sudo npm install -g npm-check-updates
@@ -72,7 +72,6 @@ sudo usermod -aG docker $USER
 yay -S \
      gnome-shell-extension-dash-to-dock \
      gnome-terminal-transparency \
-     google-chrome \
      httpie-desktop-bin \
      powerline-fonts-git \
      stripe-cli-bin \

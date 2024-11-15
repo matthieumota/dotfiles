@@ -11,7 +11,6 @@ fi
 # Taps
 brew tap buo/cask-upgrade
 brew tap nektos/tap
-brew tap shivammathur/php
 brew tap stripe/stripe-cli
 brew tap symfony-cli/tap
 
@@ -35,12 +34,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # Development
 brew install \
      php \
-     php@8.2 \
-     php@8.1 \
-     shivammathur/php/php@8.0 \
-     shivammathur/php/php@7.4 \
-     shivammathur/php/php@7.3 \
-     shivammathur/php/php@7.2 \
      composer \
      httpd \
      imagemagick \
@@ -57,14 +50,8 @@ sudo mysql -u root -e "SET PASSWORD = PASSWORD('');"
 
 # PHP modules
 $HOMEBREW_PREFIX/opt/php/bin/pecl install apcu imagick redis xdebug
-$HOMEBREW_PREFIX/opt/php@8.2/bin/pecl install apcu imagick redis xdebug
-$HOMEBREW_PREFIX/opt/php@8.1/bin/pecl install apcu imagick redis xdebug
-$HOMEBREW_PREFIX/opt/php@8.0/bin/pecl install apcu imagick redis xdebug
-$HOMEBREW_PREFIX/opt/php@7.4/bin/pecl install apcu imagick redis xdebug
-$HOMEBREW_PREFIX/opt/php@7.3/bin/pecl install apcu imagick redis xdebug
-$HOMEBREW_PREFIX/opt/php@7.2/bin/pecl install apcu imagick redis xdebug
 
-for Php in '7.2' '7.3' '7.4' '8.0' '8.1' '8.2' '8.3'; do
+for Php in '8.3'; do
     for Module in 'apcu' 'imagick' 'redis'; do
 cat > $HOMEBREW_PREFIX/etc/php/"$Php"/conf.d/ext-"$Module".ini << EOF
 [$Module]
@@ -87,7 +74,6 @@ brew install --cask \
      discord \
      docker \
      firefox \
-     google-chrome \
      google-drive \
      httpie \
      iterm2 \
