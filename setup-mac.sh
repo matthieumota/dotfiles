@@ -42,6 +42,7 @@ grep -qF 'starship init zsh' ~/.zshrc || printf "eval \"\$(starship init zsh)\"\
 grep -qF "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ~/.zshrc || printf ". \"$HOMEBREW_PREFIX/opt/nvm/nvm.sh\"\n" >> ~/.zshrc
 
 # NPM dependencies
+nvm install node
 npm install -g npm-check-updates
 
 # PHP modules

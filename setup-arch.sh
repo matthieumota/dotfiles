@@ -29,21 +29,12 @@ sudo pacman -S \
      xorg-xdpyinfo \
      zsh
 
-# Oh My Zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-grep -qF 'starship init zsh' ~/.zshrc || printf "\neval \"\$(starship init zsh)\"\n" >> ~/.zshrc
-
 # Development
 sudo pacman -S \
       composer \
       nginx-mainline \
-      nodejs \
-      npm \
       nullmailer \
       php-apcu php-fpm php-gd php-imagick php-pgsql php-redis php-sqlite xdebug
-
-# NPM dependencies
-sudo npm install -g npm-check-updates
 
 # PHP Dependencies
 composer global require laravel/installer
@@ -69,10 +60,19 @@ yay -S \
      gnome-shell-extension-dash-to-dock \
      gnome-terminal-transparency \
      httpie-desktop-bin \
+     nvm \
      powerline-fonts-git \
      stripe-cli-bin \
      symfony-cli-bin \
      visual-studio-code-bin
+
+# Oh My Zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+grep -qF 'starship init zsh' ~/.zshrc || printf "\neval \"\$(starship init zsh)\"\n" >> ~/.zshrc
+grep -qF "/usr/share/nvm/init-nvm.sh" ~/.zshrc || printf "source /usr/share/nvm/init-nvm.sh\n" >> ~/.zshrc
+
+# NPM dependencies
+npm install -g npm-check-updates
 
 # Clean
 yay -Yc
