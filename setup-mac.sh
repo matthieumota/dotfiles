@@ -47,7 +47,7 @@ npm install -g npm-check-updates
 # PHP modules
 $HOMEBREW_PREFIX/opt/php/bin/pecl install apcu imagick redis xdebug
 
-for Php in '8.3'; do
+for Php in '8.4'; do
     for Module in 'apcu' 'imagick' 'redis'; do
 cat > $HOMEBREW_PREFIX/etc/php/"$Php"/conf.d/ext-"$Module".ini << EOF
 [$Module]

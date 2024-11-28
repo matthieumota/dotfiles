@@ -23,7 +23,7 @@ if [ "$(uname)" == "Darwin" ]; then
     done
 fi
 
-if [ "$(cat /etc/os-release | grep -o "Arch" | head -n1)" == "Arch" ]; then
+if [ "$(cat /etc/os-release 2> /dev/null | grep -o "Arch" | head -n1)" == "Arch" ]; then
     echo -e "▶️  Check default config\n"
     for file in $(find / -name "*.pacnew" -o -name "*.pacsave" 2> /dev/null); do
         defaultFile=$(echo $file | sed 's/.pacnew//' | sed 's/.pacsave//')
