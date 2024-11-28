@@ -31,12 +31,11 @@ sudo pacman -S \
 
 # Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-grep -qF 'starship init zsh' ~/.zshrc || printf "\neval \"\$(starship init zsh)\"" >> ~/.zshrc
+grep -qF 'starship init zsh' ~/.zshrc || printf "\neval \"\$(starship init zsh)\"\n" >> ~/.zshrc
 
 # Development
 sudo pacman -S \
       composer \
-      mariadb \
       nginx-mainline \
       nodejs \
       npm \
@@ -45,9 +44,6 @@ sudo pacman -S \
 
 # NPM dependencies
 sudo npm install -g npm-check-updates
-
-# MariaDB configuration
-sudo mariadb -u root -e "SET PASSWORD = PASSWORD('');"
 
 # PHP Dependencies
 composer global require laravel/installer

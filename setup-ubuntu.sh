@@ -51,15 +51,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 sudo apt-get install -y \
      php8.3-apcu php8.3-bcmath php8.3-cli php8.3-curl php8.3-fpm php8.3-gd php8.3-imagick php8.3-intl \
      php8.3-mbstring php8.3-mysql php8.3-redis php8.3-soap php8.3-sqlite3 php8.3-xdebug php8.3-xml php8.3-zip \
-     mariadb-server \
      nginx \
      nodejs
 
 # NPM dependencies
 sudo npm install -g npm-check-updates
-
-# MySQL configuration
-sudo mysql -u root -e "SET PASSWORD = PASSWORD('');"
 
 # Composer
 curl -sS https://getcomposer.org/installer | php
@@ -86,9 +82,6 @@ sudo apt-get install -y ./discord.deb && rm discord.deb
 # Docker
 sudo apt-get install -y docker-ce
 sudo usermod -aG docker $USER
-
-# Act
-curl https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash
 
 # Stripe
 wget https://github.com/stripe/stripe-cli/releases/download/v1.19.2/stripe_1.19.2_linux_x86_64.tar.gz
