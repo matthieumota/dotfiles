@@ -71,7 +71,6 @@ sudo apt-get install -y \
      httpie \
      keepassx \
      spotify-client \
-     vagrant \
      virtualbox-7.0 \
      vlc
 

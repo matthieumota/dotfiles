@@ -3,14 +3,14 @@
 echo "Setting Mac..."
 
 if test ! $(which brew); then
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-  eval "$(/usr/local/Homebrew/bin/brew shellenv)"
+  # eval "$(/usr/local/Homebrew/bin/brew shellenv)"
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
 # Taps
 brew tap buo/cask-upgrade
-brew tap nektos/tap
 brew tap stripe/stripe-cli
 brew tap symfony-cli/tap
 
@@ -19,34 +19,30 @@ brew update
 
 # Binaries
 brew install \
-     act \
      dnsmasq \
      fastfetch \
      git \
      mas \
-     pkg-config \
+     starship \
      stripe \
      symfony-cli
-
-# Oh My Zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 # Development
 brew install \
      php \
      composer \
-     httpd \
      imagemagick \
-     mariadb \
-     node \
-     nginx
+     nginx \
+     nvm
+
+# Oh My Zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+grep -qF "$HOMEBREW_PREFIX/bin/brew shellenv" ~/.zshrc || printf "\neval \"\$($HOMEBREW_PREFIX/bin/brew shellenv)\"\n" >> ~/.zshrc
+grep -qF 'starship init zsh' ~/.zshrc || printf "eval \"\$(starship init zsh)\"\n" >> ~/.zshrc
+grep -qF "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ~/.zshrc || printf ". \"$HOMEBREW_PREFIX/opt/nvm/nvm.sh\"\n" >> ~/.zshrc
 
 # NPM dependencies
 npm install -g npm-check-updates
-
-# MySQL configuration
-brew services start mariadb
-sudo mysql -u root -e "SET PASSWORD = PASSWORD('');"
 
 # PHP modules
 $HOMEBREW_PREFIX/opt/php/bin/pecl install apcu imagick redis xdebug
@@ -76,17 +72,16 @@ brew install --cask \
      firefox \
      google-drive \
      httpie \
-     iterm2 \
      keepassx \
      meld \
      microsoft-office \
      spotify \
      tableplus \
      transmission \
-     vagrant \
      virtualbox \
      visual-studio-code \
-     vlc
+     vlc \
+     wezterm
 
 # Dotfiles
 ln -s $HOME/.dotfiles/config/git/.gitconfig $HOME/.gitconfig
