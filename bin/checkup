@@ -12,7 +12,7 @@ if [ "$(uname)" == "Darwin" ]; then
     mas outdated
 
     echo -e "▶️  Check default config\n"
-    for file in $(find /usr/local -name "*.default"); do
+    for file in $(find $HOMEBREW_PREFIX -name "*.default"); do
         defaultFile=$(echo $file | sed 's/.default//')
         diff "$file" "$defaultFile" > /dev/null
         if [ $? -eq 1 ]; then
