@@ -15,6 +15,7 @@ return {
       "json",
       "markdown",
       "php",
+      "rust",
       "sql",
       "typescript",
       "vue",

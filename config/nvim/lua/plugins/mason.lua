@@ -21,6 +21,7 @@ return {
         "html",
         "lua_ls",
         "intelephense",
+        "rust_analyzer",
         "tailwindcss",
         "ts_ls",
         "volar",
