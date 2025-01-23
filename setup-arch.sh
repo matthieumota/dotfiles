@@ -13,6 +13,7 @@ sudo pacman -S \
      docker-compose \
      fastfetch \
      hyprland \
+     hyprpaper \
      git \
      gnome-bluetooth-3.0 \
      gnome-keyring \
@@ -26,6 +27,7 @@ sudo pacman -S \
      starship \
      ttf-noto-nerd \
      vim \
+     waybar \
      wezterm \
      wofi \
      xorg-xdpyinfo \
