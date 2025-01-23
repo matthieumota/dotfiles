@@ -89,10 +89,11 @@ sudo tar xvf stripe_1.19.2_linux_x86_64.tar.gz --directory /usr/local/bin/ && rm
 sudo chown -R root:root /usr/local/bin/
 
 # Dotfiles
+ln -s $HOME/.dotfiles/config/.wezterm.lua $HOME/.wezterm.lua
 ln -s $HOME/.dotfiles/config/git/.gitconfig $HOME/.gitconfig
 ln -s $HOME/.dotfiles/config/git/.gitignore_global $HOME/.gitignore_global
+ln -s $HOME/.dotfiles/config/hypr $HOME/.config/hypr
+ln -s $HOME/.dotfiles/config/nvim $HOME/.config/nvim
+ln -s $HOME/.dotfiles/config/starship.toml $HOME/.config/starship.toml
 ln -s $HOME/.dotfiles/config/zsh/aliases.zsh $HOME/.oh-my-zsh/custom/aliases.zsh
 ln -s $HOME/.dotfiles/config/zsh/path.zsh $HOME/.oh-my-zsh/custom/path.zsh
-ln -s $HOME/.dotfiles/config/.wezterm.lua $HOME/.wezterm.lua
-ln -s $HOME/.dotfiles/config/starship.toml $HOME/.config/starship.toml
-ln -s $HOME/.dotfiles/config/nvim $HOME/.config/nvim
