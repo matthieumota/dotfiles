@@ -17,7 +17,6 @@ sudo pacman -S \
      gnome-bluetooth-3.0 \
      gnome-keyring \
      gnome-shell-extension-appindicator \
-     kitty \
      lazygit \
      neovim \
      noto-fonts \
