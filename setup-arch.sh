@@ -18,12 +18,14 @@ sudo pacman -S \
      gnome-bluetooth-3.0 \
      gnome-keyring \
      gnome-shell-extension-appindicator \
+     grim \
      lazygit \
      neovim \
      noto-fonts \
      noto-fonts-cjk \
      ripgrep \
      rsync \
+     slurp \
      starship \
      ttf-noto-nerd \
      vim \
@@ -89,5 +91,6 @@ ln -s $HOME/.dotfiles/config/git/.gitignore_global $HOME/.gitignore_global
 ln -s $HOME/.dotfiles/config/hypr $HOME/.config/hypr
 ln -s $HOME/.dotfiles/config/nvim $HOME/.config/nvim
 ln -s $HOME/.dotfiles/config/starship.toml $HOME/.config/starship.toml
+ln -s $HOME/.dotfiles/config/waybar $HOME/.config/waybar
 ln -s $HOME/.dotfiles/config/zsh/aliases.zsh $HOME/.oh-my-zsh/custom/aliases.zsh
 ln -s $HOME/.dotfiles/config/zsh/path.zsh $HOME/.oh-my-zsh/custom/path.zsh
