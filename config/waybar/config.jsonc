@@ -4,6 +4,7 @@
     "spacing": 4,
 
     "modules-left": [
+        "custom/logo",
         "hyprland/workspaces"
     ],
     "modules-center": [
@@ -13,6 +14,10 @@
         "tray"
     ],
 
+    "custom/logo": {
+        "format": "",
+        "tooltip": false
+    },
     "hyprland/workspaces" : {
         "persistent-workspaces": {
             "*": 5
