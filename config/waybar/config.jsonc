@@ -1,10 +1,26 @@
 {
     "layer": "top",
+    "position": "top",
+    "spacing": 4,
 
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "hyprland/window"
+    ],
     "modules-right": [
         "tray"
     ],
 
+    "hyprland/workspaces" : {
+        "persistent-workspaces": {
+            "*": 5
+        }
+    },
+    "hyprland/window" : {
+        "separate-outputs": true
+    },
     "tray": {
         "spacing": 10
     }
