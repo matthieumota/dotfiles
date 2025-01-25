@@ -1,3 +1,11 @@
 {
     "layer": "top",
+
+    "modules-right": [
+        "tray"
+    ],
+
+    "tray": {
+        "spacing": 10
+    }
 }
