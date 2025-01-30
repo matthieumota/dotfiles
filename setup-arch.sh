@@ -64,7 +64,6 @@ sudo usermod -aG docker $USER
 # Aur
 yay -S \
      gnome-shell-extension-dash-to-dock \
-     gnome-terminal-transparency \
      httpie-desktop-bin \
      nvm \
      powerline-fonts-git \
