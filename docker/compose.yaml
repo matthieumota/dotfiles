@@ -37,6 +37,16 @@ services:
       - 9081:9000
       - 8081:8000
 
+  php80:
+    <<: *php
+    build:
+      context: ./php
+      args:
+        PHP_VERSION: 8.0
+    ports:
+      - 9080:9000
+      - 8080:8000
+
   php74:
     <<: *php
     build:
