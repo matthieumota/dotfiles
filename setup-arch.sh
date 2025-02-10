@@ -64,8 +64,8 @@ sudo usermod -aG docker $USER
 # Aur
 yay -S \
      gnome-shell-extension-dash-to-dock \
-     httpie-desktop-bin \
      nvm \
+     postman-bin \
      powerline-fonts-git \
      stripe-cli-bin \
      symfony-cli-bin \

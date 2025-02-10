@@ -72,10 +72,10 @@ brew install --cask \
      docker \
      firefox \
      google-drive \
-     httpie \
      keepassx \
      meld \
      microsoft-office \
+     postman \
      spotify \
      tableplus \
      transmission \
