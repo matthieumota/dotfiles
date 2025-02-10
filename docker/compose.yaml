@@ -42,7 +42,7 @@ services:
     build:
       context: ./php
       args:
-        PHP_VERSION: 8.0
+        PHP_VERSION: '8.0'
     ports:
       - 9080:9000
       - 8080:8000
