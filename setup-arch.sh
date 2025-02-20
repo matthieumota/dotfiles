@@ -15,11 +15,12 @@ sudo pacman -S \
      hyprland \
      hyprpaper \
      git \
-     gnome-bluetooth-3.0 \
-     gnome-keyring \
+     gnome \
      gnome-shell-extension-appindicator \
      grim \
      lazygit \
+     mandb \
+     nano \
      neovim \
      noto-fonts \
      noto-fonts-cjk \
@@ -27,20 +28,23 @@ sudo pacman -S \
      rsync \
      slurp \
      starship \
+     tree \
      ttf-noto-nerd \
+     vi \
      vim \
      waybar \
      wezterm \
      wofi \
-     xorg-xdpyinfo \
      zsh
 
 # Development
 sudo pacman -S \
       composer \
+      go \
       nginx-mainline \
       nullmailer \
-      php-apcu php-fpm php-gd php-imagick php-pgsql php-redis php-sqlite xdebug
+      php-apcu php-fpm php-gd php-imagick php-pgsql php-redis php-sqlite xdebug \
+      rustup
 
 # PHP Dependencies
 composer global require laravel/installer
@@ -52,7 +56,7 @@ sudo pacman -S \
      gthumb \
      keepassxc \
      meld \
-     qemu \
+     qemu-desktop \
      remmina \
      spotify-launcher \
      transmission-gtk \
