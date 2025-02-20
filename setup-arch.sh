@@ -7,10 +7,16 @@ yay
 
 # Binaries
 sudo pacman -S \
+     amd-ucode \
+     base-devel \
      btop \
+     cups \
      curl \
+     dnsmasq \
      docker \
      docker-compose \
+     dosfstools \
+     efibootmgr \
      fastfetch \
      hyprland \
      hyprpaper \
@@ -18,23 +24,35 @@ sudo pacman -S \
      gnome \
      gnome-shell-extension-appindicator \
      grim \
+     grub \
      lazygit \
-     mandb \
+     less \
+     linux-firmware \
+     man-db \
      nano \
      neovim \
+     networkmanager \
      noto-fonts \
      noto-fonts-cjk \
+     nss-mdns \
+     nvidia \
+     os-prober \
      ripgrep \
      rsync \
+     sbctl \
      slurp \
      starship \
+     sudo \
+     system-config-printer \
      tree \
      ttf-noto-nerd \
      vi \
      vim \
      waybar \
      wezterm \
+     wl-clipboard \
      wofi \
+     xorg-server \
      zsh
 
 # Development
@@ -55,6 +73,7 @@ sudo pacman -S \
      firefox \
      gthumb \
      keepassxc \
+     libreoffice-fresh \
      meld \
      qemu-desktop \
      remmina \
@@ -68,10 +87,11 @@ sudo usermod -aG docker $USER
 # Aur
 yay -S \
      gnome-shell-extension-dash-to-dock \
+     hey-bin \
      nvm \
      postman-bin \
      powerline-fonts-git \
-     stripe-cli-bin \
+     stripe-cli \
      symfony-cli-bin \
      visual-studio-code-bin
 
