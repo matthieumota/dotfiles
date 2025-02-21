@@ -18,13 +18,13 @@ sudo pacman -S \
      dosfstools \
      efibootmgr \
      fastfetch \
-     hyprland \
-     hyprpaper \
      git \
      gnome \
      gnome-shell-extension-appindicator \
      grim \
      grub \
+     hyprland \
+     hyprpaper \
      lazygit \
      less \
      linux-firmware \
