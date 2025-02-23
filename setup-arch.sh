@@ -79,6 +79,7 @@ sudo pacman -S \
      remmina \
      spotify-launcher \
      transmission-gtk \
+     virt-manager \
      vlc
 
 # Docker
