@@ -12,7 +12,6 @@ fi
 # Taps
 brew tap buo/cask-upgrade
 brew tap stripe/stripe-cli
-brew tap symfony-cli/tap
 
 # Update
 brew update
