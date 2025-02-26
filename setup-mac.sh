@@ -70,6 +70,7 @@ brew install --cask \
      discord \
      docker \
      firefox \
+     google-chrome \
      google-drive \
      keepassx \
      meld \
