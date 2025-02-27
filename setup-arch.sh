@@ -88,6 +88,7 @@ sudo usermod -aG docker $USER
 # Aur
 yay -S \
      gnome-shell-extension-dash-to-dock \
+     google-chrome \
      hey-bin \
      nvm \
      postman-bin \
