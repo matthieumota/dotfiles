@@ -1,0 +1,18 @@
+* {
+  font-weight: 700;
+}
+
+window#waybar {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+#custom-logo,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#clock,
+#tray {
+  padding: 0 10px;
+}
