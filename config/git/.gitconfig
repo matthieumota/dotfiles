@@ -5,4 +5,4 @@
     autocrlf = input
     excludesfile = ~/.gitignore_global
 [init]
-	defaultBranch = main
+    defaultBranch = main
