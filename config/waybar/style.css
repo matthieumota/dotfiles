@@ -1,5 +1,6 @@
 * {
   font-weight: 700;
+  font-size: 14px;
 }
 
 window#waybar {
@@ -7,7 +8,32 @@ window#waybar {
   color: #fff;
 }
 
-#custom-logo,
+#workspaces {
+  background: #1e1e1e;
+  margin: 5px;
+  border-radius: 15px;
+}
+
+#workspaces button {
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 15px;
+}
+
+#workspaces button:hover {
+  color: #000;
+  background: #fff;
+  border-radius: 15px;
+  transition: 200ms;
+}
+
+#workspaces button.active {
+  color: #000;
+  background: #fff;
+  border-radius: 15px;
+  transition: 200ms;
+}
+
 #pulseaudio,
 #network,
 #cpu,
@@ -15,4 +41,9 @@ window#waybar {
 #clock,
 #tray {
   padding: 0 10px;
+}
+
+#custom-logo {
+  padding: 0px 15px;
+  font-size: 24px;
 }
