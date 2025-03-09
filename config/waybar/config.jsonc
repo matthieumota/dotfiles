@@ -11,12 +11,14 @@
         "hyprland/window"
     ],
     "modules-right": [
+        "clock",
         "tray"
     ],
 
     "custom/logo": {
         "format": "",
-        "tooltip": false
+        "tooltip": false,
+        "on-click": "pgrep -x wofi > /dev/null || wofi --show drun"
     },
     "hyprland/workspaces" : {
         "persistent-workspaces": {
@@ -25,6 +27,12 @@
     },
     "hyprland/window" : {
         "separate-outputs": true
+    },
+    "clock": {
+        "format": "<span color='#fff'></span>    {:%H:%M:%S}",
+        "format-alt": "<span color='#fff'></span>    {:L%A %d %B}",
+        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+        "interval": 1
     },
     "tray": {
         "spacing": 10
