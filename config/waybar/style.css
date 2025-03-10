@@ -47,3 +47,11 @@ window#waybar {
   padding: 0px 15px;
   font-size: 24px;
 }
+
+#cpu {
+  color: #94e2d5;
+}
+
+#memory {
+  color: #cba6f7;
+}

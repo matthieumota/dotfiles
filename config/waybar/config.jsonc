@@ -11,6 +11,10 @@
         "hyprland/window"
     ],
     "modules-right": [
+        "pulseaudio",
+        "network",
+        "cpu",
+        "memory",
         "clock",
         "tray"
     ],
@@ -27,6 +31,23 @@
     },
     "hyprland/window" : {
         "separate-outputs": true
+    },
+    "pulseaudio": {
+        "scroll-step": 1,
+        "format": "{icon}    {volume}%    {format_source}",
+        "format-source": "    {volume}%",
+    },
+    "network": {
+        "format-wifi": "    {essid} ({signalStrength}%)",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "cpu": {
+        "format": "    {usage}%",
+        "tooltip": true,
+        "interval": 1
+    },
+    "memory": {
+        "format": "    {used:0.2f}G"
     },
     "clock": {
         "format": "<span color='#fff'></span>    {:%H:%M:%S}",
