@@ -18,6 +18,9 @@ brew update
 
 # Binaries
 brew install \
+     colima \
+     docker \
+     docker-compose \
      dnsmasq \
      fastfetch \
      git \
@@ -68,7 +71,6 @@ composer global require laravel/installer
 brew install --cask \
      cyberduck \
      discord \
-     docker \
      firefox \
      google-chrome \
      google-drive \
