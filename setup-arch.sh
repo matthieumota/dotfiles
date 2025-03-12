@@ -49,7 +49,6 @@ sudo pacman -S \
      vi \
      vim \
      waybar \
-     wezterm \
      wl-clipboard \
      wofi \
      xorg-server \
@@ -95,7 +94,8 @@ yay -S \
      powerline-fonts-git \
      stripe-cli \
      symfony-cli-bin \
-     visual-studio-code-bin
+     visual-studio-code-bin \
+     wezterm-git
 
 # Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
