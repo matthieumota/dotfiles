@@ -74,7 +74,7 @@ brew install --cask \
      firefox \
      google-chrome \
      google-drive \
-     keepassx \
+     keepassxc \
      meld \
      microsoft-office \
      postman \
