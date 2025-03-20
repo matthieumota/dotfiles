@@ -18,9 +18,6 @@ brew update
 
 # Binaries
 brew install \
-     colima \
-     docker \
-     docker-compose \
      dnsmasq \
      fastfetch \
      git \
@@ -77,6 +74,7 @@ brew install --cask \
      keepassxc \
      meld \
      microsoft-office \
+     orbstack \
      postman \
      spotify \
      tableplus \
