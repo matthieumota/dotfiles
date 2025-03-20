@@ -30,7 +30,6 @@ brew install \
      php \
      composer \
      imagemagick \
-     nginx \
      nvm
 
 # Oh My Zsh
