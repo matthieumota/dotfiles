@@ -72,7 +72,6 @@ brew install --cask \
      google-drive \
      keepassxc \
      meld \
-     microsoft-office \
      orbstack \
      postman \
      spotify \
