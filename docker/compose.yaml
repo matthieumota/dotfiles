@@ -22,7 +22,20 @@ services:
       - ./nginx:/etc/nginx/conf.d
       - ~/Code:/home/matthieu/Code
 
-  php83: &php
+  php84: &php
+    build:
+      context: ./php
+      args:
+        PHP_VERSION: 8.4
+    ports:
+      - 9084:9000
+      - 8084:8000
+    user: matthieu
+    volumes:
+      - ~/Code:/home/matthieu/Code
+
+  php83:
+    <<: *php
     build:
       context: ./php
       args:
@@ -30,9 +43,6 @@ services:
     ports:
       - 9083:9000
       - 8083:8000
-    user: matthieu
-    volumes:
-      - ~/Code:/home/matthieu/Code
 
   php82:
     <<: *php
