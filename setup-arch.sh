@@ -58,7 +58,6 @@ sudo pacman -S \
 sudo pacman -S \
       composer \
       go \
-      nginx-mainline \
       nullmailer \
       php-apcu php-fpm php-gd php-imagick php-pgsql php-redis php-sqlite xdebug \
       rustup
