@@ -17,9 +17,13 @@ services:
 
   nginx:
     image: nginx
-    ports: [80:80]
+    ports:
+      - 80:80
+      # - 443:443
     volumes:
       - ./nginx:/etc/nginx/conf.d
+      # - ./nginx/server.crt:/etc/nginx/server.crt
+      # - ./nginx/server.key:/etc/nginx/server.key
       - ~/Code:/home/matthieu/Code
 
   php84: &php
