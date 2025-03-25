@@ -56,11 +56,11 @@ sudo pacman -S \
 
 # Development
 sudo pacman -S \
-      composer \
-      go \
-      nullmailer \
-      php-apcu php-fpm php-gd php-imagick php-pgsql php-redis php-sqlite xdebug \
-      rustup
+     composer \
+     go \
+     nullmailer \
+     php-apcu php-fpm php-gd php-imagick php-pgsql php-redis php-sqlite xdebug \
+     rustup
 
 # PHP Dependencies
 composer global require laravel/installer
