@@ -27,9 +27,10 @@ brew install \
 
 # Development
 brew install \
-     php \
      composer \
      imagemagick \
+     php \
+     python \
      nvm
 
 # Oh My Zsh
