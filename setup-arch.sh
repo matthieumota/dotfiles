@@ -59,7 +59,7 @@ sudo pacman -S \
      composer \
      go \
      nullmailer \
-     php-apcu php-fpm php-gd php-imagick php-pgsql php-redis php-sqlite xdebug \
+     php-apcu php-gd php-imagick php-pgsql php-redis php-sqlite xdebug \
      rustup
 
 # PHP Dependencies
