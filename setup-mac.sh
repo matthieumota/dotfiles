@@ -38,6 +38,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 grep -qF "$HOMEBREW_PREFIX/bin/brew shellenv" ~/.zshrc || printf "\neval \"\$($HOMEBREW_PREFIX/bin/brew shellenv)\"\n" >> ~/.zshrc
 grep -qF 'starship init zsh' ~/.zshrc || printf "eval \"\$(starship init zsh)\"\n" >> ~/.zshrc
 grep -qF "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ~/.zshrc || printf ". \"$HOMEBREW_PREFIX/opt/nvm/nvm.sh\"\n" >> ~/.zshrc
+grep -qF "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ~/.zshrc || printf ". \"$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm\"\n" >> ~/.zshrc
 
 # NPM dependencies
 nvm install node
