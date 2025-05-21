@@ -24,35 +24,22 @@ return {
         "rust_analyzer",
         "tailwindcss",
         "ts_ls",
-        "volar",
+        "vue_ls",
       },
     })
 
-    mason_lspconfig.setup_handlers({
-      function(server_name)
-        local config = {
-          capabilities = require("cmp_nvim_lsp").default_capabilities(),
-          root_dir = function(fname)
-            return vim.fn.getcwd()
-          end,
-        }
-
-        if server_name == 'ts_ls' then
-          config.init_options = {
-            plugins = {
-              {
-                name = '@vue/typescript-plugin',
-                location = require('mason-registry').get_package('vue-language-server'):get_install_path() .. '/node_modules/@vue/language-server',
-                languages = { 'vue' },
-              },
-            },
-          }
-          config.filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' }
-        end
-
-        require("lspconfig")[server_name].setup(config)
-      end,
-    })
+    require("lspconfig")["ts_ls"].setup {
+      init_options = {
+        plugins = {
+          {
+            name = '@vue/typescript-plugin',
+            location = "",
+            languages = { 'vue' },
+          },
+        },
+      },
+      filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
+    }
 
     cmp.setup({
       mapping = cmp.mapping.preset.insert({
