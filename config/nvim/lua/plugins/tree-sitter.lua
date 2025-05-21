@@ -15,6 +15,7 @@ return {
       "json",
       "markdown",
       "php",
+      "python",
       "rust",
       "sql",
       "typescript",
