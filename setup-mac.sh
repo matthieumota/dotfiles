@@ -21,6 +21,7 @@ brew install \
      fastfetch \
      git \
      mas \
+     neovim \
      starship \
      stripe \
      symfony-cli
@@ -28,6 +29,7 @@ brew install \
 # Development
 brew install \
      composer \
+     go \
      imagemagick \
      php \
      python \
