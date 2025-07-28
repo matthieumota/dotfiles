@@ -22,6 +22,7 @@ brew install \
      git \
      mas \
      neovim \
+     ripgrep \
      starship \
      stripe \
      symfony-cli
