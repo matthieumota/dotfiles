@@ -14,6 +14,7 @@ sudo pacman -S \
      curl \
      dnsmasq \
      docker \
+     docker-buildx \
      docker-compose \
      dosfstools \
      efibootmgr \
