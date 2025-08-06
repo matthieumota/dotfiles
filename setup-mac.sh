@@ -34,6 +34,7 @@ brew install \
      imagemagick \
      php \
      python \
+     rustup \
      nvm
 
 # Oh My Zsh
