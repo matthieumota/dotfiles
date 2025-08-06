@@ -70,6 +70,7 @@ composer global require laravel/installer
 sudo pacman -S \
      discord \
      firefox \
+     ghostty \
      gthumb \
      keepassxc \
      libreoffice-fresh \
@@ -94,8 +95,7 @@ yay -S \
      powerline-fonts-git \
      stripe-cli \
      symfony-cli-bin \
-     visual-studio-code-bin \
-     wezterm-git
+     visual-studio-code-bin
 
 # Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -110,7 +110,7 @@ yay -Yc
 yay -Scc
 
 # Dotfiles
-ln -s $HOME/.dotfiles/config/.wezterm.lua $HOME/.wezterm.lua
+ln -s $HOME/.dotfiles/config/ghostty/config $HOME/.config/ghostty/config
 ln -s $HOME/.dotfiles/config/git/.gitconfig $HOME/.gitconfig
 ln -s $HOME/.dotfiles/config/git/.gitignore_global $HOME/.gitignore_global
 ln -s $HOME/.dotfiles/config/hypr $HOME/.config/hypr

@@ -77,6 +77,7 @@ brew install --cask \
      cyberduck \
      discord \
      firefox \
+     ghostty \
      google-chrome \
      google-drive \
      keepassxc \
@@ -88,11 +89,10 @@ brew install --cask \
      transmission \
      virtualbox \
      visual-studio-code \
-     vlc \
-     wezterm
+     vlc
 
 # Dotfiles
-ln -s $HOME/.dotfiles/config/.wezterm.lua $HOME/.wezterm.lua
+ln -s $HOME/.dotfiles/config/ghostty/config $HOME/.config/ghostty/config
 ln -s $HOME/.dotfiles/config/git/.gitconfig $HOME/.gitconfig
 ln -s $HOME/.dotfiles/config/git/.gitignore_global $HOME/.gitignore_global
 ln -s $HOME/.dotfiles/config/hypr $HOME/.config/hypr
