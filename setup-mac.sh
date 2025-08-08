@@ -81,6 +81,7 @@ brew install --cask \
      ghostty \
      google-chrome \
      google-drive \
+     grandperspective \
      keepassxc \
      meld \
      orbstack \
