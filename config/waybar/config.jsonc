@@ -18,7 +18,8 @@
         "memory",
         "temperature",
         "clock",
-        "tray"
+        "tray",
+        "custom/power"
     ],
 
     "custom/logo": {
@@ -32,7 +33,8 @@
         }
     },
     "hyprland/window" : {
-        "separate-outputs": true
+        "separate-outputs": true,
+        "swap-icon-label": false
     },
     "pulseaudio": {
         "scroll-step": 1,
@@ -66,5 +68,16 @@
     },
     "tray": {
         "spacing": 10
+    },
+    "custom/power": {
+        "format" : "⏻ ",
+        "menu": "on-click",
+        "menu-file": "$HOME/.config/waybar/power_menu.xml",
+        "menu-actions": {
+            "shutdown": "shutdown",
+            "reboot": "reboot",
+            "suspend": "systemctl suspend",
+            "hibernate": "systemctl hibernate"
+        }
     }
 }
