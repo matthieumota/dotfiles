@@ -14,9 +14,11 @@
     "modules-right": [
         "pulseaudio",
         "network",
+        // "power-profiles-daemon",
         "cpu",
         "memory",
         "temperature",
+        // "backlight",
         "clock",
         "tray",
         "custom/power"
@@ -40,10 +42,22 @@
         "scroll-step": 1,
         "format": "{icon}    {volume}%    {format_source}",
         "format-source": "    {volume}%",
+        "on-click": "pavucontrol"
     },
     "network": {
         "format-wifi": "    {essid} ({signalStrength}%)",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "power-profiles-daemon": {
+        "format": "{icon}",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "default": "",
+            "performance": "",
+            "balanced": "",
+            "power-saver": ""
+        }
     },
     "cpu": {
         "format": "    {usage}%",
@@ -60,6 +74,11 @@
         "format": "{temperatureC}°C {icon}",
         "format-icons": ["", "", ""]
     },
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
     "clock": {
         "format": "<span color='#fff'></span>    {:%H:%M:%S}",
         "format-alt": "<span color='#fff'></span>    {:L%A %d %B}",
@@ -71,6 +90,7 @@
     },
     "custom/power": {
         "format" : "⏻ ",
+        "tooltip": false,
         "menu": "on-click",
         "menu-file": "$HOME/.config/waybar/power_menu.xml",
         "menu-actions": {

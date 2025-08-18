@@ -38,6 +38,7 @@ sudo pacman -S \
      nss-mdns \
      nvidia \
      os-prober \
+     pavucontrol \
      ripgrep \
      rsync \
      sbctl \
