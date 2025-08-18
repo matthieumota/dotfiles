@@ -8,6 +8,10 @@ window#waybar {
   color: #fff;
 }
 
+tooltip {
+  border-radius: 8px;
+}
+
 #workspaces {
   background: #1e1e1e;
   margin: 5px;
@@ -40,12 +44,20 @@ window#waybar {
 #memory,
 #clock,
 #tray {
-  padding: 0 10px;
+  padding: 0 8px;
 }
 
 #custom-logo {
   padding: 0px 15px;
   font-size: 24px;
+}
+
+#window {
+  color: #94e2d5;
+}
+
+#pulseaudio.muted {
+  color: #ff5b45;
 }
 
 #cpu {

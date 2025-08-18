@@ -38,6 +38,7 @@ sudo pacman -S \
      nss-mdns \
      nvidia \
      os-prober \
+     otf-font-awesome \
      pavucontrol \
      ripgrep \
      rsync \
