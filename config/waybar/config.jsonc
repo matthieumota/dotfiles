@@ -94,7 +94,7 @@
         "menu": "on-click",
         "menu-file": "$HOME/.config/waybar/power_menu.xml",
         "menu-actions": {
-            "shutdown": "shutdown",
+            "shutdown": "shutdown -h now",
             "reboot": "reboot",
             "suspend": "systemctl suspend",
             "hibernate": "systemctl hibernate"
