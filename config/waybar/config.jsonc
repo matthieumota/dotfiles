@@ -6,7 +6,8 @@
     "modules-left": [
         "custom/logo",
         "hyprland/workspaces",
-        "hyprland/submap"
+        "hyprland/submap",
+        "custom/spotify"
     ],
     "modules-center": [
         "hyprland/window"
@@ -33,6 +34,15 @@
         "persistent-workspaces": {
             "*": 5
         }
+    },
+    "custom/spotify": {
+        "format": "<span color='#1db954'>{icon}</span> {text}",
+        "return-type": "json",
+        "format-icons": {
+            "spotify": "",
+            "default": "🎜"
+        },
+        "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null"
     },
     "hyprland/window" : {
         "separate-outputs": true,

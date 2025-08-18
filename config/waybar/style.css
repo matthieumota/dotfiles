@@ -44,7 +44,7 @@ tooltip {
 #memory,
 #clock,
 #tray {
-  padding: 0 8px;
+  padding: 0 5px;
 }
 
 #custom-logo {
@@ -54,6 +54,10 @@ tooltip {
 
 #window {
   color: #94e2d5;
+  background-color: #1e1e1e;
+  padding: 0px 8px;
+  margin: 6px 3px;
+  border-radius: 20px;
 }
 
 #pulseaudio.muted {
