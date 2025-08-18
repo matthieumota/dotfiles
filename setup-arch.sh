@@ -9,12 +9,12 @@ yay
 sudo pacman -S \
      amd-ucode \
      base-devel \
+     blueman \
      btop \
      cups \
      curl \
      dnsmasq \
      docker \
-     docker-buildx \
      docker-compose \
      dosfstools \
      efibootmgr \
@@ -75,7 +75,6 @@ sudo pacman -S \
      ghostty \
      gthumb \
      keepassxc \
-     libreoffice-fresh \
      meld \
      qemu-desktop \
      remmina \
