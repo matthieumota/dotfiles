@@ -6,6 +6,8 @@ return {
     "hrsh7th/nvim-cmp",
     "hrsh7th/cmp-nvim-lsp",
     "hrsh7th/cmp-emoji",
+    "hrsh7th/cmp-path",
+    "hrsh7th/cmp-buffer",
   },
   config = function()
     local cmp = require("cmp")
@@ -65,6 +67,8 @@ return {
       sources = cmp.config.sources({
         { name = "nvim_lsp" },
         { name = "emoji" },
+        { name = "path" },
+        { name = "buffer", option = { get_bufnrs = vim.api.nvim_list_bufs } },
       }),
     })
   end,
