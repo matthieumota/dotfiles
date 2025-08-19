@@ -118,5 +118,6 @@ ln -s $HOME/.dotfiles/config/hypr $HOME/.config/hypr
 ln -s $HOME/.dotfiles/config/nvim $HOME/.config/nvim
 ln -s $HOME/.dotfiles/config/starship.toml $HOME/.config/starship.toml
 ln -s $HOME/.dotfiles/config/waybar $HOME/.config/waybar
+ln -s $HOME/.dotfiles/config/wofi $HOME/.config/wofi
 ln -s $HOME/.dotfiles/config/zsh/aliases.zsh $HOME/.oh-my-zsh/custom/aliases.zsh
 ln -s $HOME/.dotfiles/config/zsh/path.zsh $HOME/.oh-my-zsh/custom/path.zsh

@@ -39,7 +39,7 @@
     "custom/logo": {
         "format": "",
         "tooltip": false,
-        "on-click": "pgrep -x wofi > /dev/null || wofi --show drun"
+        "on-click": "pgrep -x wofi > /dev/null || wofi"
     },
     "hyprland/workspaces" : {
         "persistent-workspaces": {
