@@ -54,6 +54,7 @@ sudo pacman -S \
      waybar \
      wl-clipboard \
      wofi \
+     xdg-desktop-portal-hyprland \
      xorg-server \
      zsh
 
