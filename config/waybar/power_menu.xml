@@ -2,16 +2,6 @@
 <interface>
     <object class="GtkMenu" id="menu">
         <child>
-            <object class="GtkMenuItem" id="shutdown">
-                <property name="label">Éteindre</property>
-            </object>
-        </child>
-        <child>
-            <object class="GtkMenuItem" id="reboot">
-                <property name="label">Redémarrer</property>
-            </object>
-        </child>
-        <child>
             <object class="GtkMenuItem" id="suspend">
                 <property name="label">Veille</property>
             </object>
@@ -19,6 +9,19 @@
         <child>
             <object class="GtkMenuItem" id="hibernate">
                 <property name="label">Hibernation</property>
+            </object>
+        </child>
+        <child>
+            <object class="GtkMenuItem" id="shutdown">
+                <property name="label">Éteindre</property>
+            </object>
+        </child>
+        <child>
+            <object class="GtkSeparatorMenuItem" id="delimiter1" />
+        </child>
+        <child>
+            <object class="GtkMenuItem" id="reboot">
+                <property name="label">Redémarrer</property>
             </object>
         </child>
     </object>

@@ -1,6 +1,6 @@
 * {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 window#waybar {
@@ -38,18 +38,17 @@ tooltip {
   transition: 200ms;
 }
 
-#pulseaudio,
-#network,
-#cpu,
-#memory,
-#clock,
 #tray {
-  padding: 0 5px;
+  margin-right: 10px;
 }
 
 #custom-logo {
   padding: 0px 15px;
-  font-size: 24px;
+  font-size: 20px;
+}
+
+#custom-spotify {
+  padding: 0 10px;
 }
 
 #window {
@@ -73,5 +72,9 @@ tooltip {
 }
 
 #custom-power {
-  font-size: 24px;
+  font-size: 20px;
+}
+
+#custom-sep {
+  color: #fff;
 }

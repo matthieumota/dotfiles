@@ -14,17 +14,28 @@
     ],
     "modules-right": [
         "pulseaudio",
+        "custom/sep",
         "network",
+        "custom/sep",
         // "power-profiles-daemon",
         "cpu",
+        "custom/sep",
         "memory",
+        "custom/sep",
         "temperature",
+        "custom/sep",
         // "backlight",
         "clock",
+        "custom/sep",
         "tray",
         "custom/power"
     ],
 
+    "custom/sep": {
+        "format": "│",
+        "tooltip": false,
+        "interval": "once"
+    },
     "custom/logo": {
         "format": "",
         "tooltip": false,
