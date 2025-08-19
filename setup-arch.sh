@@ -111,7 +111,7 @@ yay -Yc
 yay -Scc
 
 # Dotfiles
-ln -s $HOME/.dotfiles/config/ghostty/config $HOME/.config/ghostty/config
+ln -s $HOME/.dotfiles/config/ghostty $HOME/.config/ghostty
 ln -s $HOME/.dotfiles/config/git/.gitconfig $HOME/.gitconfig
 ln -s $HOME/.dotfiles/config/git/.gitignore_global $HOME/.gitignore_global
 ln -s $HOME/.dotfiles/config/hypr $HOME/.config/hypr
