@@ -11,7 +11,7 @@ alias mf="php artisan migrate:fresh"
 alias mfs="php artisan migrate:fresh --seed"
 
 # JS
-alias watch="npm run watch"
+# alias watch="npm run watch"
 
 # PHP
 alias composer="php -d memory_limit=-1 /usr/bin/composer"
