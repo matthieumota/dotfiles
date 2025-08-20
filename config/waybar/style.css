@@ -44,6 +44,10 @@ tooltip {
   transition: 200ms;
 }
 
+#workspaces button.urgent {
+  background-color: #ff441f;
+}
+
 #tray {
   margin-right: 10px;
 }
