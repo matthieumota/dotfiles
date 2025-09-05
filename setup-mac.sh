@@ -91,7 +91,8 @@ brew install --cask \
      transmission \
      virtualbox \
      visual-studio-code \
-     vlc
+     vlc \
+     windows-app
 
 # Dotfiles
 ln -s $HOME/.dotfiles/config/ghostty $HOME/.config/ghostty
