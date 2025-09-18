@@ -10,6 +10,8 @@ echo "▶️  Running brew cask upgrade\n"
 brew upgrade --cask
 echo "▶️  Running brew cleanup\n"
 brew cleanup -s && rm -rf $(brew --cache)
+echo "▶️  Running brew autoremove\n"
+brew autoremove
 echo "▶️  Running brew doctor\n"
 brew doctor --verbose
 
