@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/zsh
+source ~/.zshrc
 
 echo -e "\nReady? 🍻\n"
 
@@ -6,8 +7,14 @@ echo -e "▶️  Check npm update\n"
 ncu -g
 echo -e "▶️  Check composer update\n"
 composer global outdated
+echo -e "▶️  Check nvm update\n"
+nvm ls-remote | tail -n1
+echo "Current: $(nvm current)"
+echo -e "▶️  Check rust and cargo update\n"
+rustup update
+cargo install-update -l
 
-if [ "$(uname)" == "Darwin" ]; then
+if [ "$(uname)" = "Darwin" ]; then
     echo -e "▶️  Check Mac App Store update\n"
     mas outdated
 
@@ -23,7 +30,7 @@ if [ "$(uname)" == "Darwin" ]; then
     done
 fi
 
-if [ "$(cat /etc/os-release 2> /dev/null | grep -o "Arch" | head -n1)" == "Arch" ]; then
+if [ "$(cat /etc/os-release 2> /dev/null | grep -o "Arch" | head -n1)" = "Arch" ]; then
     echo -e "▶️  Check default config\n"
     for file in $(find / -name "*.pacnew" -o -name "*.pacsave" 2> /dev/null); do
         defaultFile=$(echo $file | sed 's/.pacnew//' | sed 's/.pacsave//')
