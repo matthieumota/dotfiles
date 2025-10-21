@@ -89,6 +89,7 @@ sudo usermod -aG docker $USER
 
 # Aur
 yay -S \
+     beekeeper-studio-bin \
      gnome-shell-extension-dash-to-dock \
      google-chrome \
      hey-bin \

@@ -75,6 +75,7 @@ composer global require laravel/installer
 
 # Apps
 brew install --cask \
+     beekeeper-studio \
      cyberduck \
      discord \
      firefox \
