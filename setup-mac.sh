@@ -33,6 +33,7 @@ brew install \
      go \
      imagemagick \
      php \
+     php-intl \
      python \
      rustup \
      nvm
