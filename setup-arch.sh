@@ -22,6 +22,7 @@ sudo pacman -S \
      git \
      gnome \
      gnome-shell-extension-appindicator \
+     gnome-tweaks \
      grim \
      grub \
      hyprland \
@@ -90,6 +91,7 @@ sudo usermod -aG docker $USER
 # Aur
 yay -S \
      beekeeper-studio-bin \
+     ttf-firacode-nerd \
      gnome-shell-extension-dash-to-dock \
      google-chrome \
      hey-bin \
