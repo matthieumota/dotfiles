@@ -80,6 +80,7 @@ brew install --cask \
      cyberduck \
      discord \
      firefox \
+     font-fira-code-nerd-font \
      ghostty \
      google-chrome \
      google-drive \
