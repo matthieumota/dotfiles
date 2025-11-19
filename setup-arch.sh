@@ -108,7 +108,11 @@ grep -qF 'starship init zsh' ~/.zshrc || printf "\neval \"\$(starship init zsh)\
 grep -qF "/usr/share/nvm/init-nvm.sh" ~/.zshrc || printf "source /usr/share/nvm/init-nvm.sh\n" >> ~/.zshrc
 
 # NPM dependencies
+nvm install node
 npm install -g npm-check-updates
+
+# Bun
+curl -fsSL https://bun.sh/install | bash
 
 # Clean
 yay -Yc

@@ -54,6 +54,9 @@ echo "nameserver 127.0.0.1" > /etc/resolver/bx
 nvm install node
 npm install -g npm-check-updates
 
+# Bun
+curl -fsSL https://bun.sh/install | bash
+
 # PHP modules
 $HOMEBREW_PREFIX/opt/php/bin/pecl install apcu imagick redis xdebug
 
