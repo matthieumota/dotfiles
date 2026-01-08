@@ -15,6 +15,12 @@ echo "Current: $(nvm current)"
 echo -e "▶️  Check rust and cargo update\n"
 rustup update
 cargo install-update -l
+echo -e "▶️  Check go update\n"
+GO_TOOLS=(github.com/air-verse/air)
+for tool in "${GO_TOOLS[@]}"; do
+    echo "↻ $tool\n"
+    go install "$tool@latest"
+done
 
 if [ "$(uname)" = "Darwin" ]; then
     echo -e "▶️  Check Mac App Store update\n"
