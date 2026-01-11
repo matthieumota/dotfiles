@@ -110,7 +110,7 @@ grep -qF "/usr/share/nvm/init-nvm.sh" ~/.zshrc || printf "source /usr/share/nvm/
 
 # NPM dependencies
 nvm install node
-npm install -g npm-check-updates @github/copilot
+npm install -g npm-check-updates @github/copilot opencode-ai
 
 # Bun
 curl -fsSL https://bun.sh/install | bash

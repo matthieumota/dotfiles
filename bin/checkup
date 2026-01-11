@@ -16,7 +16,7 @@ echo -e "▶️  Check rust and cargo update\n"
 rustup update
 cargo install-update -l
 echo -e "▶️  Check go update\n"
-GO_TOOLS=(github.com/air-verse/air)
+GO_TOOLS=(github.com/air-verse/air github.com/goreleaser/goreleaser/v2)
 for tool in "${GO_TOOLS[@]}"; do
     echo "↻ $tool\n"
     go install "$tool@latest"
