@@ -53,6 +53,7 @@ echo "nameserver 127.0.0.1" > /etc/resolver/bx
 # NPM dependencies
 nvm install node
 npm install -g npm-check-updates @github/copilot opencode-ai
+curl -fsSL https://claude.ai/install.sh | bash
 
 # Bun
 curl -fsSL https://bun.sh/install | bash
