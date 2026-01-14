@@ -21,6 +21,7 @@ brew install \
      fastfetch \
      git \
      mas \
+     mo \
      neovim \
      ripgrep \
      starship \
