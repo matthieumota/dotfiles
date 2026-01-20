@@ -1,0 +1,17 @@
+input {
+    keyboard {
+        xkb {
+            layout "us"
+        }
+    }
+}
+
+output "HDMI-A-1" {
+    mode "2560x1440@143.973"
+    position x=1280 y=1440
+}
+
+output "DP-1" {
+    mode "5120x1440@239.761"
+    position x=0 y=0
+}
