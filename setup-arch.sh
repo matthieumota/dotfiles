@@ -50,6 +50,7 @@ sudo pacman -S \
      slurp \
      starship \
      sudo \
+     swaybg \
      system-config-printer \
      tree \
      ttf-noto-nerd \
