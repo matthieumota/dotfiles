@@ -1,13 +1,15 @@
+@import "frappe.css";
+
 * {
   font-weight: 700;
   font-size: 12px;
 }
 
 window#waybar {
-  transition-property: background-color;
-  transition-duration: 0.5s;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
+  background-color: shade(@base, 0.9);
+  border: 2px solid alpha(@crust, 0.3);
+  color: @text;
+  margin: 5px 5px;
 }
 
 tooltip {
@@ -48,17 +50,28 @@ tooltip {
   background-color: #ff441f;
 }
 
-#tray {
-  margin-right: 10px;
-}
-
 #custom-logo {
   padding: 0px 15px;
   font-size: 20px;
 }
 
-#custom-spotify {
-  padding: 0 10px;
+#custom-music,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#temperature,
+#clock,
+#tray,
+#custom-power {
+  background-color: @surface0;
+  padding: 5px 10px;
+  margin: 5px 0;
+}
+
+#custom-music {
+  color: @mauve;
+  border-radius: 1rem;
 }
 
 #window {
@@ -73,22 +86,39 @@ window#waybar.empty #window {
   background-color: transparent;
 }
 
+#pulseaudio {
+  color: @maroon;
+  border-radius: 1rem 0px 0px 1rem;
+  margin-left: 1rem;
+}
+
 #pulseaudio.muted {
   color: #ff5b45;
 }
 
 #cpu {
-  color: #94e2d5;
+  color: @blue;
 }
 
 #memory {
-  color: #cba6f7;
+  color: @pink;
+}
+
+#clock {
+  color: @blue;
+  border-radius: 0px 1rem 1rem 0px;
+  margin-right: 1rem;
 }
 
 #custom-power {
+  margin-right: 10px;
+  padding: 0px 15px;
   font-size: 20px;
+  border-radius: 1rem;
+  color: @red;
 }
 
-#custom-sep {
-  color: #fff;
+#tray {
+  margin-right: 1rem;
+  border-radius: 1rem;
 }
