@@ -16,43 +16,47 @@ tooltip {
   border-radius: 8px;
 }
 
+#custom-logo {
+  padding: 0px 15px;
+  font-size: 20px;
+}
+
 #workspaces {
   margin: 5px;
-  border-radius: 15px;
+  border-radius: 1rem;
+  background-color: @surface0;
 }
 
 #workspaces button {
-  background: #1e1e1e;
-  margin: 2px;
-  color: #fff;
-  padding: 2px 6px;
-  border-radius: 15px;
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
-
-#workspaces button:hover {
-  color: #000;
-  background: #fff;
-  border-radius: 15px;
-  transition: 200ms;
-  opacity: 0.8;
+  color: @lavender;
+  border-radius: 1rem;
+  padding: 0.5rem 0.6rem 0.5rem 0.5rem;
 }
 
 #workspaces button.active {
-  color: #000;
-  background: #fff;
-  border-radius: 15px;
-  transition: 200ms;
+  color: @sky;
+  border-radius: 1rem;
+}
+
+#workspaces button:hover {
+  color: @sapphire;
+  border-radius: 1rem;
 }
 
 #workspaces button.urgent {
   background-color: #ff441f;
 }
 
-#custom-logo {
-  padding: 0px 15px;
-  font-size: 20px;
+#window {
+  color: #94e2d5;
+  background-color: #1e1e1e;
+  padding: 0px 8px;
+  margin: 6px 3px;
+  border-radius: 20px;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
 }
 
 #custom-music,
@@ -72,18 +76,6 @@ tooltip {
 #custom-music {
   color: @mauve;
   border-radius: 1rem;
-}
-
-#window {
-  color: #94e2d5;
-  background-color: #1e1e1e;
-  padding: 0px 8px;
-  margin: 6px 3px;
-  border-radius: 20px;
-}
-
-window#waybar.empty #window {
-  background-color: transparent;
 }
 
 #pulseaudio {

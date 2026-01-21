@@ -4,13 +4,15 @@
     "spacing": 4,
 
     "modules-left": [
-        "custom/logo"
+        "custom/logo",
+        "niri/workspaces",
         // "hyprland/workspaces",
-        // "hyprland/submap"
+        // "hyprland/submap",
+        "custom/music"
     ],
     "modules-center": [
         // "hyprland/window"
-        "custom/music"
+        "niri/window"
     ],
     "modules-right": [
         "pulseaudio",
@@ -35,6 +37,12 @@
             "*": 5
         }
     },
+    "niri/workspaces" : {
+        "format": "{icon}",
+        "format-icons": {
+            "default": ""
+        }
+    },
     "custom/music": {
         "format": "<span color='#1db954'>{icon}</span>  {text}",
         "return-type": "json",
@@ -42,11 +50,16 @@
             "spotify": " ",
             "default": " "
         },
+        "escape": true,
+        "interval": 2,
         "exec": "playerctl metadata --format '{\"text\": \"{{ artist }} - {{ title }}\", \"alt\": \"{{ playerName }}\"}'",
         "on-click": "playerctl play-pause"
     },
     "hyprland/window" : {
         "separate-outputs": true,
+        "swap-icon-label": false
+    },
+    "niri/window" : {
         "swap-icon-label": false
     },
     "pulseaudio": {
