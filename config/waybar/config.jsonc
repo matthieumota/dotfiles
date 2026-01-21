@@ -7,7 +7,7 @@
         "custom/logo",
         "hyprland/workspaces",
         "hyprland/submap",
-        "custom/spotify"
+        "custom/music"
     ],
     "modules-center": [
         "hyprland/window"
@@ -46,14 +46,14 @@
             "*": 5
         }
     },
-    "custom/spotify": {
+    "custom/music": {
         "format": "<span color='#1db954'>{icon}</span>  {text}",
         "return-type": "json",
         "format-icons": {
             "spotify": " ",
             "default": " "
         },
-        "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null"
+        "exec": "playerctl metadata --format '{\"text\": \"{{ artist }} - {{ title }}\", \"alt\": \"{{ playerName }}\"}'",
     },
     "hyprland/window" : {
         "separate-outputs": true,
