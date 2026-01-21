@@ -17,7 +17,7 @@ tooltip {
 }
 
 #custom-logo {
-  padding: 0px 15px;
+  padding: 0 15px;
   font-size: 20px;
 }
 
@@ -48,11 +48,8 @@ tooltip {
 }
 
 #window {
-  color: #94e2d5;
-  background-color: #1e1e1e;
-  padding: 0px 8px;
-  margin: 6px 3px;
-  border-radius: 20px;
+  color: @blue;
+  border-radius: 1rem;
 }
 
 window#waybar.empty #window {
@@ -60,6 +57,7 @@ window#waybar.empty #window {
 }
 
 #custom-music,
+#window,
 #pulseaudio,
 #network,
 #cpu,
@@ -80,7 +78,7 @@ window#waybar.empty #window {
 
 #pulseaudio {
   color: @maroon;
-  border-radius: 1rem 0px 0px 1rem;
+  border-radius: 1rem 0 0 1rem;
   margin-left: 1rem;
 }
 
@@ -98,13 +96,13 @@ window#waybar.empty #window {
 
 #clock {
   color: @blue;
-  border-radius: 0px 1rem 1rem 0px;
+  border-radius: 0 1rem 1rem 0;
   margin-right: 1rem;
 }
 
 #custom-power {
   margin-right: 10px;
-  padding: 0px 15px;
+  padding: 0 15px;
   font-size: 20px;
   border-radius: 1rem;
   color: @red;
