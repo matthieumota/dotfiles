@@ -39,7 +39,7 @@
     "custom/logo": {
         "format": "",
         "tooltip": false,
-        "on-click": "pgrep -x wofi > /dev/null || wofi"
+        "on-click": "pgrep -x fuzzel > /dev/null || fuzzel"
     },
     "hyprland/workspaces" : {
         "persistent-workspaces": {
