@@ -109,9 +109,9 @@ input {
 }
 
 output "HDMI-A-1" {
-    // mode "2560x1440@143.973"
-    mode "3840x2160@144.001"
-    scale 1.5
+    mode "2560x1440@143.973"
+    // mode "3840x2160@143.990"
+    // scale 1.5
     position x=1280 y=1440
 }
 

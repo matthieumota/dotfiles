@@ -60,6 +60,7 @@ sudo pacman -S \
      wl-clipboard \
      xdg-desktop-portal-hyprland \
      xorg-server \
+     xwayland-satellite \
      zsh
 
 # Development
