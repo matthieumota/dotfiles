@@ -21,6 +21,8 @@ input {
             // localectl set-x11-keymap.
 
             layout "us"
+            variant "altgr-intl"
+            options "compose:ralt"
         }
 
         // Enable numlock on startup, omitting this setting disables it.
