@@ -87,7 +87,8 @@ sudo pacman -S \
      spotify-launcher \
      transmission-gtk \
      virt-manager \
-     vlc
+     vlc \
+     zed
 
 # Docker
 sudo usermod -aG docker $USER

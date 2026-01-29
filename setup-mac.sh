@@ -90,6 +90,7 @@ brew install --cask \
      google-chrome \
      google-drive \
      grandperspective \
+     handy \
      keepassxc \
      meld \
      orbstack \
@@ -100,7 +101,8 @@ brew install --cask \
      virtualbox \
      visual-studio-code \
      vlc \
-     windows-app
+     windows-app \
+     zed
 
 # Dotfiles
 ln -s $HOME/.dotfiles/config/ghostty $HOME/.config/ghostty
