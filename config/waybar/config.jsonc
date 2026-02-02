@@ -37,12 +37,6 @@
             "*": 5
         }
     },
-    "niri/workspaces" : {
-        "format": "{icon}",
-        "format-icons": {
-            "default": ""
-        }
-    },
     "custom/music": {
         "format": "<span color='#1db954'>{icon}</span>  {text}",
         "return-type": "json",
@@ -60,7 +54,9 @@
         "swap-icon-label": false
     },
     "niri/window" : {
-        "swap-icon-label": false
+        "swap-icon-label": false,
+        "icon": true,
+        "icon-size": 18
     },
     "pulseaudio": {
         "scroll-step": 1,
