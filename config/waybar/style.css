@@ -6,7 +6,6 @@
 
 window#waybar {
   background: shade(@base, 0.9);
-  border: 2px solid alpha(@crust, 0.3);
   color: @text;
 }
 
@@ -16,34 +15,33 @@ window#waybar {
 }
 
 #workspaces {
+  background: @surface0;
+  padding: 2px;
   margin: 5px 0;
+  border-radius: 0.5rem;
 }
 
 #workspaces button {
   color: @lavender;
-  background: @surface0;
   border: 0;
   box-shadow: none;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   padding: 0rem 0.25rem;
   margin: 0 2px;
+  transition: all 0.3s ease;
 }
 
 #workspaces button.active, #workspaces button:hover {
-  color: @surface0;
   background: @sky;
+  color: @surface0;
 }
 
 #workspaces button.active {
-  padding: 0rem 0.75rem;
+  padding: 0rem 0.25rem;
 }
 
 #workspaces button.urgent {
   background: #ff441f;
-}
-
-#window {
-  color: @blue;
 }
 
 window#waybar.empty #window {
@@ -66,32 +64,11 @@ window#waybar.empty #window {
   border-radius: 0.5rem;
 }
 
-#custom-music {
-  color: @mauve;
-}
-
-#pulseaudio {
-  color: @maroon;
-}
-
 #pulseaudio.muted {
   color: #ff5b45;
-}
-
-#cpu {
-  color: @blue;
-}
-
-#memory {
-  color: @pink;
-}
-
-#clock {
-  color: @blue;
 }
 
 #custom-power {
   margin-right: 5px;
   font-size: 20px;
-  color: @red;
 }
