@@ -2,9 +2,15 @@
 
 [username]
 style_user = 'bold white'
-format = ' [$user]($style)@'
-# format = ' [$user]($style)@'
+format = '[$user]($style)@'
 show_always = true
+
+[os]
+disabled = false
+
+[os.symbols]
+Macos = " "
+Arch = " "
 
 [hostname]
 ssh_only = false
