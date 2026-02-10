@@ -81,6 +81,7 @@ composer global require laravel/installer
 
 # Apps
 brew install --cask \
+     arc \
      beekeeper-studio \
      cyberduck \
      discord \
@@ -96,7 +97,6 @@ brew install --cask \
      orbstack \
      postman \
      spotify \
-     tableplus \
      transmission \
      virtualbox \
      visual-studio-code \
