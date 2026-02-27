@@ -6,12 +6,9 @@
     "modules-left": [
         "custom/logo",
         "niri/workspaces",
-        // "hyprland/workspaces",
-        // "hyprland/submap",
         "custom/music"
     ],
     "modules-center": [
-        // "hyprland/window"
         "niri/window"
     ],
     "modules-right": [
@@ -32,11 +29,6 @@
         "tooltip": false,
         "on-click": "pgrep -x fuzzel > /dev/null || fuzzel"
     },
-    "hyprland/workspaces" : {
-        "persistent-workspaces": {
-            "*": 5
-        }
-    },
     "custom/music": {
         "format": "<span color='#1db954'>{icon}</span>  {text}",
         "return-type": "json",
@@ -48,10 +40,6 @@
         "interval": 2,
         "exec": "playerctl metadata --format '{\"text\": \"{{ artist }} - {{ title }}\", \"alt\": \"{{ playerName }}\"}'",
         "on-click": "playerctl play-pause"
-    },
-    "hyprland/window" : {
-        "separate-outputs": true,
-        "swap-icon-label": false
     },
     "niri/window" : {
         "swap-icon-label": false,

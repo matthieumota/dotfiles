@@ -82,7 +82,6 @@ composer global require laravel/installer
 # Apps
 brew install --cask \
      arc \
-     beekeeper-studio \
      cyberduck \
      discord \
      firefox \

@@ -25,10 +25,7 @@ sudo pacman -S \
      gnome \
      gnome-shell-extension-appindicator \
      gnome-tweaks \
-     grim \
      grub \
-     hyprland \
-     hyprpaper \
      lazygit \
      less \
      linux-firmware \
@@ -47,7 +44,6 @@ sudo pacman -S \
      ripgrep \
      rsync \
      sbctl \
-     slurp \
      starship \
      sudo \
      swaybg \
@@ -57,8 +53,6 @@ sudo pacman -S \
      vi \
      vim \
      waybar \
-     wl-clipboard \
-     xdg-desktop-portal-hyprland \
      xorg-server \
      xwayland-satellite \
      zsh
@@ -95,7 +89,6 @@ sudo usermod -aG docker $USER
 
 # Aur
 yay -S \
-     beekeeper-studio-bin \
      ttf-firacode-nerd \
      gnome-shell-extension-dash-to-dock \
      google-chrome \
@@ -129,7 +122,6 @@ ln -s $HOME/.dotfiles/config/fuzzel $HOME/.config/fuzzel
 ln -s $HOME/.dotfiles/config/ghostty $HOME/.config/ghostty
 ln -s $HOME/.dotfiles/config/git/.gitconfig $HOME/.gitconfig
 ln -s $HOME/.dotfiles/config/git/.gitignore_global $HOME/.gitignore_global
-ln -s $HOME/.dotfiles/config/hypr $HOME/.config/hypr
 ln -s $HOME/.dotfiles/config/niri $HOME/.config/niri
 ln -s $HOME/.dotfiles/config/nvim $HOME/.config/nvim
 ln -s $HOME/.dotfiles/config/starship.toml $HOME/.config/starship.toml
