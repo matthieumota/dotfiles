@@ -19,16 +19,16 @@ sudo pacman -S \
      docker-compose \
      dosfstools \
      efibootmgr \
+     ex-vi-compat \
      fastfetch \
      fuzzel \
      git \
      gnome \
      gnome-shell-extension-appindicator \
+     gnome-shell-extensions \
      gnome-tweaks \
      grub \
      lazygit \
-     less \
-     linux-firmware \
      man-db \
      nano \
      neovim \
@@ -37,7 +37,7 @@ sudo pacman -S \
      noto-fonts \
      noto-fonts-cjk \
      nss-mdns \
-     nvidia \
+     nvidia-open \
      os-prober \
      otf-font-awesome \
      pavucontrol \
@@ -45,15 +45,11 @@ sudo pacman -S \
      rsync \
      sbctl \
      starship \
-     sudo \
      swaybg \
      system-config-printer \
      tree \
      ttf-noto-nerd \
-     vi \
-     vim \
      waybar \
-     xorg-server \
      xwayland-satellite \
      zsh
 
