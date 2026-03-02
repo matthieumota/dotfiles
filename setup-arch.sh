@@ -103,7 +103,7 @@ grep -qF "/usr/share/nvm/init-nvm.sh" ~/.zshrc || printf "source /usr/share/nvm/
 
 # NPM dependencies
 nvm install node
-npm install -g npm-check-updates @github/copilot opencode-ai
+npm install -g npm-check-updates @github/copilot opencode-ai @openai/codex
 curl -fsSL https://claude.ai/install.sh | bash
 
 # Bun
