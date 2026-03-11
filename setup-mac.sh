@@ -82,6 +82,7 @@ composer global require laravel/installer
 # Apps
 brew install --cask \
      arc \
+     bitwarden \
      cyberduck \
      discord \
      firefox \
@@ -91,7 +92,6 @@ brew install --cask \
      google-drive \
      grandperspective \
      handy \
-     keepassxc \
      meld \
      orbstack \
      postman \

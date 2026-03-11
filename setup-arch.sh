@@ -66,11 +66,11 @@ composer global require laravel/installer
 
 # Apps
 sudo pacman -S \
+     bitwarden \
      discord \
      firefox \
      ghostty \
      gthumb \
-     keepassxc \
      meld \
      qemu-desktop \
      remmina \
