@@ -21,23 +21,21 @@ brew install \
      fastfetch \
      git \
      mas \
-     mo \
+     mole \
      neovim \
      ripgrep \
      starship \
-     stripe \
+     stripe-cli \
      symfony-cli
 
 # Development
 brew install \
      composer \
      go \
-     imagemagick \
+     nvm \
      php \
-     php-intl \
      python \
-     rustup \
-     nvm
+     rustup
 
 # Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
