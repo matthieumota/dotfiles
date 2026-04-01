@@ -19,6 +19,7 @@ brew update
 brew install \
      dnsmasq \
      fastfetch \
+     gh \
      git \
      mas \
      mole \

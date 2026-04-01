@@ -22,6 +22,7 @@ sudo pacman -S \
      ex-vi-compat \
      fastfetch \
      fuzzel \
+     github-cli \
      git \
      gnome \
      gnome-shell-extension-appindicator \
