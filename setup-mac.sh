@@ -21,6 +21,7 @@ brew install \
      fastfetch \
      gh \
      git \
+     lazygit \
      mas \
      mole \
      neovim \
