@@ -60,10 +60,10 @@ curl -fsSL https://claude.ai/install.sh | bash
 curl -fsSL https://bun.sh/install | bash
 
 # PHP modules
-$HOMEBREW_PREFIX/opt/php/bin/pecl install apcu imagick redis xdebug
+$HOMEBREW_PREFIX/opt/php/bin/pecl install apcu redis xdebug
 
 for Php in '8.4'; do
-    for Module in 'apcu' 'imagick' 'redis'; do
+    for Module in 'apcu' 'redis'; do
 cat > $HOMEBREW_PREFIX/etc/php/"$Php"/conf.d/ext-"$Module".ini << EOF
 [$Module]
 extension="$Module.so"
