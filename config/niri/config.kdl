@@ -119,6 +119,7 @@ output "HDMI-A-1" {
 
 output "DP-1" {
     mode "5120x1440@239.761"
+    // mode "5120x1440@119.999"
     position x=0 y=0
 }
 
