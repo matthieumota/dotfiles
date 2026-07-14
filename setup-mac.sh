@@ -65,20 +65,6 @@ pie install apcu/apcu
 pie install phpredis/phpredis
 pie install xdebug/xdebug
 
-for Php in '8.4'; do
-    for Module in 'apcu' 'redis'; do
-cat > $HOMEBREW_PREFIX/etc/php/"$Php"/conf.d/ext-"$Module".ini << EOF
-[$Module]
-extension="$Module.so"
-EOF
-    done
-
-cat > $HOMEBREW_PREFIX/etc/php/"$Php"/conf.d/ext-xdebug.ini << EOF
-[xdebug]
-;zend_extension="xdebug.so"
-EOF
-done
-
 # PHP Dependencies
 composer global require laravel/installer
 
