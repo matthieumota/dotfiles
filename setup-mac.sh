@@ -36,6 +36,7 @@ brew install \
      go \
      nvm \
      php \
+     pie \
      python \
      rustup
 
@@ -60,7 +61,9 @@ curl -fsSL https://claude.ai/install.sh | bash
 curl -fsSL https://bun.sh/install | bash
 
 # PHP modules
-$HOMEBREW_PREFIX/opt/php/bin/pecl install apcu redis xdebug
+pie install apcu/apcu 
+pie install phpredis/phpredis
+pie install xdebug/xdebug
 
 for Php in '8.4'; do
     for Module in 'apcu' 'redis'; do
