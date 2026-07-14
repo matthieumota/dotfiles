@@ -91,6 +91,7 @@ yay -S \
      google-chrome \
      hey-bin \
      nvm \
+     php-pcov \
      postman-bin \
      powerline-fonts-git \
      stripe-cli \

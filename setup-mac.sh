@@ -61,7 +61,8 @@ curl -fsSL https://claude.ai/install.sh | bash
 curl -fsSL https://bun.sh/install | bash
 
 # PHP modules
-pie install apcu/apcu 
+pie install apcu/apcu
+pie install pecl/pcov
 pie install phpredis/phpredis
 pie install xdebug/xdebug
 
