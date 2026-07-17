@@ -30,6 +30,7 @@ sudo pacman -S \
      gnome-tweaks \
      grub \
      lazygit \
+     libva-nvidia-driver \
      man-db \
      nano \
      neovim \
