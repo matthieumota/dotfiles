@@ -110,10 +110,23 @@ input {
     position x=1280 y=0
 }
 
-output "HDMI-A-1" {
+output "DP-1" {
     mode "5120x2160@165.058"
     scale 1
     position x=0 y=0
+}
+
+output "HDMI-A-1" {
+    mode "3840x2160@143.988"
+    position x=5120 y=0
+}
+
+window-rule {
+    match app-id="at.yrlf.wl_mirror"
+
+    open-on-output "HDMI-A-1"
+    open-fullscreen true
+    open-focused true
 }
 
 // Settings that influence how windows are positioned and sized.
