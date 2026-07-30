@@ -1,0 +1,3 @@
+#!/bin/sh
+
+wl-mirror --fullscreen-output HDMI-A-1 DP-1
