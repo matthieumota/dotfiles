@@ -57,14 +57,14 @@ sudo pacman -S \
 
 # Development
 sudo pacman -S \
-     composer \
      go \
      nullmailer \
-     php-apcu php-gd php-pgsql php-redis php-sqlite xdebug \
+     python python-pip python-virtualenv uv \
      rustup
 
-# PHP Dependencies
-composer global require laravel/installer
+# Python Dependencies
+uv tool install poetry
+uv tool install ruff
 
 # Apps
 sudo pacman -S \
@@ -92,11 +92,9 @@ yay -S \
      google-chrome \
      hey-bin \
      nvm \
-     php-pcov \
      postman-bin \
      powerline-fonts-git \
      stripe-cli \
-     symfony-cli-bin \
      visual-studio-code-bin
 
 # Oh My Zsh

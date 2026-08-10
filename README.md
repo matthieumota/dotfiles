@@ -51,26 +51,26 @@ ssh -L 3307:localhost:3306 -N cloud@1.2.3.4
 
 ## Docker
 
-To manage old PHP versions, I have 2 choices :
+To manage old Python versions, I have 2 choices :
 
 - Simply install old versions on machine with AUR or PPA.
-- Use docker to manage old PHP versions containers, you can find configuration in `docker` folder.
+- Use docker to manage old Python versions containers, you can find configuration in `docker` folder.
 
-You can use PHP FPM on Nginx (or Apache but no documented) :
+You can proxy your Python app (Django, FastAPI...) on Nginx (or Apache but no documented) :
 
 ```
-location ~ \.php$ {
-    # 9082 is exposed for PHP 8.2
-    # 9081 is exposed for PHP 8.1
-    fastcgi_pass 127.0.0.1:9081;
+location / {
+    # 8312 is exposed for Python 3.12
+    # 8311 is exposed for Python 3.11
+    proxy_pass http://127.0.0.1:8311;
 }
 ```
 
-You can run PHP commands via container :
+You can run Python commands via container :
 
 ```bash
-docker compose exec php81 php --version
-docker compose exec php81 composer
+docker compose exec python311 python --version
+docker compose exec python311 pip list
 ```
 
 Be careful to adapt `Dockerfile` and `compose.yaml` with your information (Project path, name, user id and group id from system) and you can build images
@@ -79,7 +79,7 @@ Be careful to adapt `Dockerfile` and `compose.yaml` with your information (Proje
 docker compose up -d --build
 ```
 
-You can easily add other PHP versions.
+You can easily add other Python versions.
 
 ## QEMU
 

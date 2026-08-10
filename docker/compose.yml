@@ -26,67 +26,62 @@ services:
       - ./nginx/server.key:/etc/nginx/server.key
       - ~/Code:/home/matthieu/Code
 
-  php84: &php
+  python313: &python
     build:
-      context: ./php
+      context: ./python
       args:
-        PHP_VERSION: 8.4
+        PYTHON_VERSION: 3.13
+    command: sleep infinity
     ports:
-      - 9084:9000
-      - 8084:8000
+      - 8313:8000
     user: matthieu
     volumes:
       - ~/Code:/home/matthieu/Code
 
-  php83:
-    <<: *php
+  python312:
+    <<: *python
     build:
-      context: ./php
+      context: ./python
       args:
-        PHP_VERSION: 8.3
+        PYTHON_VERSION: 3.12
     ports:
-      - 9083:9000
-      - 8083:8000
+      - 8312:8000
 
-  php82:
-    <<: *php
+  python311:
+    <<: *python
     build:
-      context: ./php
+      context: ./python
       args:
-        PHP_VERSION: 8.2
+        PYTHON_VERSION: 3.11
     ports:
-      - 9082:9000
-      - 8082:8000
+      - 8311:8000
 
-  php81:
-    <<: *php
+  python310:
+    <<: *python
     build:
-      context: ./php
+      context: ./python
       args:
-        PHP_VERSION: 8.1
+        PYTHON_VERSION: '3.10'
     ports:
-      - 9081:9000
-      - 8081:8000
+      - 8310:8000
 
-  php80:
-    <<: *php
+  python39:
+    <<: *python
     build:
-      context: ./php
+      context: ./python
       args:
-        PHP_VERSION: '8.0'
+        PYTHON_VERSION: 3.9
     ports:
-      - 9080:9000
-      - 8080:8000
+      - 8309:8000
 
-  php74:
-    <<: *php
+  python38:
+    <<: *python
     build:
-      context: ./php
+      context: ./python
       args:
-        PHP_VERSION: 7.4
+        PYTHON_VERSION: 3.8
     ports:
-      - 9074:9000
-      - 8074:8000
+      - 8308:8000
 
 volumes:
   db-data:
