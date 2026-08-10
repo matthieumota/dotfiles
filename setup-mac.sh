@@ -27,18 +27,15 @@ brew install \
      neovim \
      ripgrep \
      starship \
-     stripe-cli \
-     symfony-cli
+     stripe-cli
 
 # Development
 brew install \
-     composer \
      go \
      nvm \
-     php \
-     pie \
      python \
-     rustup
+     rustup \
+     uv
 
 # Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
@@ -60,14 +57,9 @@ curl -fsSL https://claude.ai/install.sh | bash
 # Bun
 curl -fsSL https://bun.sh/install | bash
 
-# PHP modules
-pie install apcu/apcu
-pie install pecl/pcov
-pie install phpredis/phpredis
-pie install xdebug/xdebug
-
-# PHP Dependencies
-composer global require laravel/installer
+# Python Dependencies
+uv tool install poetry
+uv tool install ruff
 
 # Apps
 brew install --cask \

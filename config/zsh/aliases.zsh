@@ -2,13 +2,14 @@
 alias c="clear"
 alias e="exit"
 
-# Symfony
-alias sf="php bin/console"
+# Python
+alias venv="python -m venv .venv && source .venv/bin/activate"
+alias act="source .venv/bin/activate"
 
-# Laravel
-alias artisan="php artisan"
-alias mf="php artisan migrate:fresh"
-alias mfs="php artisan migrate:fresh --seed"
+# Django
+alias dj="python manage.py"
+alias mf="python manage.py migrate"
+alias mfs="python manage.py migrate && python manage.py loaddata seed"
 
 # JS
 # alias watch="npm run watch"

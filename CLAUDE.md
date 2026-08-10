@@ -8,7 +8,7 @@ Personal dotfiles repository for macOS and Arch Linux. Manages system setup, con
 
 ## Setup
 
-- **macOS**: `./setup-mac.sh` — installs Homebrew packages/casks, Oh My Zsh, dev tools (PHP, Node, Go, Rust), and symlinks configs
+- **macOS**: `./setup-mac.sh` — installs Homebrew packages/casks, Oh My Zsh, dev tools (Python, Node, Go, Rust), and symlinks configs
 - **Arch Linux**: `./setup-arch.sh` — installs pacman/AUR packages, Oh My Zsh, dev tools, and symlinks configs
 
 Both scripts are idempotent and meant to be run on a fresh machine.
@@ -25,7 +25,7 @@ Both scripts are idempotent and meant to be run on a fresh machine.
   - `waybar/` — status bar config (Arch only)
   - `git/` — global .gitconfig and .gitignore_global
   - `starship.toml` — cross-shell prompt config
-- `docker/` — Docker Compose setup for legacy PHP versions with nginx
+- `docker/` — Docker Compose setup for legacy Python versions with nginx
 
 ## Symlink convention
 

@@ -1,8 +1,11 @@
 *~
 .DS_Store
-.php_cs.cache
-.php-cs-fixer.cache
-.phpunit.result.cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
 
 .idea/
 .vagrant/
