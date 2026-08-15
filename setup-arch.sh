@@ -13,7 +13,6 @@ sudo pacman -S \
      btop \
      cups \
      curl \
-     dnsmasq \
      docker \
      docker-buildx \
      docker-compose \

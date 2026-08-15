@@ -17,7 +17,6 @@ brew update
 
 # Binaries
 brew install \
-     dnsmasq \
      fastfetch \
      gh \
      git \
@@ -46,11 +45,6 @@ grep -qF "$HOMEBREW_PREFIX/bin/brew shellenv" ~/.zshrc || printf "\neval \"\$($H
 grep -qF 'starship init zsh' ~/.zshrc || printf "eval \"\$(starship init zsh)\"\n" >> ~/.zshrc
 grep -qF "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ~/.zshrc || printf ". \"$HOMEBREW_PREFIX/opt/nvm/nvm.sh\"\n" >> ~/.zshrc
 grep -qF "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ~/.zshrc || printf ". \"$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm\"\n" >> ~/.zshrc
-
-# dnsmasq
-echo "address=/bx/127.0.0.1" > $HOMEBREW_PREFIX/etc/dnsmasq.d/bx
-mkdir -p /etc/resolver
-echo "nameserver 127.0.0.1" > /etc/resolver/bx
 
 # NPM dependencies
 nvm install node

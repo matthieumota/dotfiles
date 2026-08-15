@@ -103,16 +103,7 @@ sudo iptables -I DOCKER-USER 2 -i tap0 -o wlp13s0 -j ACCEPT
 # On the guest without DHCP
 sudo ip a add 192.168.100.2/24 dev ens3
 sudo ip route add default via 192.168.100.1
-```
-
-We can enable DHCP on host in `/etc/NetworkManager/dnsmasq.d/local` :
-
-```bash
-address=/bx/127.0.0.1
-
-interface=tap0
-bind-interfaces
-dhcp-range=192.168.100.2,192.168.100.254
+echo 'nameserver 192.168.1.254' | sudo tee /etc/resolv.conf
 ```
 
 Boot with an iso on a disk :
