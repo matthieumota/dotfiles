@@ -18,7 +18,8 @@ cargo install-update -l
 echo -e "▶️  Check go update\n"
 GO_BINS=(air goreleaser)
 for bin in "${GO_BINS[@]}"; do
-    read -r tool current <<< $(go version -m =$bin | awk '$1 == "mod" { print $2, $3; exit }')
+    command -v $bin > /dev/null || continue
+    read -r tool current <<< $(go version -m $(command -v $bin) | awk '$1 == "mod" { print $2, $3; exit }')
     latest=$(go list -m -f '{{.Version}}' $tool@latest)
     if [ "$current" = "$latest" ]; then
         echo "✅ $bin $current"
