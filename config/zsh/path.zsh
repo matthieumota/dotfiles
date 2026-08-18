@@ -1,7 +1,14 @@
-export PATH=$HOME/.config/composer/vendor/bin:$PATH
-export PATH=$HOME/.local/bin:$PATH
-export PATH=$HOME/.composer/vendor/bin:$PATH
-export PATH=$HOME/.cargo/bin:$PATH
-export PATH=$HOME/go/bin:$PATH
-export PATH=/opt/homebrew/opt/rustup/bin:$PATH
-export PATH=/opt/homebrew/opt/libpq/bin:$PATH
+for dir in \
+    $HOME/.config/composer/vendor/bin \
+    $HOME/.local/bin \
+    $HOME/.composer/vendor/bin \
+    $HOME/.cargo/bin \
+    $HOME/go/bin \
+    /usr/local/go/bin \
+    /opt/homebrew/opt/rustup/bin \
+    /opt/homebrew/opt/libpq/bin
+do
+    [ -d $dir ] || continue
+    case ":$PATH:" in *":$dir:"*) continue ;; esac
+    export PATH=$dir:$PATH
+done
