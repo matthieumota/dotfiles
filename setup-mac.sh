@@ -10,7 +10,6 @@ fi
 
 # Taps
 brew tap buo/cask-upgrade
-brew tap stripe/stripe-cli
 
 # Update
 brew update
@@ -26,7 +25,6 @@ brew install \
      neovim \
      ripgrep \
      starship \
-     stripe-cli \
      symfony-cli
 
 # Development

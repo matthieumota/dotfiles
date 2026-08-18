@@ -94,7 +94,6 @@ yay -S \
      php-pcov \
      postman-bin \
      powerline-fonts-git \
-     stripe-cli \
      symfony-cli-bin \
      visual-studio-code-bin
 

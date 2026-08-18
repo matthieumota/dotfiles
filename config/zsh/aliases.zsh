@@ -20,3 +20,9 @@ alias gc="git checkout"
 alias gl="git log --oneline"
 alias gst="git status"
 alias push="git push"
+
+stripe() {
+    local flags=(--rm -i --network host -v "$HOME/.config/stripe:/root/.config/stripe" -v "$PWD:$PWD" -w "$PWD")
+    [ -t 0 ] && [ -t 1 ] && flags+=(-t)
+    docker run "${flags[@]}" stripe/stripe-cli "$@"
+}
