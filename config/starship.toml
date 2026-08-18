@@ -11,6 +11,7 @@ disabled = false
 [os.symbols]
 Macos = " "
 Arch = " "
+Ubuntu = " "
 
 [hostname]
 ssh_only = false
