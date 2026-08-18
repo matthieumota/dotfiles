@@ -15,10 +15,8 @@ window#waybar {
 }
 
 #workspaces {
-  background: @surface0;
   padding: 2px;
   margin: 5px 0;
-  border-radius: 0.5rem;
 }
 
 #workspaces button {
@@ -44,12 +42,7 @@ window#waybar {
   background: #ff441f;
 }
 
-window#waybar.empty #window {
-  background: transparent;
-}
-
 #custom-music,
-#window,
 #pulseaudio,
 #network,
 #cpu,
@@ -58,10 +51,8 @@ window#waybar.empty #window {
 #clock,
 #tray,
 #custom-power {
-  background: @surface0;
-  padding: 0px 8px;
+  padding: 0 8px;
   margin: 5px 0;
-  border-radius: 0.5rem;
 }
 
 #pulseaudio.muted {

@@ -9,7 +9,7 @@
         "custom/music"
     ],
     "modules-center": [
-        "niri/window"
+        "clock"
     ],
     "modules-right": [
         "pulseaudio",
@@ -19,7 +19,6 @@
         "memory",
         "temperature",
         // "backlight",
-        "clock",
         "tray",
         "custom/power"
     ],
@@ -40,11 +39,6 @@
         "interval": 2,
         "exec": "playerctl metadata --format '{\"text\": \"{{ artist }} - {{ title }}\", \"alt\": \"{{ playerName }}\"}'",
         "on-click": "playerctl play-pause"
-    },
-    "niri/window" : {
-        "swap-icon-label": false,
-        "icon": true,
-        "icon-size": 18
     },
     "pulseaudio": {
         "scroll-step": 1,
@@ -106,8 +100,8 @@
     },
     "clock": {
         "timezone": "Europe/Paris",
-        "format": "  {:%H:%M:%S}",
-        "format-alt": "  {:L%A %d %B}",
+        "format": "{:L%A %Hh%M}",
+        "format-alt": "{:L%A %d %B %Hh%Mm%S}",
         "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
         "interval": 1
     },
