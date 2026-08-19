@@ -30,15 +30,29 @@ hl.monitor({
     scale    = "auto",
 })
 
+hl.monitor({
+    output   = "DP-1",
+    mode     = "5120x2160@165.06",
+    position = "0x0",
+    scale    = 1.6,
+})
+
+hl.monitor({
+    output   = "HDMI-A-1",
+    mode     = "3840x2160@144.00",
+    position = "3200x0",
+    scale    = 1,
+})
+
 
 ---------------------
 ---- MY PROGRAMS ----
 ---------------------
 
 -- Set programs that you use
-local terminal    = "kitty"
-local fileManager = "dolphin"
-local menu        = "hyprlauncher"
+local terminal    = "ghostty"
+local fileManager = "nautilus"
+local menu        = "fuzzel"
 
 
 -------------------
@@ -361,4 +375,12 @@ hl.window_rule({
 
     move  = "20 monitor_h-120",
     float = true,
+})
+
+hl.window_rule({
+    name  = "stream-mirror",
+    match = { class = "at.yrlf.wl_mirror" },
+
+    monitor    = "HDMI-A-1",
+    fullscreen = true,
 })

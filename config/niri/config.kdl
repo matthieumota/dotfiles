@@ -112,13 +112,13 @@ input {
 
 output "DP-1" {
     mode "5120x2160@165.058"
-    scale 1
+    scale 1.5
     position x=0 y=0
 }
 
 output "HDMI-A-1" {
     mode "3840x2160@143.988"
-    position x=5120 y=0
+    position x=3413 y=0
 }
 
 window-rule {
