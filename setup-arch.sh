@@ -53,6 +53,8 @@ sudo pacman -S \
      tree \
      ttf-noto-nerd \
      waybar \
+     wl-clipboard \
+     xdg-desktop-portal-hyprland \
      xwayland-satellite \
      zsh
 
