@@ -2,6 +2,12 @@
 alias c="clear"
 alias e="exit"
 
+# ls
+if command -v eza > /dev/null; then
+    alias ls="eza --group-directories-first --icons=auto --git"
+    alias lt="ls --tree --level=2"
+fi
+
 # Symfony
 alias sf="php bin/console"
 

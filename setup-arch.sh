@@ -19,6 +19,7 @@ sudo pacman -S \
      dosfstools \
      efibootmgr \
      ex-vi-compat \
+     eza \
      fastfetch \
      fuzzel \
      github-cli \
