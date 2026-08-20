@@ -90,10 +90,10 @@ brew install --cask \
      zed
 
 # Dotfiles
-ln -s $HOME/.dotfiles/config/ghostty $HOME/.config/ghostty
-ln -s $HOME/.dotfiles/config/git/.gitconfig $HOME/.gitconfig
-ln -s $HOME/.dotfiles/config/git/.gitignore_global $HOME/.gitignore_global
-ln -s $HOME/.dotfiles/config/nvim $HOME/.config/nvim
-ln -s $HOME/.dotfiles/config/starship.toml $HOME/.config/starship.toml
-ln -s $HOME/.dotfiles/config/zsh/aliases.zsh $HOME/.oh-my-zsh/custom/aliases.zsh
-ln -s $HOME/.dotfiles/config/zsh/path.zsh $HOME/.oh-my-zsh/custom/path.zsh
+ln -sfn $HOME/.dotfiles/config/ghostty $HOME/.config/ghostty
+ln -sfn $HOME/.dotfiles/config/git/.gitconfig $HOME/.gitconfig
+ln -sfn $HOME/.dotfiles/config/git/.gitignore_global $HOME/.gitignore_global
+ln -sfn $HOME/.dotfiles/config/nvim $HOME/.config/nvim
+ln -sfn $HOME/.dotfiles/config/starship.toml $HOME/.config/starship.toml
+ln -sfn $HOME/.dotfiles/config/zsh/aliases.zsh $HOME/.oh-my-zsh/custom/aliases.zsh
+ln -sfn $HOME/.dotfiles/config/zsh/path.zsh $HOME/.oh-my-zsh/custom/path.zsh

@@ -126,15 +126,15 @@ yay -Yc
 yay -Scc
 
 # Dotfiles
-ln -s $HOME/.dotfiles/config/fuzzel $HOME/.config/fuzzel
-ln -s $HOME/.dotfiles/config/ghostty $HOME/.config/ghostty
-ln -s $HOME/.dotfiles/config/git/.gitconfig $HOME/.gitconfig
-ln -s $HOME/.dotfiles/config/git/.gitignore_global $HOME/.gitignore_global
-ln -s $HOME/.dotfiles/config/hypr $HOME/.config/hypr
-ln -s $HOME/.dotfiles/config/niri $HOME/.config/niri
-ln -s $HOME/.dotfiles/config/nvim $HOME/.config/nvim
-ln -s $HOME/.dotfiles/config/spotify-launcher.conf $HOME/.config/spotify-launcher.conf
-ln -s $HOME/.dotfiles/config/starship.toml $HOME/.config/starship.toml
-ln -s $HOME/.dotfiles/config/waybar $HOME/.config/waybar
-ln -s $HOME/.dotfiles/config/zsh/aliases.zsh $HOME/.oh-my-zsh/custom/aliases.zsh
-ln -s $HOME/.dotfiles/config/zsh/path.zsh $HOME/.oh-my-zsh/custom/path.zsh
+ln -sfn $HOME/.dotfiles/config/fuzzel $HOME/.config/fuzzel
+ln -sfn $HOME/.dotfiles/config/ghostty $HOME/.config/ghostty
+ln -sfn $HOME/.dotfiles/config/git/.gitconfig $HOME/.gitconfig
+ln -sfn $HOME/.dotfiles/config/git/.gitignore_global $HOME/.gitignore_global
+ln -sfn $HOME/.dotfiles/config/hypr $HOME/.config/hypr
+ln -sfn $HOME/.dotfiles/config/niri $HOME/.config/niri
+ln -sfn $HOME/.dotfiles/config/nvim $HOME/.config/nvim
+ln -sfn $HOME/.dotfiles/config/spotify-launcher.conf $HOME/.config/spotify-launcher.conf
+ln -sfn $HOME/.dotfiles/config/starship.toml $HOME/.config/starship.toml
+ln -sfn $HOME/.dotfiles/config/waybar $HOME/.config/waybar
+ln -sfn $HOME/.dotfiles/config/zsh/aliases.zsh $HOME/.oh-my-zsh/custom/aliases.zsh
+ln -sfn $HOME/.dotfiles/config/zsh/path.zsh $HOME/.oh-my-zsh/custom/path.zsh
