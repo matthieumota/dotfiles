@@ -38,8 +38,8 @@
         },
         "escape": true,
         "interval": 2,
-        "exec": "playerctl metadata --format '{\"text\": \"{{ artist }} - {{ title }}\", \"alt\": \"{{ playerName }}\"}'",
-        "on-click": "playerctl play-pause"
+        "exec": "playerctl -p spotify,%any metadata --format '{\"text\": \"{{ artist }} - {{ title }}\", \"alt\": \"{{ playerName }}\"}'",
+        "on-click": "playerctl -p spotify,%any play-pause"
     },
     "pulseaudio": {
         "scroll-step": 1,
