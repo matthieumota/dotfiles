@@ -28,6 +28,7 @@ sudo pacman -S \
      gnome-shell-extension-appindicator \
      gnome-shell-extensions \
      gnome-tweaks \
+     grim \
      grub \
      hyprland \
      hyprpolkitagent \
@@ -49,6 +50,7 @@ sudo pacman -S \
      ripgrep \
      rsync \
      sbctl \
+     slurp \
      starship \
      swaybg \
      system-config-printer \

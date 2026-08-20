@@ -332,6 +332,12 @@ hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = tr
 hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
 
+-- Screenshot
+hl.bind(mainMod .. " + F3", hl.dsp.exec_cmd(
+    [[g=$(slurp -d) || exit; ]] ..
+    [[f="$HOME/Images/Captures d’écran/Screenshot from $(date '+%Y-%m-%d %H-%M-%S').png"; ]] ..
+    [[grim -g "$g" "$f" && wl-copy --type image/png < "$f" && notify-send "Capture d’écran" "${f##*/}"]]))
+
 
 --------------------------------
 ---- WINDOWS AND WORKSPACES ----
