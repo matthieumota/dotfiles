@@ -26,7 +26,8 @@ brew install \
      neovim \
      ripgrep \
      starship \
-     symfony-cli
+     symfony-cli \
+     tmux
 
 # Development
 brew install \

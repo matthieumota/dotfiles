@@ -21,6 +21,7 @@ sudo pacman -S \
      ex-vi-compat \
      eza \
      fastfetch \
+     foot \
      fuzzel \
      github-cli \
      git \
@@ -56,6 +57,7 @@ sudo pacman -S \
      starship \
      swaybg \
      system-config-printer \
+     tmux \
      tree \
      ttf-noto-nerd \
      waybar \
@@ -128,6 +130,7 @@ yay -Yc
 yay -Scc
 
 # Dotfiles
+ln -sfn $HOME/.dotfiles/config/foot $HOME/.config/foot
 ln -sfn $HOME/.dotfiles/config/fuzzel $HOME/.config/fuzzel
 ln -sfn $HOME/.dotfiles/config/ghostty $HOME/.config/ghostty
 ln -sfn $HOME/.dotfiles/config/git/.gitconfig $HOME/.gitconfig
