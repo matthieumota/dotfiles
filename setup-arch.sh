@@ -31,6 +31,7 @@ sudo pacman -S \
      grim \
      grub \
      hyprland \
+     hyprlock \
      hyprpolkitagent \
      lazygit \
      libva-nvidia-driver \
