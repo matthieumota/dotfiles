@@ -33,6 +33,7 @@ sudo pacman -S \
      hyprpolkitagent \
      lazygit \
      libva-nvidia-driver \
+     mako \
      man-db \
      nano \
      neovim \
