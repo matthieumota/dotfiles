@@ -30,6 +30,7 @@ sudo pacman -S \
      gnome-tweaks \
      grim \
      grub \
+     hypridle \
      hyprland \
      hyprlock \
      hyprpolkitagent \
