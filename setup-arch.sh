@@ -30,6 +30,7 @@ sudo pacman -S \
      gnome-tweaks \
      grub \
      hyprland \
+     hyprpolkitagent \
      lazygit \
      libva-nvidia-driver \
      man-db \
