@@ -1,4 +1,5 @@
 for dir in \
+    $HOME/.dotfiles/bin \
     $HOME/.config/composer/vendor/bin \
     $HOME/.local/bin \
     $HOME/.composer/vendor/bin \
