@@ -16,6 +16,7 @@ brew update
 
 # Binaries
 brew install \
+     bat \
      eza \
      fastfetch \
      gh \

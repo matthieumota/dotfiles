@@ -9,6 +9,7 @@ yay
 sudo pacman -S \
      amd-ucode \
      base-devel \
+     bat \
      blueman \
      btop \
      cups \
