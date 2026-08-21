@@ -58,7 +58,6 @@ sudo pacman -S \
      swaybg \
      system-config-printer \
      tmux \
-     tree \
      ttf-noto-nerd \
      waybar \
      wl-clipboard \
