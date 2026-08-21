@@ -22,6 +22,7 @@ sudo pacman -S \
      ex-vi-compat \
      eza \
      fastfetch \
+     fd \
      foot \
      fuzzel \
      github-cli \

@@ -19,6 +19,7 @@ brew install \
      bat \
      eza \
      fastfetch \
+     fd \
      gh \
      git \
      lazygit \
