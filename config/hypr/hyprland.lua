@@ -33,13 +33,13 @@ hl.monitor({
     output   = "DP-1",
     mode     = "5120x2160@165.06",
     position = "0x0",
-    scale    = 1.6,
+    scale    = 1.333333,
 })
 
 hl.monitor({
     output   = "HDMI-A-1",
     mode     = "3840x2160@144.00",
-    position = "3200x0",
+    position = "3840x0",
     scale    = 1,
 })
 
@@ -252,6 +252,8 @@ hl.config({
         kb_model   = "",
         kb_options = "compose:ralt",
         kb_rules   = "",
+
+        numlock_by_default = true,
 
         follow_mouse = 1,
 
