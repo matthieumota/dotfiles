@@ -19,7 +19,7 @@ echo -e "▶️  Check go update\n"
 GO_BINS=(air goreleaser)
 for bin in "${GO_BINS[@]}"; do
     command -v $bin > /dev/null || continue
-    read -r tool current <<< $(go version -m $(command -v $bin) | awk '$1 == "mod" { print $2, $3; exit }')
+    read -r tool current <<< $(go version -m =$bin | awk '$1 == "mod" { print $2, $3; exit }')
     latest=$(go list -m -f '{{.Version}}' $tool@latest)
     if [ "$current" = "$latest" ]; then
         echo "✅ $bin $current"
@@ -49,6 +49,34 @@ if [ "$(cat /etc/os-release 2> /dev/null | grep -o "Arch" | head -n1)" = "Arch" 
     echo -e "▶️  Check default config\n"
     for file in $(find / -name "*.pacnew" -o -name "*.pacsave" 2> /dev/null); do
         defaultFile=$(echo $file | sed 's/.pacnew//' | sed 's/.pacsave//')
+        diff "$file" "$defaultFile" > /dev/null
+        if [ $? -eq 1 ]; then
+            echo "diff : $defaultFile"
+        else
+            echo "nodiff : $defaultFile"
+        fi
+    done
+fi
+
+if [ "$(cat /etc/os-release 2> /dev/null | grep -o "debian" | head -n1)" = "debian" ]; then
+    echo -e "▶️  Check apt update\n"
+    sudo apt-get update
+    sudo apt-get upgrade -y
+
+    GO_VERSION=$(curl -s 'https://go.dev/VERSION?m=text' | head -1)
+    GO_CURRENT=$(/usr/local/go/bin/go env GOVERSION 2>/dev/null)
+    if [ "$GO_CURRENT" = "$GO_VERSION" ]; then
+        echo "✅ go $GO_CURRENT"
+    else
+        echo "↻ go $GO_CURRENT → $GO_VERSION"
+        GO_TARBALL="$GO_VERSION.linux-$(dpkg --print-architecture).tar.gz"
+        sudo rm -rf /usr/local/go
+        curl -4 -fsSL https://go.dev/dl/$GO_TARBALL | sudo tar -C /usr/local -xz
+    fi
+
+    echo -e "▶️  Check default config\n"
+    for file in $(find / -name "*.dpkg-dist" -o -name "*.dpkg-old" -o -name "*.ucf-dist" -o -name "*.ucf-old" 2> /dev/null); do
+        defaultFile=$(echo $file | sed 's/.dpkg-dist//' | sed 's/.dpkg-old//' | sed 's/.ucf-dist//' | sed 's/.ucf-old//')
         diff "$file" "$defaultFile" > /dev/null
         if [ $? -eq 1 ]; then
             echo "diff : $defaultFile"
