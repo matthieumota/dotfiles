@@ -1,6 +1,7 @@
 # Misc
 alias c="clear"
 alias e="exit"
+alias ff="fastfetch"
 
 # ls
 if command -v eza > /dev/null; then
