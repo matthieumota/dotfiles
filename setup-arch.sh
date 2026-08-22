@@ -25,6 +25,7 @@ sudo pacman -S \
      fd \
      foot \
      fuzzel \
+     fzf \
      github-cli \
      git \
      gnome \
@@ -143,4 +144,5 @@ ln -sfn $HOME/.dotfiles/config/spotify-launcher.conf $HOME/.config/spotify-launc
 ln -sfn $HOME/.dotfiles/config/starship.toml $HOME/.config/starship.toml
 ln -sfn $HOME/.dotfiles/config/waybar $HOME/.config/waybar
 ln -sfn $HOME/.dotfiles/config/zsh/aliases.zsh $HOME/.oh-my-zsh/custom/aliases.zsh
+ln -sfn $HOME/.dotfiles/config/zsh/fzf.zsh $HOME/.oh-my-zsh/custom/fzf.zsh
 ln -sfn $HOME/.dotfiles/config/zsh/path.zsh $HOME/.oh-my-zsh/custom/path.zsh

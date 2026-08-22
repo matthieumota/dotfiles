@@ -20,6 +20,7 @@ brew install \
      eza \
      fastfetch \
      fd \
+     fzf \
      gh \
      git \
      lazygit \
@@ -99,4 +100,5 @@ ln -sfn $HOME/.dotfiles/config/git/.gitignore_global $HOME/.gitignore_global
 ln -sfn $HOME/.dotfiles/config/nvim $HOME/.config/nvim
 ln -sfn $HOME/.dotfiles/config/starship.toml $HOME/.config/starship.toml
 ln -sfn $HOME/.dotfiles/config/zsh/aliases.zsh $HOME/.oh-my-zsh/custom/aliases.zsh
+ln -sfn $HOME/.dotfiles/config/zsh/fzf.zsh $HOME/.oh-my-zsh/custom/fzf.zsh
 ln -sfn $HOME/.dotfiles/config/zsh/path.zsh $HOME/.oh-my-zsh/custom/path.zsh
