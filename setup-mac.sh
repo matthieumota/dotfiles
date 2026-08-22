@@ -24,7 +24,9 @@ brew install \
      gh \
      git \
      jq \
+     lazydocker \
      lazygit \
+     lazysql \
      mas \
      mole \
      neovim \

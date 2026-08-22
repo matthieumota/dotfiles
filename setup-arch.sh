@@ -39,6 +39,7 @@ sudo pacman -S \
      hyprlock \
      hyprpolkitagent \
      jq \
+     lazydocker \
      lazygit \
      libva-nvidia-driver \
      mako \
@@ -103,6 +104,7 @@ yay -S \
      gnome-shell-extension-dash-to-dock \
      google-chrome \
      hey-bin \
+     lazysql \
      nvm \
      php-pcov \
      postman-bin \
