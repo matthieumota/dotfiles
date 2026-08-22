@@ -30,7 +30,8 @@ brew install \
      ripgrep \
      starship \
      symfony-cli \
-     tmux
+     tmux \
+     yazi
 
 # Development
 brew install \

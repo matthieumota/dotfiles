@@ -66,6 +66,7 @@ sudo pacman -S \
      wl-clipboard \
      xdg-desktop-portal-hyprland \
      xwayland-satellite \
+     yazi \
      zsh
 
 # Development
