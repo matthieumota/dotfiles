@@ -80,16 +80,12 @@ brew install --cask \
      ghostty \
      google-chrome \
      google-drive \
-     grandperspective \
      handy \
      meld \
      orbstack \
      postman \
      spotify \
-     transmission \
-     virtualbox \
      visual-studio-code \
-     vlc \
      windows-app \
      zed
 

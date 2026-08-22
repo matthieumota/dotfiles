@@ -92,7 +92,6 @@ sudo pacman -S \
      spotify-launcher \
      transmission-gtk \
      virt-manager \
-     vlc \
      zed
 
 # Docker
