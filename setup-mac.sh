@@ -23,6 +23,7 @@ brew install \
      fzf \
      gh \
      git \
+     jq \
      lazygit \
      mas \
      mole \

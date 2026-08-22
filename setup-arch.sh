@@ -38,6 +38,7 @@ sudo pacman -S \
      hyprland \
      hyprlock \
      hyprpolkitagent \
+     jq \
      lazygit \
      libva-nvidia-driver \
      mako \
