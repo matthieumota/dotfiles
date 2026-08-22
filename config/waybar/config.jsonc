@@ -5,7 +5,6 @@
 
     "modules-left": [
         "custom/logo",
-        "niri/workspaces",
         "hyprland/workspaces",
         "custom/music"
     ],

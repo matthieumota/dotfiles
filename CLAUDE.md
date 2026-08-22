@@ -16,15 +16,18 @@ Both scripts are idempotent and meant to be run on a fresh machine.
 ## Structure
 
 - `setup-mac.sh` / `setup-arch.sh` — full machine bootstrap scripts
-- `bin/` — utility scripts: `brewup` (Homebrew maintenance), `checkup` (cross-platform dependency update checker), `bx-git-sync` (mirror git repos)
+- `bin/` — utility scripts: `brewup` (Homebrew maintenance), `checkup` (cross-platform dependency update checker), `bx-git-sync` (mirror git repos), `stream` (mirror a monitor with wl-mirror)
 - `config/` — dotfiles symlinked into `~/.config/` or `~/`:
-  - `zsh/` — Oh My Zsh custom aliases and PATH exports
+  - `zsh/` — Oh My Zsh custom aliases, PATH exports and fzf integration
   - `nvim/` — Neovim config (Lua-based, uses lazy.nvim plugin manager)
   - `ghostty/` — terminal emulator config with catppuccin-mocha theme
-  - `niri/` — Wayland compositor config (Arch only)
+  - `foot/` — second terminal emulator, same theme (Arch only)
+  - `hypr/` — Hyprland compositor, plus hyprlock and hypridle (Arch only)
   - `waybar/` — status bar config (Arch only)
+  - `fuzzel/` — application launcher (Arch only)
   - `git/` — global .gitconfig and .gitignore_global
   - `starship.toml` — cross-shell prompt config
+  - `spotify-launcher.conf` — forces Spotify to run natively under Wayland (Arch only)
 - `docker/` — Docker Compose setup for legacy PHP versions with nginx
 
 ## Symlink convention

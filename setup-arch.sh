@@ -45,7 +45,6 @@ sudo pacman -S \
      nano \
      neovim \
      networkmanager \
-     niri \
      noto-fonts \
      noto-fonts-cjk \
      nss-mdns \
@@ -65,7 +64,6 @@ sudo pacman -S \
      waybar \
      wl-clipboard \
      xdg-desktop-portal-hyprland \
-     xwayland-satellite \
      yazi \
      zsh
 
@@ -138,7 +136,6 @@ ln -sfn $HOME/.dotfiles/config/ghostty $HOME/.config/ghostty
 ln -sfn $HOME/.dotfiles/config/git/.gitconfig $HOME/.gitconfig
 ln -sfn $HOME/.dotfiles/config/git/.gitignore_global $HOME/.gitignore_global
 ln -sfn $HOME/.dotfiles/config/hypr $HOME/.config/hypr
-ln -sfn $HOME/.dotfiles/config/niri $HOME/.config/niri
 ln -sfn $HOME/.dotfiles/config/nvim $HOME/.config/nvim
 ln -sfn $HOME/.dotfiles/config/spotify-launcher.conf $HOME/.config/spotify-launcher.conf
 ln -sfn $HOME/.dotfiles/config/starship.toml $HOME/.config/starship.toml
