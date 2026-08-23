@@ -74,7 +74,7 @@ hl.on("hyprland.start", function ()
     hl.exec_cmd("systemctl --user start hypridle")
     hl.exec_cmd("systemctl --user start hyprpolkitagent")
     hl.exec_cmd("systemctl --user start mako")
-    hl.exec_cmd("swaybg -m fill -i /home/matthieu/Images/arch-linux.jpg")
+    hl.exec_cmd("swaybg -m fill -i /home/matthieu/Images/arch-linux.jpeg")
 end)
 
 
@@ -116,7 +116,7 @@ hl.env("GTK_IM_MODULE", "simple")
 hl.config({
     general = {
         gaps_in  = 5,
-        gaps_out = 20,
+        gaps_out = 10,
 
         border_size = 2,
 
@@ -135,7 +135,7 @@ hl.config({
     },
 
     decoration = {
-        rounding       = 10,
+        rounding       = 0,
         rounding_power = 2,
 
         -- Change transparency of focused and unfocused windows
