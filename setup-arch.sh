@@ -130,6 +130,7 @@ yay -Yc
 yay -Scc
 
 # Dotfiles
+ln -sfn $HOME/.dotfiles/config/fontconfig $HOME/.config/fontconfig
 ln -sfn $HOME/.dotfiles/config/foot $HOME/.config/foot
 ln -sfn $HOME/.dotfiles/config/fuzzel $HOME/.config/fuzzel
 ln -sfn $HOME/.dotfiles/config/ghostty $HOME/.config/ghostty
