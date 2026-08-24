@@ -75,11 +75,9 @@ composer global require laravel/installer
 
 # Apps
 brew install --cask \
-     arc \
      bitwarden \
      cyberduck \
      discord \
-     firefox \
      font-fira-code-nerd-font \
      ghostty \
      google-chrome \

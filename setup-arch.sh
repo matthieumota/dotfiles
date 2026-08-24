@@ -29,15 +29,13 @@ sudo pacman -S \
      github-cli \
      git \
      gnome \
-     gnome-shell-extension-appindicator \
-     gnome-shell-extensions \
-     gnome-tweaks \
      grim \
      grub \
      hypridle \
      hyprland \
      hyprlock \
      hyprpolkitagent \
+     imv \
      jq \
      lazydocker \
      lazygit \
@@ -59,6 +57,7 @@ sudo pacman -S \
      sbctl \
      slurp \
      starship \
+     sushi \
      swaybg \
      system-config-printer \
      tmux \
@@ -84,14 +83,11 @@ composer global require laravel/installer
 sudo pacman -S \
      bitwarden \
      discord \
-     firefox \
      ghostty \
-     gthumb \
      meld \
      qemu-desktop \
      remmina \
      spotify-launcher \
-     transmission-gtk \
      virt-manager \
      zed
 
@@ -101,7 +97,6 @@ sudo usermod -aG docker $USER
 # Aur
 yay -S \
      ttf-firacode-nerd \
-     gnome-shell-extension-dash-to-dock \
      google-chrome \
      hey-bin \
      lazysql \
