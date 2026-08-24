@@ -13,6 +13,30 @@ PanelWindow {
   color: "#1e1e2e"
 
   Text {
+    id: logo
+    anchors {
+      left: parent.left
+      leftMargin: 15
+      verticalCenter: parent.verticalCenter
+    }
+    color: "#cdd6f4"
+    font.family: "monospace"
+    font.pixelSize: 16
+    text: ""
+
+    MouseArea {
+      anchors.fill: parent
+      cursorShape: Qt.PointingHandCursor
+      onClicked: logoProc.running = true
+    }
+  }
+
+  Process {
+    id: logoProc
+    command: ["sh", "-c", "pgrep -x fuzzel > /dev/null || fuzzel"]
+  }
+
+  Text {
     id: clock
     anchors.centerIn: parent
     color: "#cdd6f4"
