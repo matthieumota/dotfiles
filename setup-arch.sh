@@ -28,7 +28,6 @@ sudo pacman -S \
      fzf \
      github-cli \
      git \
-     gnome \
      grim \
      grub \
      hypridle \
@@ -52,9 +51,11 @@ sudo pacman -S \
      os-prober \
      otf-font-awesome \
      pavucontrol \
+     pipewire-pulse \
      ripgrep \
      rsync \
      sbctl \
+     sddm \
      slurp \
      starship \
      sushi \
@@ -64,6 +65,7 @@ sudo pacman -S \
      ttf-noto-nerd \
      waybar \
      wl-clipboard \
+     wl-mirror \
      xdg-desktop-portal-hyprland \
      yazi \
      zsh
