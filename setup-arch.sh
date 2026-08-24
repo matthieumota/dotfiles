@@ -52,6 +52,7 @@ sudo pacman -S \
      otf-font-awesome \
      pavucontrol \
      pipewire-pulse \
+     quickshell \
      ripgrep \
      rsync \
      sbctl \
@@ -138,6 +139,7 @@ ln -sfn $HOME/.dotfiles/config/git/.gitconfig $HOME/.gitconfig
 ln -sfn $HOME/.dotfiles/config/git/.gitignore_global $HOME/.gitignore_global
 ln -sfn $HOME/.dotfiles/config/hypr $HOME/.config/hypr
 ln -sfn $HOME/.dotfiles/config/nvim $HOME/.config/nvim
+ln -sfn $HOME/.dotfiles/config/quickshell $HOME/.config/quickshell
 ln -sfn $HOME/.dotfiles/config/spotify-launcher.conf $HOME/.config/spotify-launcher.conf
 ln -sfn $HOME/.dotfiles/config/starship.toml $HOME/.config/starship.toml
 ln -sfn $HOME/.dotfiles/config/waybar $HOME/.config/waybar
