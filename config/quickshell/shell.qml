@@ -3,6 +3,7 @@ import Quickshell
 import Quickshell.Hyprland
 import Quickshell.Io
 import Quickshell.Services.Mpris
+import Quickshell.Services.SystemTray
 
 PanelWindow {
   anchors {
@@ -130,6 +131,34 @@ PanelWindow {
     repeat: true
     onTriggered: {
       if (!dateProc.running) dateProc.running = true
+    }
+  }
+
+  Row {
+    id: tray
+    anchors {
+      right: parent.right
+      rightMargin: 15
+      verticalCenter: parent.verticalCenter
+    }
+    spacing: 8
+
+    Repeater {
+      model: SystemTray.items.values
+
+      Image {
+        id: trayItem
+        required property var modelData
+        width: 16
+        height: 16
+        source: trayItem.modelData.icon
+
+        MouseArea {
+          anchors.fill: parent
+          cursorShape: Qt.PointingHandCursor
+          onClicked: trayItem.modelData.activate()
+        }
+      }
     }
   }
 }
