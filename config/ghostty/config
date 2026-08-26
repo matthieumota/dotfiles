@@ -1,5 +1,4 @@
 background-opacity = 0.95
-font-family = monospace
-font-size = 9
+font-family = FiraCode Nerd Font
 shell-integration-features = ssh-env,ssh-terminfo
 theme = catppuccin-mocha.conf
