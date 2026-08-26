@@ -76,7 +76,7 @@ PanelWindow {
       rightMargin: 15
       verticalCenter: parent.verticalCenter
     }
-    spacing: 8
+    spacing: 10
 
     Repeater {
       model: SystemTray.items.values
