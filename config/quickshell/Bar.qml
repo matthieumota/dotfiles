@@ -72,7 +72,7 @@ PanelWindow {
   Row {
     id: tray
     anchors {
-      right: parent.right
+      right: powerButton.left
       rightMargin: 15
       verticalCenter: parent.verticalCenter
     }
@@ -94,6 +94,15 @@ PanelWindow {
           onClicked: trayItem.modelData.activate()
         }
       }
+    }
+  }
+
+  PowerButton {
+    id: powerButton
+    anchors {
+      right: parent.right
+      rightMargin: 15
+      verticalCenter: parent.verticalCenter
     }
   }
 }
