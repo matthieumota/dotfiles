@@ -2,6 +2,7 @@ import QtQuick
 import Quickshell
 import Quickshell.Hyprland
 import Quickshell.Io
+import Quickshell.Services.Mpris
 
 PanelWindow {
   anchors {
@@ -63,6 +64,42 @@ PanelWindow {
           cursorShape: Qt.PointingHandCursor
           onClicked: wsItem.modelData.activate()
         }
+      }
+    }
+  }
+
+  Text {
+    id: music
+
+    readonly property var current: {
+      var players = Mpris.players.values
+      for (var i = 0; i < players.length; i++) {
+        if (players[i].identity && players[i].identity.toLowerCase().indexOf("spotify") !== -1) return players[i]
+      }
+      return players.length > 0 ? players[0] : null
+    }
+
+    anchors {
+      left: workspaces.right
+      leftMargin: 15
+      verticalCenter: parent.verticalCenter
+    }
+    visible: music.current !== null
+    color: "#1db954"
+    font.family: "monospace"
+    font.pixelSize: 12
+    text: {
+      if (!music.current) return ""
+      var isSpotify = music.current.identity && music.current.identity.toLowerCase().indexOf("spotify") !== -1
+      var icon = isSpotify ? "" : ""
+      return icon + "  " + music.current.trackArtist + " - " + music.current.trackTitle
+    }
+
+    MouseArea {
+      anchors.fill: parent
+      cursorShape: Qt.PointingHandCursor
+      onClicked: {
+        if (music.current) music.current.togglePlaying()
       }
     }
   }
