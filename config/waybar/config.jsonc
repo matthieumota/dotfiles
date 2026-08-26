@@ -114,10 +114,10 @@
         "menu": "on-click",
         "menu-file": "$HOME/.config/waybar/power_menu.xml",
         "menu-actions": {
-            "shutdown": "shutdown -h now",
-            "reboot": "reboot",
+            "lock": "hyprlock",
             "suspend": "systemctl suspend",
-            "hibernate": "systemctl hibernate"
+            "reboot": "reboot",
+            "shutdown": "shutdown -h now"
         }
     }
 }
