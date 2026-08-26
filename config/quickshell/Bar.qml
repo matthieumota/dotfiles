@@ -41,6 +41,14 @@ PanelWindow {
     anchors.centerIn: parent
   }
 
+  Volume {
+    anchors {
+      right: tray.left
+      rightMargin: 15
+      verticalCenter: parent.verticalCenter
+    }
+  }
+
   Tray {
     id: tray
     anchors {
