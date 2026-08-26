@@ -2,7 +2,7 @@ import QtQuick
 import Quickshell.Hyprland
 
 Row {
-  spacing: 8
+  spacing: 12
 
   Repeater {
     model: Hyprland.workspaces.values
@@ -11,7 +11,8 @@ Row {
       id: wsItem
       required property var modelData
       text: wsItem.modelData.id
-      color: wsItem.modelData.focused ? "#89b4fa" : "#cdd6f4"
+      color: "#cdd6f4"
+      opacity: wsItem.modelData.focused ? 1 : 0.5
       font.family: "monospace"
       font.pixelSize: 14
       font.bold: wsItem.modelData.focused

@@ -36,7 +36,7 @@ PanelWindow {
     id: music
 
     readonly property var current: {
-      var players = Mpris.players.values
+      var players = Mpris.players.values.filter(function(p) { return p.trackTitle })
       for (var i = 0; i < players.length; i++) {
         if (players[i].identity && players[i].identity.toLowerCase().indexOf("spotify") !== -1) return players[i]
       }
@@ -49,14 +49,14 @@ PanelWindow {
       verticalCenter: parent.verticalCenter
     }
     visible: music.current !== null
-    color: "#1db954"
+    color: "#cdd6f4"
     font.family: "monospace"
     font.pixelSize: 12
     text: {
       if (!music.current) return ""
       var isSpotify = music.current.identity && music.current.identity.toLowerCase().indexOf("spotify") !== -1
       var icon = isSpotify ? "" : ""
-      return icon + "  " + music.current.trackArtist + " - " + music.current.trackTitle
+      return "<font color=\"#1db954\">" + icon + "</font>&nbsp;&nbsp;" + music.current.trackArtist + " - " + music.current.trackTitle
     }
 
     MouseArea {
