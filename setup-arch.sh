@@ -43,6 +43,7 @@ sudo pacman -S \
      man-db \
      nano \
      neovim \
+     network-manager-applet \
      networkmanager \
      noto-fonts \
      noto-fonts-cjk \

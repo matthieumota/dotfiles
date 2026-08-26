@@ -13,12 +13,9 @@
     ],
     "modules-right": [
         "pulseaudio",
-        "network",
-        // "power-profiles-daemon",
         "cpu",
         "memory",
         "temperature",
-        // "backlight",
         "tray",
         "custom/power"
     ],
@@ -59,25 +56,6 @@
         },
         "on-click": "pavucontrol"
     },
-    "network": {
-        "format-wifi": "   {essid} ({signalStrength}%)",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (Pas d'IP) ",
-        "format-disconnected": "Déconnecté ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
-    },
-    "power-profiles-daemon": {
-        "format": "{icon}",
-        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
-        "tooltip": true,
-        "format-icons": {
-            "default": "",
-            "performance": "",
-            "balanced": "",
-            "power-saver": ""
-        }
-    },
     "cpu": {
         "format": "  {usage}%",
         "tooltip": true,
@@ -92,11 +70,6 @@
         "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
         "format-icons": ["", "", ""]
-    },
-    "backlight": {
-        // "device": "acpi_video1",
-        "format": "{percent}% {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "clock": {
         "timezone": "Europe/Paris",
