@@ -3,13 +3,14 @@ import Quickshell.Io
 
 Text {
   id: clock
+  property bool alt: false
   color: "#cdd6f4"
   font.family: "monospace"
   font.pixelSize: 12
 
   Process {
     id: proc
-    command: ["date", "+%A %Hh%M"]
+    command: ["date", clock.alt ? "+%A %d %B %Hh%Mm%S" : "+%A %Hh%M"]
     running: true
     stdout: StdioCollector {
       onStreamFinished: {
@@ -24,5 +25,14 @@ Text {
     running: true
     repeat: true
     onTriggered: if (!proc.running) proc.running = true
+  }
+
+  MouseArea {
+    anchors.fill: parent
+    cursorShape: Qt.PointingHandCursor
+    onClicked: {
+      clock.alt = !clock.alt
+      proc.running = true
+    }
   }
 }

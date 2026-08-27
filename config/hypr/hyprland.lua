@@ -70,8 +70,9 @@ local menu        = "fuzzel"
 -- end)
 
 hl.on("hyprland.start", function ()
-    hl.exec_cmd("waybar")
+    hl.exec_cmd("qs")
     hl.exec_cmd("nm-applet")
+    hl.exec_cmd("blueman-applet")
     hl.exec_cmd("systemctl --user start hypridle")
     hl.exec_cmd("systemctl --user start hyprpolkitagent")
     hl.exec_cmd("systemctl --user start mako")

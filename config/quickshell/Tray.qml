@@ -18,10 +18,12 @@ Row {
       MouseArea {
         anchors.fill: parent
         cursorShape: Qt.PointingHandCursor
-        acceptedButtons: Qt.LeftButton | Qt.RightButton
+        acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MiddleButton
         onClicked: (mouse) => {
           if (mouse.button === Qt.RightButton && trayItem.modelData.hasMenu) {
             menuAnchor.open()
+          } else if (mouse.button === Qt.MiddleButton) {
+            trayItem.modelData.secondaryActivate()
           } else {
             trayItem.modelData.activate()
           }

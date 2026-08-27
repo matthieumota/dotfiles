@@ -17,10 +17,12 @@ Text {
   font.pixelSize: 12
   text: {
     if (!volume.audio) return ""
-    if (volume.audio.muted) return "󰖁"
+    var isBluetooth = volume.sink.properties["device.api"] === "bluez5"
+    var bt = isBluetooth ? " " : ""
+    if (volume.audio.muted) return bt + "󰖁"
     var pct = Math.round(volume.audio.volume * 100)
     var icon = pct < 33 ? "" : (pct < 67 ? "" : "")
-    return icon + "  " + pct + "%"
+    return bt + icon + "  " + pct + "%"
   }
 
   MouseArea {
