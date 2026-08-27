@@ -1,4 +1,5 @@
 import QtQuick
+import Quickshell
 import Quickshell.Services.SystemTray
 
 Row {
@@ -17,7 +18,22 @@ Row {
       MouseArea {
         anchors.fill: parent
         cursorShape: Qt.PointingHandCursor
-        onClicked: trayItem.modelData.activate()
+        acceptedButtons: Qt.LeftButton | Qt.RightButton
+        onClicked: (mouse) => {
+          if (mouse.button === Qt.RightButton && trayItem.modelData.hasMenu) {
+            menuAnchor.open()
+          } else {
+            trayItem.modelData.activate()
+          }
+        }
+      }
+
+      QsMenuAnchor {
+        id: menuAnchor
+        menu: trayItem.modelData.menu
+        anchor.item: trayItem
+        anchor.edges: Edges.Bottom | Edges.Right
+        anchor.gravity: Edges.Bottom | Edges.Left
       }
     }
   }
