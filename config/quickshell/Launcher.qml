@@ -3,6 +3,7 @@ pragma ComponentBehavior: Bound
 import QtQuick
 import QtQuick.Layouts
 import Quickshell
+import Quickshell.Io
 import Quickshell.Widgets
 
 PopupWindow {
@@ -20,8 +21,24 @@ PopupWindow {
   color: "#1e1e2e"
 
   function launch(entry) {
-    entry.execute()
+    if (entry.runInTerminal) {
+      proc.command = ["ghostty", "-e"].concat(entry.command)
+      proc.running = true
+    } else {
+      entry.execute()
+    }
     launcher.visible = false
+  }
+
+  Process {
+    id: proc
+  }
+
+  IpcHandler {
+    target: "launcher"
+    function toggle() {
+      launcher.visible = !launcher.visible
+    }
   }
 
   function fuzzyScore(text, query) {

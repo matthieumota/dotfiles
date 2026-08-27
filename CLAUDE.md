@@ -23,8 +23,7 @@ Both scripts are idempotent and meant to be run on a fresh machine.
   - `ghostty/` — terminal emulator config with catppuccin-mocha theme
   - `foot/` — second terminal emulator, same theme (Arch only)
   - `hypr/` — Hyprland compositor, plus hyprlock and hypridle (Arch only)
-  - `quickshell/` — status bar (QML-based, Arch only)
-  - `fuzzel/` — application launcher (Arch only)
+  - `quickshell/` — status bar and app launcher (QML-based, Arch only)
   - `git/` — global .gitconfig and .gitignore_global
   - `starship.toml` — cross-shell prompt config
   - `spotify-launcher.conf` — forces Spotify to run natively under Wayland (Arch only)

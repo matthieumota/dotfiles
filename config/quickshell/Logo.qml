@@ -1,7 +1,7 @@
 import QtQuick
-import Quickshell.Io
 
 Text {
+  id: logo
   color: "#cdd6f4"
   font.family: "monospace"
   font.pixelSize: 20
@@ -10,11 +10,11 @@ Text {
   MouseArea {
     anchors.fill: parent
     cursorShape: Qt.PointingHandCursor
-    onClicked: proc.running = true
+    onClicked: launcher.visible = true
   }
 
-  Process {
-    id: proc
-    command: ["sh", "-c", "pgrep -x fuzzel > /dev/null || fuzzel"]
+  Launcher {
+    id: launcher
+    anchorItem: logo
   }
 }

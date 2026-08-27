@@ -24,7 +24,6 @@ sudo pacman -S \
      fastfetch \
      fd \
      foot \
-     fuzzel \
      fzf \
      github-cli \
      git \
@@ -133,7 +132,6 @@ yay -Scc
 # Dotfiles
 ln -sfn $HOME/.dotfiles/config/fontconfig $HOME/.config/fontconfig
 ln -sfn $HOME/.dotfiles/config/foot $HOME/.config/foot
-ln -sfn $HOME/.dotfiles/config/fuzzel $HOME/.config/fuzzel
 ln -sfn $HOME/.dotfiles/config/ghostty $HOME/.config/ghostty
 ln -sfn $HOME/.dotfiles/config/git/.gitconfig $HOME/.gitconfig
 ln -sfn $HOME/.dotfiles/config/git/.gitignore_global $HOME/.gitignore_global
