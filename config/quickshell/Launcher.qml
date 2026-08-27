@@ -63,9 +63,20 @@ PopupWindow {
       clip: true
       model: {
         var query = search.text.toLowerCase()
+
+        function matchRank(e) {
+          var positions = [e.name, e.genericName, e.id]
+            .map(text => text.toLowerCase().indexOf(query))
+            .filter(i => i !== -1)
+          return positions.length > 0 ? Math.min(...positions) : -1
+        }
+
         return DesktopEntries.applications.values
-          .filter(e => !e.noDisplay && e.name.toLowerCase().includes(query))
-          .sort((a, b) => a.name.localeCompare(b.name))
+          .filter(e => !e.noDisplay)
+          .map(e => ({ entry: e, rank: matchRank(e) }))
+          .filter(r => r.rank !== -1)
+          .sort((a, b) => a.rank - b.rank || a.entry.name.localeCompare(b.entry.name))
+          .map(r => r.entry)
       }
 
       delegate: Item {
