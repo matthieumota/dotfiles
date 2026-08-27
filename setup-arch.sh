@@ -46,6 +46,7 @@ sudo pacman -S \
      networkmanager \
      noto-fonts \
      noto-fonts-cjk \
+     noto-fonts-emoji \
      nss-mdns \
      nvidia-open \
      os-prober \
