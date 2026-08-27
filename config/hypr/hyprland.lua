@@ -70,7 +70,7 @@ local menu        = "qs ipc call launcher toggle"
 -- end)
 
 hl.on("hyprland.start", function ()
-    hl.exec_cmd("qs")
+    hl.exec_cmd("qs-supervisor")
     hl.exec_cmd("nm-applet")
     hl.exec_cmd("blueman-applet")
     hl.exec_cmd("systemctl --user start hypridle")
