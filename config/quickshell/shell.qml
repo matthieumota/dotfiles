@@ -1,4 +1,11 @@
 //@ pragma UseQApplication
 
-Bar {
+import Quickshell
+
+ShellRoot {
+  Bar {
+  }
+
+  Notifications {
+  }
 }
