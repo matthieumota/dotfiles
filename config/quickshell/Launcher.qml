@@ -24,6 +24,28 @@ PopupWindow {
     launcher.visible = false
   }
 
+  function fuzzyScore(text, query) {
+    text = text.toLowerCase()
+    var textIndex = 0
+    var score = 0
+    var streak = 0
+
+    for (var i = 0; i < query.length; i++) {
+      var foundAt = text.indexOf(query[i], textIndex)
+      if (foundAt === -1) return -Infinity
+
+      if (foundAt === textIndex) {
+        streak += 5
+      } else {
+        streak = 0
+      }
+      score += 10 + streak - (foundAt - textIndex)
+      textIndex = foundAt + 1
+    }
+
+    return score - text.indexOf(query[0])
+  }
+
   onVisibleChanged: if (launcher.visible) {
     search.text = ""
     search.forceActiveFocus()
@@ -63,19 +85,17 @@ PopupWindow {
       clip: true
       model: {
         var query = search.text.toLowerCase()
-
-        function matchRank(e) {
-          var positions = [e.name, e.genericName, e.id]
-            .map(text => text.toLowerCase().indexOf(query))
-            .filter(i => i !== -1)
-          return positions.length > 0 ? Math.min(...positions) : -1
-        }
+        if (!query) return DesktopEntries.applications.values.filter(e => !e.noDisplay).sort((a, b) => a.name.localeCompare(b.name))
 
         return DesktopEntries.applications.values
           .filter(e => !e.noDisplay)
-          .map(e => ({ entry: e, rank: matchRank(e) }))
-          .filter(r => r.rank !== -1)
-          .sort((a, b) => a.rank - b.rank || a.entry.name.localeCompare(b.entry.name))
+          .map(e => {
+            var best = Math.max(launcher.fuzzyScore(e.name, query), launcher.fuzzyScore(e.genericName, query))
+            var idScore = launcher.fuzzyScore(e.id, query)
+            return { entry: e, matched: isFinite(best) || isFinite(idScore), score: isFinite(best) ? best : idScore - 1000 }
+          })
+          .filter(r => r.matched)
+          .sort((a, b) => b.score - a.score || a.entry.name.localeCompare(b.entry.name))
           .map(r => r.entry)
       }
 
