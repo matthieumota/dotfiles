@@ -43,6 +43,33 @@ PanelWindow {
 
   Volume {
     anchors {
+      right: cpu.left
+      rightMargin: 15
+      verticalCenter: parent.verticalCenter
+    }
+  }
+
+  Cpu {
+    id: cpu
+    anchors {
+      right: memory.left
+      rightMargin: 15
+      verticalCenter: parent.verticalCenter
+    }
+  }
+
+  Memory {
+    id: memory
+    anchors {
+      right: temperature.left
+      rightMargin: 15
+      verticalCenter: parent.verticalCenter
+    }
+  }
+
+  Temperature {
+    id: temperature
+    anchors {
       right: tray.left
       rightMargin: 15
       verticalCenter: parent.verticalCenter

@@ -2,20 +2,17 @@ import QtQuick
 import Quickshell.Io
 
 Text {
-  id: clock
+  id: cpu
   color: "#cdd6f4"
   font.family: "monospace"
   font.pixelSize: 12
 
   Process {
     id: proc
-    command: ["date", "+%A %Hh%M"]
+    command: ["sh", "-c", "vmstat 1 2 | tail -1 | awk '{print 100-$15-$16}'"]
     running: true
     stdout: StdioCollector {
-      onStreamFinished: {
-        var raw = text.trim()
-        clock.text = raw.charAt(0).toUpperCase() + raw.slice(1)
-      }
+      onStreamFinished: cpu.text = "  " + text.trim() + "%"
     }
   }
 
