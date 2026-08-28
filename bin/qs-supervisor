@@ -1,2 +1,4 @@
 #!/bin/sh
-qs
+until qs; do
+  sleep 1
+done
