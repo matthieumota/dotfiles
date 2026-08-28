@@ -11,8 +11,8 @@ Row {
     Image {
       id: trayItem
       required property var modelData
-      width: 16
-      height: 16
+      width: 14
+      height: 14
       source: trayItem.modelData.icon
 
       MouseArea {

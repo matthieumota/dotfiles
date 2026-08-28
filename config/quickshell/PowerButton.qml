@@ -9,7 +9,7 @@ Text {
 
   color: "#cdd6f4"
   font.family: "monospace"
-  font.pixelSize: 20
+  font.pixelSize: 12
   text: "⏻"
 
   MouseArea {
