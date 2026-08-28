@@ -38,7 +38,6 @@ sudo pacman -S \
      lazydocker \
      lazygit \
      libva-nvidia-driver \
-     mako \
      man-db \
      nano \
      neovim \
@@ -53,6 +52,7 @@ sudo pacman -S \
      otf-font-awesome \
      pavucontrol \
      pipewire-pulse \
+     qt6-imageformats \
      quickshell \
      ripgrep \
      rsync \
