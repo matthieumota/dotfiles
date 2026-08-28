@@ -30,6 +30,7 @@ brew install \
      mas \
      mole \
      neovim \
+     pkgconf \
      ripgrep \
      starship \
      symfony-cli \
