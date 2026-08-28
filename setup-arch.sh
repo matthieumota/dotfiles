@@ -144,3 +144,8 @@ ln -sfn $HOME/.dotfiles/config/zsh/aliases.zsh $HOME/.oh-my-zsh/custom/aliases.z
 ln -sfn $HOME/.dotfiles/config/zsh/fzf.zsh $HOME/.oh-my-zsh/custom/fzf.zsh
 curl -fsSL https://raw.githubusercontent.com/junegunn/fzf-git.sh/main/fzf-git.sh -o $HOME/.oh-my-zsh/custom/fzf-git.zsh
 ln -sfn $HOME/.dotfiles/config/zsh/path.zsh $HOME/.oh-my-zsh/custom/path.zsh
+
+# SDDM theme
+sudo cp -r $HOME/.dotfiles/config/sddm/fiorella /usr/share/sddm/themes/fiorella
+sudo mkdir -p /etc/sddm.conf.d
+printf '[Theme]\nCurrent=fiorella\n' | sudo tee /etc/sddm.conf.d/10-theme.conf
