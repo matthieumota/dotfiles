@@ -3,6 +3,9 @@
 import Quickshell
 
 ShellRoot {
+  Wallpaper {
+  }
+
   Bar {
   }
 

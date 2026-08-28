@@ -76,7 +76,6 @@ hl.on("hyprland.start", function ()
     hl.exec_cmd("systemctl --user start hypridle")
     hl.exec_cmd("systemctl --user start hyprpolkitagent")
     hl.exec_cmd("systemctl --user start mako")
-    hl.exec_cmd("swaybg -m fill -i /home/matthieu/Images/arch-linux.jpeg")
 end)
 
 

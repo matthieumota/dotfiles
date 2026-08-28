@@ -61,7 +61,6 @@ sudo pacman -S \
      slurp \
      starship \
      sushi \
-     swaybg \
      system-config-printer \
      tmux \
      ttf-noto-nerd \
