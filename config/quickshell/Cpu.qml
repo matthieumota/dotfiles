@@ -6,6 +6,7 @@ Text {
   color: "#cdd6f4"
   font.family: "monospace"
   font.pixelSize: 12
+  text: "  0%"
 
   Process {
     id: proc
