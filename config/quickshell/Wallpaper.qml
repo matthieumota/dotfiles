@@ -20,7 +20,8 @@ PanelWindow {
   readonly property string dir: "file:///home/matthieu/Images/Wallpapers/"
   property var images: [
     "0-winding-road.webp",
-    "3-sunset-lake.webp"
+    "3-sunset-lake.webp",
+    "papy.jpg"
   ]
   property int index: 0
 
