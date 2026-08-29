@@ -1,9 +1,8 @@
 import QtQuick
-import Quickshell.Io
 
 Text {
   id: clock
-  property bool alt: false
+  readonly property bool alt: hoverArea.containsMouse
   color: "#cdd6f4"
   font.family: "monospace"
   font.pixelSize: 12
@@ -16,6 +15,9 @@ Text {
         clock.text = raw.charAt(0).toUpperCase() + raw.slice(1)
   }
 
+  Component.onCompleted: clock.update()
+  onAltChanged: clock.update()
+
   Timer {
     interval: 1000
     running: true
@@ -24,11 +26,9 @@ Text {
   }
 
   MouseArea {
+    id: hoverArea
     anchors.fill: parent
+    hoverEnabled: true
     cursorShape: Qt.PointingHandCursor
-    onClicked: {
-      clock.alt = !clock.alt
-      clock.update()
-    }
   }
 }
