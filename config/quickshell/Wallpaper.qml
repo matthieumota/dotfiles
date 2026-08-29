@@ -15,7 +15,7 @@ PanelWindow {
 
   WlrLayershell.layer: WlrLayer.Background
   WlrLayershell.exclusionMode: ExclusionMode.Ignore
-  color: "transparent"
+  color: "#1e1e2e"
 
   readonly property string dir: "file:///home/matthieu/Images/Wallpapers/"
   property var images: [
@@ -32,8 +32,10 @@ PanelWindow {
   }
 
   Image {
+    id: image
     anchors.fill: parent
     source: wallpaper.dir + wallpaper.images[wallpaper.index]
-    fillMode: Image.PreserveAspectCrop
+    fillMode: image.implicitHeight > image.implicitWidth ? Image.PreserveAspectFit : Image.PreserveAspectCrop
+    autoTransform: true
   }
 }
