@@ -410,3 +410,10 @@ hl.window_rule({
     monitor    = "HDMI-A-1",
     fullscreen = true,
 })
+
+hl.window_rule({
+    name  = "default-opacity",
+    match = { class = ".*" },
+
+    opacity = "0.95 0.9",
+})
