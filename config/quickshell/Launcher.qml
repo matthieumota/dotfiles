@@ -83,7 +83,10 @@ PopupWindow {
       font.pixelSize: 12
 
       Keys.onEscapePressed: launcher.visible = false
-      Keys.onReturnPressed: if (results.count > 0) launcher.launch(results.model[results.currentIndex])
+      Keys.onPressed: (event) => {
+        if (event.key !== Qt.Key_Return && event.key !== Qt.Key_Enter) return
+        if (results.count > 0) launcher.launch(results.model[results.currentIndex])
+      }
       Keys.onDownPressed: results.currentIndex = Math.min(results.currentIndex + 1, results.count - 1)
       Keys.onUpPressed: results.currentIndex = Math.max(results.currentIndex - 1, 0)
       onTextChanged: results.currentIndex = 0
