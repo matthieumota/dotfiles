@@ -148,4 +148,4 @@ ln -sfn $HOME/.dotfiles/config/zsh/path.zsh $HOME/.oh-my-zsh/custom/path.zsh
 # SDDM theme
 sudo cp -r $HOME/.dotfiles/config/sddm/fiorella /usr/share/sddm/themes/fiorella
 sudo mkdir -p /etc/sddm.conf.d
-printf '[General]\nGreeterEnvironment=XKB_DEFAULT_LAYOUT=us\n\n[Theme]\nCurrent=fiorella\nCursorSize=24\n' | sudo tee /etc/sddm.conf.d/10-theme.conf
+printf '[Theme]\nCurrent=fiorella\nCursorSize=24\n' | sudo tee /etc/sddm.conf.d/10-theme.conf
