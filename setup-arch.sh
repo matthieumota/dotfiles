@@ -23,10 +23,12 @@ sudo pacman -S \
      eza \
      fastfetch \
      fd \
+     ffmpegthumbnailer \
      foot \
      fzf \
      github-cli \
      git \
+     gpu-screen-recorder \
      grim \
      grub \
      hypridle \
@@ -39,6 +41,7 @@ sudo pacman -S \
      lazygit \
      libva-nvidia-driver \
      man-db \
+     mpv \
      nano \
      neovim \
      network-manager-applet \

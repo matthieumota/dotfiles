@@ -342,8 +342,15 @@ hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = tr
 -- Screenshot
 hl.bind(mainMod .. " + F3", hl.dsp.exec_cmd(
     [[g=$(slurp -d) || exit; ]] ..
-    [[f="$HOME/Images/Captures d’écran/Screenshot from $(date '+%Y-%m-%d %H-%M-%S').png"; ]] ..
+    [[f="$HOME/Images/Captures d’écran/Capture d’écran du $(date '+%Y-%m-%d %H-%M-%S').png"; ]] ..
     [[grim -g "$g" "$f" && wl-copy --type image/png < "$f" && notify-send "Capture d’écran" "${f##*/}"]]))
+
+-- Screen recording
+hl.bind(mainMod .. " + F4", hl.dsp.exec_cmd(
+    [[pkill -INT -f "^gpu-screen-recorder" && exit; ]] ..
+    [[region=$(slurp -f '%wx%h+%x+%y') || exit; ]] ..
+    [[f="$HOME/Vidéos/Captures vidéo/Enregistrement du $(date '+%Y-%m-%d %H-%M-%S').mp4"; ]] ..
+    [[gpu-screen-recorder -w "$region" -k auto -f 60 -o "$f" && notify-send "Enregistrement écran" "${f##*/}"]]))
 
 
 --------------------------------
