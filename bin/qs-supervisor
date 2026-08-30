@@ -1,4 +1,6 @@
 #!/bin/sh
-until qs; do
+while true; do
+  qs && exit 0
+  hyprctl -j monitors >/dev/null 2>&1 || exit 0
   sleep 1
 done
