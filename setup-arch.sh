@@ -68,7 +68,6 @@ sudo pacman -S \
      tmux \
      ttf-noto-nerd \
      wl-clipboard \
-     wl-mirror \
      xdg-desktop-portal-hyprland \
      yazi \
      zsh

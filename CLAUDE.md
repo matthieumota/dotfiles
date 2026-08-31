@@ -16,7 +16,7 @@ Both scripts are idempotent and meant to be run on a fresh machine.
 ## Structure
 
 - `setup-mac.sh` / `setup-arch.sh` — full machine bootstrap scripts
-- `bin/` — utility scripts: `brewup` (Homebrew maintenance), `checkup` (cross-platform dependency update checker), `bx-git-sync` (mirror git repos), `stream` (mirror a monitor with wl-mirror)
+- `bin/` — utility scripts: `brewup` (Homebrew maintenance), `checkup` (cross-platform dependency update checker), `bx-git-sync` (mirror git repos), `qs-supervisor` (keep Quickshell alive under Hyprland)
 - `config/` — dotfiles symlinked into `~/.config/` or `~/`:
   - `zsh/` — Oh My Zsh custom aliases, PATH exports and fzf integration
   - `nvim/` — Neovim config (Lua-based, uses lazy.nvim plugin manager)

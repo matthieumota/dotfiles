@@ -41,6 +41,7 @@ hl.monitor({
     mode     = "3840x2160@144.00",
     position = "3840x0",
     scale    = 1,
+    mirror   = "DP-1",
 })
 
 
@@ -401,14 +402,6 @@ hl.window_rule({
 
     move  = "20 monitor_h-120",
     float = true,
-})
-
-hl.window_rule({
-    name  = "stream-mirror",
-    match = { class = "at.yrlf.wl_mirror" },
-
-    monitor    = "HDMI-A-1",
-    fullscreen = true,
 })
 
 hl.window_rule({
