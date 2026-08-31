@@ -25,6 +25,7 @@ sudo pacman -S \
      fd \
      ffmpegthumbnailer \
      foot \
+     freerdp \
      fzf \
      github-cli \
      git \
