@@ -70,6 +70,12 @@ PopupWindow {
     results.positionViewAtBeginning()
   }
 
+  Rectangle {
+    anchors.fill: parent
+    color: "#1e1e2e"
+    border.color: "#585b70"
+  }
+
   ColumnLayout {
     anchors.fill: parent
     anchors.margins: 8
