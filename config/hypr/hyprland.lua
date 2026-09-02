@@ -397,6 +397,14 @@ hl.window_rule({
 -- })
 -- overlayLayerRule:set_enabled(false)
 
+hl.layer_rule({
+    name  = "blur-qs-bar",
+    match = { namespace = "^quickshell-bar$" },
+
+    blur        = true,
+    blur_popups = true,
+})
+
 -- Hyprland-run windowrule
 hl.window_rule({
     name  = "move-hyprland-run",

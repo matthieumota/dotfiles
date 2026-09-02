@@ -1,5 +1,6 @@
 import QtQuick
 import Quickshell
+import Quickshell.Wayland
 
 PanelWindow {
   anchors {
@@ -9,7 +10,9 @@ PanelWindow {
   }
 
   implicitHeight: 30
-  color: "#1e1e2e"
+  color: "#d91e1e2e"
+
+  WlrLayershell.namespace: "quickshell-bar"
 
   Logo {
     id: logo

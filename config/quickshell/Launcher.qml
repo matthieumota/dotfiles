@@ -18,7 +18,7 @@ PopupWindow {
   grabFocus: true
   implicitWidth: 320
   implicitHeight: 360
-  color: "#1e1e2e"
+  color: "transparent"
 
   function launch(entry) {
     if (entry.runInTerminal) {
@@ -72,7 +72,7 @@ PopupWindow {
 
   Rectangle {
     anchors.fill: parent
-    color: "#1e1e2e"
+    color: "#d91e1e2e"
     border.color: "#585b70"
   }
 
