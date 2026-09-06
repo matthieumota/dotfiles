@@ -42,6 +42,7 @@ sudo pacman -S \
      libva-nvidia-driver \
      limine \
      man-db \
+     mise \
      mpv \
      nano \
      neovim \
@@ -105,7 +106,6 @@ yay -S \
      hey-bin \
      lazysql \
      limine-mkinitcpio-hook \
-     nvm \
      php-pcov \
      postman-bin \
      powerline-fonts-git \
@@ -115,10 +115,10 @@ yay -S \
 # Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 grep -qF 'starship init zsh' ~/.zshrc || printf "\neval \"\$(starship init zsh)\"\n" >> ~/.zshrc
-grep -qF "/usr/share/nvm/init-nvm.sh" ~/.zshrc || printf "source /usr/share/nvm/init-nvm.sh\n" >> ~/.zshrc
+grep -qF 'mise activate zsh' ~/.zshrc || printf "eval \"\$(mise activate zsh)\"\n" >> ~/.zshrc
 
 # NPM dependencies
-nvm install node
+mise use -g node
 npm install -g npm-check-updates
 curl -fsSL https://gh.io/copilot-install | bash
 curl -fsSL https://opencode.ai/install | bash
