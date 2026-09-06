@@ -9,9 +9,8 @@ echo -e "▶️  Check bun update\n"
 bun upgrade
 echo -e "▶️  Check composer update\n"
 composer global outdated
-echo -e "▶️  Check nvm update\n"
-nvm ls-remote | tail -n1
-echo "Current: $(nvm current)"
+echo -e "▶️  Check mise update\n"
+mise outdated
 echo -e "▶️  Check rust and cargo update\n"
 rustup update
 cargo install-update -l
