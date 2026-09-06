@@ -31,7 +31,6 @@ sudo pacman -S \
      git \
      gpu-screen-recorder \
      grim \
-     grub \
      hypridle \
      hyprland \
      hyprlock \
@@ -41,6 +40,7 @@ sudo pacman -S \
      lazydocker \
      lazygit \
      libva-nvidia-driver \
+     limine \
      man-db \
      mpv \
      nano \
@@ -52,7 +52,6 @@ sudo pacman -S \
      noto-fonts-emoji \
      nss-mdns \
      nvidia-open \
-     os-prober \
      otf-font-awesome \
      pavucontrol \
      pipewire-pulse \
@@ -105,6 +104,7 @@ yay -S \
      google-chrome \
      hey-bin \
      lazysql \
+     limine-mkinitcpio-hook \
      nvm \
      php-pcov \
      postman-bin \
