@@ -9,7 +9,7 @@ Text {
 
   Process {
     id: proc
-    command: ["cat", "/sys/class/hwmon/hwmon2/temp1_input"]
+    command: ["sh", "-c", "f=$(grep -l k10temp /sys/class/hwmon/hwmon*/name); cat \"${f%/*}/temp1_input\""]
     running: true
     stdout: StdioCollector {
       onStreamFinished: {
