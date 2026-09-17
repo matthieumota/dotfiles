@@ -118,6 +118,7 @@ grep -qF 'starship init zsh' ~/.zshrc || printf "\neval \"\$(starship init zsh)\
 grep -qF 'mise activate zsh' ~/.zshrc || printf "eval \"\$(mise activate zsh)\"\n" >> ~/.zshrc
 
 # NPM dependencies
+eval "$(mise activate bash)"
 mise use -g node
 npm install -g npm-check-updates
 curl -fsSL https://gh.io/copilot-install | bash
