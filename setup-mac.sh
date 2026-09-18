@@ -69,7 +69,6 @@ curl -fsSL https://bun.sh/install | bash
 pie install apcu/apcu
 pie install pecl/pcov
 pie install phpredis/phpredis
-pie install xdebug/xdebug
 
 # PHP Dependencies
 composer global require laravel/installer
