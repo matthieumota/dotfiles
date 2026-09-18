@@ -8,12 +8,13 @@ yay
 # Binaries
 sudo pacman -S \
      amd-ucode \
+     baobab \
+     base \
      base-devel \
      bat \
      blueman \
      btop \
      cups \
-     curl \
      docker \
      docker-buildx \
      docker-compose \
@@ -27,10 +28,16 @@ sudo pacman -S \
      foot \
      freerdp \
      fzf \
-     github-cli \
      git \
+     github-cli \
+     gnome-keyring \
      gpu-screen-recorder \
      grim \
+     gvfs \
+     gvfs-goa \
+     gvfs-mtp \
+     gvfs-nfs \
+     gvfs-smb \
      hypridle \
      hyprland \
      hyprlock \
@@ -41,10 +48,13 @@ sudo pacman -S \
      lazygit \
      libva-nvidia-driver \
      limine \
+     linux \
+     linux-firmware \
      man-db \
      mise \
      mpv \
      nano \
+     nautilus \
      neovim \
      network-manager-applet \
      networkmanager \
