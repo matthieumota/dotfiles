@@ -67,6 +67,7 @@ sudo pacman -S \
      sushi \
      system-config-printer \
      tmux \
+     ttf-firacode-nerd \
      ttf-noto-nerd \
      wl-clipboard \
      xdg-desktop-portal-hyprland \
@@ -101,7 +102,6 @@ sudo usermod -aG docker $USER
 
 # Aur
 yay -S \
-     ttf-firacode-nerd \
      google-chrome \
      hey-bin \
      lazysql \
