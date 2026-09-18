@@ -18,6 +18,7 @@ sudo pacman -S \
      bat \
      blueman \
      btop \
+     bun \
      cups \
      docker \
      docker-buildx \
@@ -149,9 +150,6 @@ curl -fsSL https://gh.io/copilot-install | bash
 curl -fsSL https://opencode.ai/install | bash
 curl -fsSL https://chatgpt.com/codex/install.sh | CODEX_NON_INTERACTIVE=1 sh
 curl -fsSL https://claude.ai/install.sh | bash
-
-# Bun
-curl -fsSL https://bun.sh/install | bash
 
 # Clean
 yay -Yc
