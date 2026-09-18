@@ -3,7 +3,11 @@
 echo "Setting Arch..."
 
 # Update
-yay
+if command -v yay &> /dev/null; then
+    yay
+else
+    sudo pacman -Syu
+fi
 
 # Binaries
 sudo pacman -S \
@@ -113,6 +117,13 @@ sudo pacman -S \
 
 # Docker
 sudo usermod -aG docker $USER
+
+# Yay
+if ! command -v yay &> /dev/null; then
+    git clone https://aur.archlinux.org/yay-bin.git /tmp/yay-bin
+    (cd /tmp/yay-bin && makepkg -si --noconfirm)
+    rm -rf /tmp/yay-bin
+fi
 
 # Aur
 yay -S \
