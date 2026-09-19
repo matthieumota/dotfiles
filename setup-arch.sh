@@ -18,7 +18,6 @@ sudo pacman -S \
      bat \
      blueman \
      btop \
-     bun \
      cups \
      docker \
      docker-buildx \
@@ -143,6 +142,7 @@ grep -qF 'starship init zsh' ~/.zshrc || printf "\neval \"\$(starship init zsh)\
 grep -qF 'mise activate zsh' ~/.zshrc || printf "eval \"\$(mise activate zsh)\"\n" >> ~/.zshrc
 
 # NPM dependencies
+export SHELL=$(command -v zsh)
 eval "$(mise activate bash)"
 mise use -g node
 npm install -g npm-check-updates
@@ -150,6 +150,9 @@ curl -fsSL https://gh.io/copilot-install | bash
 curl -fsSL https://opencode.ai/install | bash
 curl -fsSL https://chatgpt.com/codex/install.sh | CODEX_NON_INTERACTIVE=1 sh
 curl -fsSL https://claude.ai/install.sh | bash
+
+# Bun
+curl -fsSL https://bun.sh/install | bash
 
 # Clean
 yay -Yc

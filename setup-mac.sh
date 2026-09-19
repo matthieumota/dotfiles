@@ -54,6 +54,7 @@ grep -qF 'starship init zsh' ~/.zshrc || printf "eval \"\$(starship init zsh)\"\
 grep -qF 'mise activate zsh' ~/.zshrc || printf "eval \"\$(mise activate zsh)\"\n" >> ~/.zshrc
 
 # NPM dependencies
+export SHELL=$(command -v zsh)
 eval "$(mise activate bash)"
 mise use -g node
 npm install -g npm-check-updates
