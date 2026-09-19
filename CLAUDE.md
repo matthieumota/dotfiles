@@ -27,7 +27,7 @@ Both scripts are idempotent and meant to be run on a fresh machine.
   - `git/` — global .gitconfig and .gitignore_global
   - `starship.toml` — cross-shell prompt config
   - `spotify-launcher.conf` — forces Spotify to run natively under Wayland (Arch only)
-- `docker/` — Docker Compose setup for legacy PHP versions with nginx
+- `docker/` — Docker Compose setup for legacy PHP versions with Caddy
 
 ## Symlink convention
 

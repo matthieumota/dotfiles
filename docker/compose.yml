@@ -15,12 +15,12 @@ services:
     image: redis
     ports: [6379:6379]
 
-  nginx:
-    image: nginx
+  caddy:
+    image: caddy
     ports:
       - 80:80
     volumes:
-      - ./nginx:/etc/nginx/conf.d
+      - ./caddy/Caddyfile:/etc/caddy/Caddyfile
       - ~/Code:/home/matthieu/Code
 
   php84: &php

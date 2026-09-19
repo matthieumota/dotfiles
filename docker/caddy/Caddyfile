@@ -1,0 +1,11 @@
+http://localhost {
+	root * /home/matthieu/Code
+	php_fastcgi php81:9000
+	file_server browse
+}
+
+http://*.localhost {
+	root * /home/matthieu/Code/{labels.1}/public
+	php_fastcgi php81:9000
+	file_server browse
+}

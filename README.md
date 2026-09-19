@@ -34,12 +34,11 @@ Sometimes, I need to create SSH tunnel. For instance, to create a tunnel on `300
 ssh -R 3002:domain:80 -N cloud@1.2.3.4
 ```
 
-After, we can use a nginx reverse proxy with :
+After, we can use a Caddy reverse proxy with :
 
 ```
-location / {
-    proxy_pass http://localhost:3002;
-    proxy_set_header Host domain;
+reverse_proxy localhost:3002 {
+    header_up Host domain
 }
 ```
 
@@ -56,14 +55,14 @@ To manage old PHP versions, I have 2 choices :
 - Simply install old versions on machine with AUR or PPA.
 - Use docker to manage old PHP versions containers, you can find configuration in `docker` folder.
 
-You can use PHP FPM on Nginx :
+The `caddy` service serves `~/Code` on `http://localhost` and each `~/Code/<project>/public` on `http://<project>.localhost`, with PHP 8.1 (see `docker/caddy/Caddyfile`).
+
+You can also use PHP FPM from another Caddy :
 
 ```
-location ~ \.php$ {
-    # 9082 is exposed for PHP 8.2
-    # 9081 is exposed for PHP 8.1
-    fastcgi_pass 127.0.0.1:9081;
-}
+# 9082 is exposed for PHP 8.2
+# 9081 is exposed for PHP 8.1
+php_fastcgi 127.0.0.1:9081
 ```
 
 You can run PHP commands via container :
