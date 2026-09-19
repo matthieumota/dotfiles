@@ -18,6 +18,7 @@ sudo pacman -S \
      bat \
      blueman \
      btop \
+     chafa \
      cups \
      docker \
      docker-buildx \

@@ -56,7 +56,7 @@ To manage old PHP versions, I have 2 choices :
 - Simply install old versions on machine with AUR or PPA.
 - Use docker to manage old PHP versions containers, you can find configuration in `docker` folder.
 
-You can use PHP FPM on Nginx (or Apache but no documented) :
+You can use PHP FPM on Nginx :
 
 ```
 location ~ \.php$ {
