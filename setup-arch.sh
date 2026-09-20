@@ -132,7 +132,6 @@ yay -S \
      lazysql \
      limine-mkinitcpio-hook \
      php-pcov \
-     postman-bin \
      powerline-fonts-git \
      symfony-cli-bin \
      visual-studio-code-bin

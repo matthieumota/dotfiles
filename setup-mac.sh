@@ -87,7 +87,6 @@ brew install --cask \
      handy \
      meld \
      orbstack \
-     postman \
      spotify \
      visual-studio-code \
      windows-app \
