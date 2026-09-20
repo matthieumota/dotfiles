@@ -48,6 +48,19 @@ We can also make a simple tunnel to remote server :
 ssh -L 3307:localhost:3306 -N cloud@1.2.3.4
 ```
 
+## VPN
+
+My dev server prints a client config with `vpn arch`, to paste on the client :
+
+```bash
+sudo nano /etc/wireguard/wg0.conf      # paste the config here, /opt/homebrew/etc/wireguard on macOS
+sudo chmod 600 /etc/wireguard/wg0.conf
+sudo wg-quick up wg0                   # wg-quick down wg0 to stop
+ssh luna@10.8.0.1
+```
+
+On iOS, scan the QR code printed by `vpn` with the Wireguard app.
+
 ## Docker
 
 To manage old PHP versions, I have 2 choices :

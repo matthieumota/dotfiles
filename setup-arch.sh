@@ -84,6 +84,7 @@ sudo pacman -S \
      tmux \
      ttf-firacode-nerd \
      ttf-noto-nerd \
+     wireguard-tools \
      wl-clipboard \
      xdg-desktop-portal-hyprland \
      yazi \

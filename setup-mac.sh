@@ -36,6 +36,7 @@ brew install \
      starship \
      symfony-cli \
      tmux \
+     wireguard-tools \
      yazi
 
 # Development
