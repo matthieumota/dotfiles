@@ -147,6 +147,8 @@ export SHELL=$(command -v zsh)
 eval "$(mise activate bash)"
 mise use -g node
 npm install -g npm-check-updates
+
+# Install AI agents
 curl -fsSL https://gh.io/copilot-install | bash
 curl -fsSL https://opencode.ai/install | bash
 curl -fsSL https://chatgpt.com/codex/install.sh | CODEX_NON_INTERACTIVE=1 sh
