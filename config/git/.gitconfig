@@ -13,3 +13,5 @@
     format = ssh
 [tag]
     gpgSign = true
+[push]
+    autoSetupRemote = true
