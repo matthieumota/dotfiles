@@ -8,13 +8,8 @@ import Quickshell.Services.Notifications
 PanelWindow {
   id: notifPanel
 
-  property var notifications: []
+  readonly property var notifications: server.trackedNotifications.values.slice().reverse()
   readonly property int maxVisible: 5
-
-  function dismiss(notification) {
-    notification.tracked = false
-    notifPanel.notifications = notifPanel.notifications.filter(n => n !== notification)
-  }
 
   anchors {
     top: true
@@ -30,11 +25,11 @@ PanelWindow {
   visible: notifPanel.notifications.length > 0
 
   NotificationServer {
+    id: server
     bodySupported: true
     imageSupported: true
     onNotification: (notification) => {
       notification.tracked = true
-      notifPanel.notifications = [notification, ...notifPanel.notifications]
     }
   }
 
@@ -58,7 +53,7 @@ PanelWindow {
         Timer {
           interval: card.modelData.expireTimeout > 0 ? card.modelData.expireTimeout : 5000
           running: card.modelData.expireTimeout !== 0 && !cardMouse.containsMouse
-          onTriggered: notifPanel.dismiss(card.modelData)
+          onTriggered: card.modelData.expire()
         }
 
         MouseArea {
@@ -67,7 +62,7 @@ PanelWindow {
           hoverEnabled: true
           cursorShape: Qt.PointingHandCursor
           acceptedButtons: Qt.LeftButton | Qt.RightButton
-          onClicked: notifPanel.dismiss(card.modelData)
+          onClicked: card.modelData.dismiss()
         }
 
         Image {
