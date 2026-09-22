@@ -105,3 +105,7 @@ ln -sfn $HOME/.dotfiles/config/zsh/aliases.zsh $HOME/.oh-my-zsh/custom/aliases.z
 ln -sfn $HOME/.dotfiles/config/zsh/fzf.zsh $HOME/.oh-my-zsh/custom/fzf.zsh
 curl -fsSL https://raw.githubusercontent.com/junegunn/fzf-git.sh/main/fzf-git.sh -o $HOME/.oh-my-zsh/custom/fzf-git.zsh
 ln -sfn $HOME/.dotfiles/config/zsh/path.zsh $HOME/.oh-my-zsh/custom/path.zsh
+mkdir -p $HOME/.claude $HOME/.codex $HOME/.config/opencode
+ln -sfn $HOME/.dotfiles/config/agents/AGENTS.md $HOME/.claude/CLAUDE.md
+ln -sfn $HOME/.dotfiles/config/agents/AGENTS.md $HOME/.codex/AGENTS.md
+ln -sfn $HOME/.dotfiles/config/agents/AGENTS.md $HOME/.config/opencode/AGENTS.md
