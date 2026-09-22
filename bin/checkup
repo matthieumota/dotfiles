@@ -1,5 +1,5 @@
 #!/bin/zsh
-source ~/.zshrc
+source $HOME/.zshrc
 
 echo -e "\nReady? 🍻\n"
 

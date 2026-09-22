@@ -51,9 +51,9 @@ brew install \
 
 # Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-grep -qsF "$HOMEBREW_PREFIX/bin/brew shellenv" ~/.zprofile || printf "\neval \"\$($HOMEBREW_PREFIX/bin/brew shellenv)\"\n" >> ~/.zprofile
-grep -qF 'starship init zsh' ~/.zshrc || printf "eval \"\$(starship init zsh)\"\n" >> ~/.zshrc
-grep -qF 'mise activate zsh' ~/.zshrc || printf "eval \"\$(mise activate zsh)\"\n" >> ~/.zshrc
+grep -qsF "$HOMEBREW_PREFIX/bin/brew shellenv" $HOME/.zprofile || printf "\neval \"\$($HOMEBREW_PREFIX/bin/brew shellenv)\"\n" >> $HOME/.zprofile
+grep -qF 'starship init zsh' $HOME/.zshrc || printf "eval \"\$(starship init zsh)\"\n" >> $HOME/.zshrc
+grep -qF 'mise activate zsh' $HOME/.zshrc || printf "eval \"\$(mise activate zsh)\"\n" >> $HOME/.zshrc
 
 # NPM dependencies
 export SHELL=$(command -v zsh)
