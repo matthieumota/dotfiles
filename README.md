@@ -28,21 +28,23 @@ cd .dotfiles
 
 ## Tunnel SSH
 
-Sometimes, I need to create SSH tunnel. For instance, to create a tunnel on `3002` port on `1.2.3.4` server for `domain:80` :
+To expose a local site through any server, open a reverse tunnel from the local machine : the port `3002` of the server forwards to `domain:80` locally.
 
 ```bash
 ssh -R 3002:domain:80 -N cloud@1.2.3.4
 ```
 
-After, we can use a Caddy reverse proxy with :
+On the server, a Caddy reverse proxy sends a public domain to this port :
 
 ```
-reverse_proxy localhost:3002 {
-    header_up Host domain
+public.example.com {
+    reverse_proxy localhost:3002 {
+        header_up Host domain
+    }
 }
 ```
 
-We can also make a simple tunnel to remote server :
+Sometimes, I need to reach a service of a remote server, like its database on `3306`, locally on `3307` :
 
 ```bash
 ssh -L 3307:localhost:3306 -N cloud@1.2.3.4
@@ -56,7 +58,7 @@ My dev server prints a client config with `vpn arch`, to paste on the client :
 sudo nano /etc/wireguard/wg0.conf      # paste the config here, /opt/homebrew/etc/wireguard on macOS
 sudo chmod 600 /etc/wireguard/wg0.conf
 sudo wg-quick up wg0                   # wg-quick down wg0 to stop
-ssh luna@10.8.0.1
+ssh matthieu@10.8.0.1
 ```
 
 On iOS, scan the QR code printed by `vpn` with the Wireguard app.
