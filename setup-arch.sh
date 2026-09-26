@@ -60,6 +60,7 @@ sudo pacman -S \
      mpv \
      nano \
      nautilus \
+     ncdu \
      neovim \
      network-manager-applet \
      networkmanager \
