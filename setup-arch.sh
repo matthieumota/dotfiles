@@ -93,6 +93,7 @@ sudo pacman -S \
 
 # Development
 sudo pacman -S \
+     cargo-update \
      composer \
      go \
      nullmailer \

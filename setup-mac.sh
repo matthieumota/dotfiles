@@ -41,6 +41,7 @@ brew install \
 
 # Development
 brew install \
+     cargo-update \
      composer \
      go \
      mise \
