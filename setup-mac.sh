@@ -60,9 +60,8 @@ grep -qF 'mise activate zsh' $HOME/.zshrc || printf "eval \"\$(mise activate zsh
 
 # NPM dependencies
 export SHELL=$(command -v zsh)
-eval "$(mise activate bash)"
 mise use -g node
-npm install -g npm-check-updates
+mise exec -- npm install -g npm-check-updates
 
 # Install AI agents
 curl -fsSL https://gh.io/copilot-install | bash
