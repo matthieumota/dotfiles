@@ -49,6 +49,9 @@ brew install \
      python \
      rustup
 
+# Install Rust
+$(brew --prefix rustup)/bin/rustup default stable
+
 # Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 grep -qsF "$HOMEBREW_PREFIX/bin/brew shellenv" $HOME/.zprofile || printf "\neval \"\$($HOMEBREW_PREFIX/bin/brew shellenv)\"\n" >> $HOME/.zprofile

@@ -98,6 +98,9 @@ sudo pacman -S \
      php-apcu php-gd php-pgsql php-redis php-sqlite \
      rustup
 
+# Install Rust
+rustup default stable
+
 # PHP extensions
 sudo sed -i -E 's/^;(extension=(bcmath|exif|ftp|gd|iconv|intl|mysqli|pdo_mysql|pdo_pgsql|pdo_sqlite|pgsql|soap|sqlite3))$/\1/' /etc/php/php.ini
 sudo sed -i -E 's/^;(extension=)/\1/' /etc/php/conf.d/{apcu,igbinary,redis}.ini
