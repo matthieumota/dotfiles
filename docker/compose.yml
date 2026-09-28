@@ -21,7 +21,7 @@ services:
       - 80:80
     volumes:
       - ./caddy/Caddyfile:/etc/caddy/Caddyfile
-      - ~/Code:/home/matthieu/Code
+      - ~/Code:/app
 
   php84: &php
     build:
@@ -31,9 +31,8 @@ services:
     ports:
       - 9084:9000
       - 8084:8000
-    user: matthieu
     volumes:
-      - ~/Code:/home/matthieu/Code
+      - ~/Code:/app
 
   php83:
     <<: *php
