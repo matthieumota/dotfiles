@@ -43,3 +43,6 @@ stripe() {
     [ -t 0 ] && [ -t 1 ] && flags+=(-t)
     docker run "${flags[@]}" stripe/stripe-cli "$@"
 }
+
+# Claude
+claude-as() { CLAUDE_CODE_OAUTH_TOKEN="$(<~/.config/claude-tokens/$1)" claude "${@:2}"; }
