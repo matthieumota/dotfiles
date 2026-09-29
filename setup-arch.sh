@@ -112,7 +112,6 @@ composer global require laravel/installer
 
 # Apps
 sudo pacman -S \
-     bitwarden \
      discord \
      ghostty \
      meld \
@@ -134,6 +133,7 @@ fi
 
 # Aur
 yay -S \
+     1password \
      google-chrome \
      lazysql \
      limine-mkinitcpio-hook \

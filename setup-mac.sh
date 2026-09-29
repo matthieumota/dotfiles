@@ -83,7 +83,7 @@ composer global require laravel/installer
 
 # Apps
 brew install --cask \
-     bitwarden \
+     1password \
      cyberduck \
      discord \
      font-fira-code-nerd-font \
