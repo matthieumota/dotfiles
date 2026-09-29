@@ -84,6 +84,7 @@ composer global require laravel/installer
 # Apps
 brew install --cask \
      1password \
+     1password-cli \
      cyberduck \
      discord \
      font-fira-code-nerd-font \

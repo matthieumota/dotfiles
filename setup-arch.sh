@@ -134,6 +134,7 @@ fi
 # Aur
 yay -S \
      1password \
+     1password-cli \
      google-chrome \
      lazysql \
      limine-mkinitcpio-hook \
