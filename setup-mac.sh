@@ -106,6 +106,7 @@ ln -sfn $HOME/.dotfiles/config/git/.gitignore_global $HOME/.gitignore_global
 git config --file $HOME/.gitconfig.local gpg.ssh.program /Applications/1Password.app/Contents/MacOS/op-ssh-sign
 ln -sfn $HOME/.dotfiles/config/nvim $HOME/.config/nvim
 ln -sfn $HOME/.dotfiles/config/starship.toml $HOME/.config/starship.toml
+ln -sfn $HOME/.dotfiles/config/tmux $HOME/.config/tmux
 ln -sfn $HOME/.dotfiles/config/zsh/aliases.zsh $HOME/.oh-my-zsh/custom/aliases.zsh
 ln -sfn $HOME/.dotfiles/config/zsh/fzf.zsh $HOME/.oh-my-zsh/custom/fzf.zsh
 curl -fsSL https://raw.githubusercontent.com/junegunn/fzf-git.sh/main/fzf-git.sh -o $HOME/.oh-my-zsh/custom/fzf-git.zsh
