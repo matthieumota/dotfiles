@@ -29,6 +29,17 @@ for bin in "${GO_BINS[@]}"; do
 done
 
 if [ "$(uname)" = "Darwin" ]; then
+    echo -e "▶️  Check brew update\n"
+    brew update
+    brew upgrade --greedy-auto-updates
+
+    echo -e "▶️  Clean brew cache\n"
+    brew cleanup -s && rm -rf $(brew --cache)
+    brew autoremove
+
+    echo -e "▶️  Check brew doctor\n"
+    brew doctor --verbose
+
     echo -e "▶️  Check Mac App Store update\n"
     mas outdated
 
