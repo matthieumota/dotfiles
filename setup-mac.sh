@@ -21,6 +21,7 @@ brew install \
      fzf \
      gh \
      git \
+     hunk \
      jq \
      lazydocker \
      lazygit \
@@ -104,6 +105,7 @@ ln -sfn $HOME/.dotfiles/config/ghostty $HOME/.config/ghostty
 ln -sfn $HOME/.dotfiles/config/git/.gitconfig $HOME/.gitconfig
 ln -sfn $HOME/.dotfiles/config/git/.gitignore_global $HOME/.gitignore_global
 git config --file $HOME/.gitconfig.local gpg.ssh.program /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+ln -sfn $HOME/.dotfiles/config/lazygit "$HOME/Library/Application Support/lazygit"
 ln -sfn $HOME/.dotfiles/config/nvim $HOME/.config/nvim
 ln -sfn $HOME/.dotfiles/config/starship.toml $HOME/.config/starship.toml
 ln -sfn $HOME/.dotfiles/config/tmux $HOME/.config/tmux

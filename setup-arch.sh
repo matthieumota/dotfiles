@@ -136,6 +136,7 @@ yay -S \
      1password \
      1password-cli \
      google-chrome \
+     hunk-bin \
      lazysql \
      limine-mkinitcpio-hook \
      php-pcov \
@@ -177,6 +178,7 @@ ln -sfn $HOME/.dotfiles/config/git/.gitconfig $HOME/.gitconfig
 ln -sfn $HOME/.dotfiles/config/git/.gitignore_global $HOME/.gitignore_global
 git config --file $HOME/.gitconfig.local gpg.ssh.program /opt/1Password/op-ssh-sign
 ln -sfn $HOME/.dotfiles/config/hypr $HOME/.config/hypr
+ln -sfn $HOME/.dotfiles/config/lazygit $HOME/.config/lazygit
 ln -sfn $HOME/.dotfiles/config/nvim $HOME/.config/nvim
 ln -sfn $HOME/.dotfiles/config/quickshell $HOME/.config/quickshell
 ln -sfn $HOME/.dotfiles/config/spotify-launcher.conf $HOME/.config/spotify-launcher.conf
