@@ -1,7 +1,37 @@
 #!/bin/zsh
 source $HOME/.zshrc
 
+IS_MAC=false
+IS_ARCH=false
+[ "$(uname)" = "Darwin" ] && IS_MAC=true
+grep -q "Arch" /etc/os-release 2> /dev/null && IS_ARCH=true
+
 echo -e "\nReady? 🍻\n"
+
+if $IS_MAC; then
+    echo -e "▶️  Check brew update\n"
+    brew update
+    brew upgrade --greedy-auto-updates
+
+    echo -e "▶️  Clean brew cache\n"
+    brew cleanup -s && rm -rf $(brew --cache)
+    brew autoremove
+
+    echo -e "▶️  Check brew doctor\n"
+    brew doctor --verbose
+
+    echo -e "▶️  Check Mac App Store update\n"
+    mas outdated
+fi
+
+if $IS_ARCH; then
+    echo -e "▶️  Check pacman update\n"
+    yay
+
+    echo -e "▶️  Clean pacman cache\n"
+    yay -Yc
+    yay -Scc
+fi
 
 echo -e "▶️  Check npm update\n"
 ncu -g
@@ -28,21 +58,7 @@ for bin in "${GO_BINS[@]}"; do
     fi
 done
 
-if [ "$(uname)" = "Darwin" ]; then
-    echo -e "▶️  Check brew update\n"
-    brew update
-    brew upgrade --greedy-auto-updates
-
-    echo -e "▶️  Clean brew cache\n"
-    brew cleanup -s && rm -rf $(brew --cache)
-    brew autoremove
-
-    echo -e "▶️  Check brew doctor\n"
-    brew doctor --verbose
-
-    echo -e "▶️  Check Mac App Store update\n"
-    mas outdated
-
+if $IS_MAC; then
     echo -e "▶️  Check default config\n"
     for file in $(find $HOMEBREW_PREFIX -name "*.default"); do
         defaultFile=$(echo $file | sed 's/.default//')
@@ -55,14 +71,7 @@ if [ "$(uname)" = "Darwin" ]; then
     done
 fi
 
-if [ "$(cat /etc/os-release 2> /dev/null | grep -o "Arch" | head -n1)" = "Arch" ]; then
-    echo -e "▶️  Check pacman update\n"
-    yay
-
-    echo -e "▶️  Clean pacman cache\n"
-    yay -Yc
-    yay -Scc
-
+if $IS_ARCH; then
     echo -e "▶️  Check default config\n"
     for file in $(find / -name "*.pacnew" -o -name "*.pacsave" 2> /dev/null); do
         defaultFile=$(echo $file | sed 's/.pacnew//' | sed 's/.pacsave//')
