@@ -96,7 +96,6 @@ sudo pacman -S \
      cargo-update \
      composer \
      go \
-     nullmailer \
      php-apcu php-gd php-pgsql php-redis php-sqlite \
      rustup
 
