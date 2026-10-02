@@ -63,38 +63,6 @@ ssh matthieu@10.8.0.1
 
 On iOS, scan the QR code printed by `vpn` with the Wireguard app.
 
-## Docker
-
-To manage old PHP versions, I have 2 choices :
-
-- Simply install old versions on machine with AUR or PPA.
-- Use docker to manage old PHP versions containers, you can find configuration in `docker` folder.
-
-The `caddy` service serves `~/Code` on `http://localhost` and each `~/Code/<project>/public` on `http://<project>.localhost`, with PHP 8.1 (see `docker/caddy/Caddyfile`).
-
-You can also use PHP FPM from another Caddy :
-
-```
-# 9082 is exposed for PHP 8.2
-# 9081 is exposed for PHP 8.1
-php_fastcgi 127.0.0.1:9081
-```
-
-You can run PHP commands via container :
-
-```bash
-docker compose exec php81 php --version
-docker compose exec php81 composer
-```
-
-Be careful to adapt `Dockerfile` and `compose.yaml` with your information (Project path, name, user id and group id from system) and you can build images
-
-```bash
-docker compose up -d --build
-```
-
-You can easily add other PHP versions.
-
 ## QEMU
 
 We use QEMU for Virtualization. To create a disk :

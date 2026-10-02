@@ -28,7 +28,6 @@ Both scripts are idempotent and meant to be run on a fresh machine.
   - `lazygit/` — lazygit config, renders diffs with hunk
   - `starship.toml` — cross-shell prompt config
   - `spotify-launcher.conf` — forces Spotify to run natively under Wayland (Arch only)
-- `docker/` — Docker Compose setup for legacy PHP versions with Caddy
 
 ## Symlink convention
 
