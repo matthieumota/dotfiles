@@ -138,6 +138,7 @@ yay -S \
      hunk-bin \
      lazysql \
      limine-mkinitcpio-hook \
+     paseo-desktop-bin \
      php-pcov \
      powerline-fonts-git \
      symfony-cli-bin \
