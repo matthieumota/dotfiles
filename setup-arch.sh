@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/bin/sh
 
 echo "Setting Arch..."
 
 # Update
-if command -v yay &> /dev/null; then
+if command -v yay >/dev/null 2>&1; then
     yay
 else
     sudo pacman -Syu
@@ -104,7 +104,7 @@ rustup default stable
 
 # PHP extensions
 sudo sed -i -E 's/^;(extension=(bcmath|exif|ftp|gd|iconv|intl|mysqli|pdo_mysql|pdo_pgsql|pdo_sqlite|pgsql|soap|sqlite3))$/\1/' /etc/php/php.ini
-sudo sed -i -E 's/^;(extension=)/\1/' /etc/php/conf.d/{apcu,igbinary,redis}.ini
+sudo sed -i -E 's/^;(extension=)/\1/' /etc/php/conf.d/apcu.ini /etc/php/conf.d/igbinary.ini /etc/php/conf.d/redis.ini
 
 # PHP Dependencies
 composer global require laravel/installer
@@ -124,7 +124,7 @@ sudo pacman -S \
 sudo usermod -aG docker $USER
 
 # Yay
-if ! command -v yay &> /dev/null; then
+if ! command -v yay >/dev/null 2>&1; then
     git clone https://aur.archlinux.org/yay-bin.git /tmp/yay-bin
     (cd /tmp/yay-bin && makepkg -si --noconfirm)
     rm -rf /tmp/yay-bin
