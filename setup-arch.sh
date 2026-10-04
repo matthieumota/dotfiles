@@ -155,9 +155,11 @@ grep -qF 'starship init zsh' $HOME/.zshrc || printf "\neval \"\$(starship init z
 grep -qF 'mise activate zsh' $HOME/.zshrc || printf "eval \"\$(mise activate zsh)\"\n" >> $HOME/.zshrc
 
 # NPM dependencies
-export SHELL=$(command -v zsh)
 mise use -g node
 mise exec -- npm install -g npm-check-updates
+
+# The installers below write their PATH into the rc file of $SHELL
+export SHELL=$(command -v zsh)
 
 # Install AI agents
 curl -fsSL https://gh.io/copilot-install | bash
