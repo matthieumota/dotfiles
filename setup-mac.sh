@@ -14,6 +14,7 @@ brew update
 # Binaries
 brew install \
      bat \
+     btop \
      chafa \
      eza \
      fastfetch \
