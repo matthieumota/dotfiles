@@ -24,7 +24,6 @@ sudo pacman -S \
      docker-buildx \
      docker-compose \
      dosfstools \
-     efibootmgr \
      ex-vi-compat \
      eza \
      fastfetch \
@@ -38,7 +37,6 @@ sudo pacman -S \
      gnome-keyring \
      gpu-screen-recorder \
      grim \
-     gvfs \
      gvfs-goa \
      gvfs-mtp \
      gvfs-nfs \
@@ -69,7 +67,6 @@ sudo pacman -S \
      noto-fonts-emoji \
      nss-mdns \
      nvidia-open \
-     otf-font-awesome \
      pavucontrol \
      pipewire-pulse \
      qt6-imageformats \
@@ -84,7 +81,6 @@ sudo pacman -S \
      system-config-printer \
      tmux \
      ttf-firacode-nerd \
-     ttf-noto-nerd \
      wireguard-tools \
      wl-clipboard \
      xdg-desktop-portal-hyprland \
@@ -146,7 +142,6 @@ yay -S \
      limine-mkinitcpio-hook \
      paseo-desktop-bin \
      php-pcov \
-     powerline-fonts-git \
      symfony-cli-bin \
      visual-studio-code-bin
 
