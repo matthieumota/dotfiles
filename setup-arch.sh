@@ -145,7 +145,7 @@ yay -S \
      visual-studio-code-bin
 
 # Oh My Zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 grep -qF 'starship init zsh' $HOME/.zshrc || printf "\neval \"\$(starship init zsh)\"\n" >> $HOME/.zshrc
 grep -qF 'mise activate zsh' $HOME/.zshrc || printf "eval \"\$(mise activate zsh)\"\n" >> $HOME/.zshrc
 
