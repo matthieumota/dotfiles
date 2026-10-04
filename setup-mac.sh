@@ -48,6 +48,7 @@ brew install \
      go \
      just \
      mise \
+     npm-check-updates \
      php \
      pie \
      python \
@@ -63,9 +64,8 @@ grep -qsF "$HOMEBREW_PREFIX/bin/brew shellenv" $HOME/.zprofile || printf "\neval
 grep -qF 'starship init zsh' $HOME/.zshrc || printf "eval \"\$(starship init zsh)\"\n" >> $HOME/.zshrc
 grep -qF 'mise activate zsh' $HOME/.zshrc || printf "eval \"\$(mise activate zsh)\"\n" >> $HOME/.zshrc
 
-# NPM dependencies
+# Nodejs
 mise use -g node
-mise exec -- npm install -g npm-check-updates
 
 # The installers below write their PATH into the rc file of $SHELL
 export SHELL=$(command -v zsh)
