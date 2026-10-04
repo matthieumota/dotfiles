@@ -93,11 +93,16 @@ sudo pacman -S \
 
 # Development
 sudo pacman -S \
+     bacon \
+     cargo-edit \
+     cargo-outdated \
      cargo-update \
      composer \
      go \
+     just \
      php-apcu php-gd php-pgsql php-redis php-sqlite \
-     rustup
+     rustup \
+     sqlx-cli
 
 # Install Rust
 rustup default stable

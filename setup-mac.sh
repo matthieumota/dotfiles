@@ -40,14 +40,19 @@ brew install \
 
 # Development
 brew install \
+     bacon \
+     cargo-edit \
+     cargo-outdated \
      cargo-update \
      composer \
      go \
+     just \
      mise \
      php \
      pie \
      python \
-     rustup
+     rustup \
+     sqlx-cli
 
 # Install Rust
 $(brew --prefix rustup)/bin/rustup default stable
