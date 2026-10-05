@@ -9,16 +9,6 @@ if command -v eza > /dev/null; then
     alias lt="ls --tree --level=2"
 fi
 
-# bat
-if command -v batcat > /dev/null; then
-    alias bat="batcat"
-fi
-
-# fd
-if command -v fdfind > /dev/null; then
-    alias fd="fdfind"
-fi
-
 # Symfony
 alias sf="php bin/console"
 
