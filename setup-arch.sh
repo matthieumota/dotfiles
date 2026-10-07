@@ -194,6 +194,8 @@ mkdir -p $HOME/.claude $HOME/.codex $HOME/.config/opencode
 ln -sfn $HOME/.dotfiles/config/agents/AGENTS.md $HOME/.claude/CLAUDE.md
 ln -sfn $HOME/.dotfiles/config/agents/AGENTS.md $HOME/.codex/AGENTS.md
 ln -sfn $HOME/.dotfiles/config/agents/AGENTS.md $HOME/.config/opencode/AGENTS.md
+[ -f $HOME/.claude/settings.json ] || echo '{}' > $HOME/.claude/settings.json
+echo "$(jq '.attribution = {"commit": "", "pr": ""}' $HOME/.claude/settings.json)" > $HOME/.claude/settings.json
 
 # SDDM theme
 sudo cp -r $HOME/.dotfiles/config/sddm/fiorella /usr/share/sddm/themes/fiorella
