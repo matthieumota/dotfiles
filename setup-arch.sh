@@ -80,7 +80,7 @@ sudo pacman -S \
      sushi \
      system-config-printer \
      tmux \
-     ttf-firacode-nerd \
+     ttf-jetbrains-mono-nerd \
      wireguard-tools \
      wl-clipboard \
      xdg-desktop-portal-hyprland \

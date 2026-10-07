@@ -96,7 +96,7 @@ brew install --cask \
      1password-cli \
      cyberduck \
      discord \
-     font-fira-code-nerd-font \
+     font-jetbrains-mono-nerd-font \
      ghostty \
      google-chrome \
      google-drive \
