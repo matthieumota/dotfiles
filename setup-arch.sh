@@ -119,8 +119,7 @@ sudo pacman -S \
      qemu-desktop \
      remmina \
      spotify-launcher \
-     virt-manager \
-     zed
+     virt-manager
 
 # Docker
 sudo usermod -aG docker $USER

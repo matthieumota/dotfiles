@@ -106,8 +106,7 @@ brew install --cask \
      paseo \
      spotify \
      visual-studio-code \
-     windows-app \
-     zed
+     windows-app
 
 # Dotfiles
 ln -sfn $HOME/.dotfiles/config/ghostty $HOME/.config/ghostty
