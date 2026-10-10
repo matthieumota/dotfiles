@@ -128,6 +128,7 @@ sudo usermod -aG docker $USER
 if ! command -v yay >/dev/null 2>&1; then
     git clone https://aur.archlinux.org/yay-bin.git /tmp/yay-bin
     (cd /tmp/yay-bin && makepkg -si --noconfirm)
+    sudo pacman -Rns --noconfirm yay-bin-debug
     rm -rf /tmp/yay-bin
 fi
 
