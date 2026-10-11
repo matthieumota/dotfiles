@@ -30,7 +30,7 @@ if $IS_ARCH; then
 
     echo -e "▶️  Clean pacman cache\n"
     yay -Yc
-    yay -Scc
+    yes | yay -Scc
 fi
 
 echo -e "▶️  Check npm update\n"
@@ -45,18 +45,18 @@ echo -e "▶️  Check rust and cargo update\n"
 rustup update
 cargo install-update -l
 echo -e "▶️  Check go update\n"
-GO_BINS=(air goreleaser)
-for bin in "${GO_BINS[@]}"; do
-    command -v $bin > /dev/null || continue
-    read -r tool current <<< $(go version -m =$bin | awk '$1 == "mod" { print $2, $3; exit }')
+for bin in ~/go/bin/*(N:t); do
+    read -r pkg tool current <<< $(go version -m =$bin | awk '$1 == "path" { pkg = $2 } $1 == "mod" { print pkg, $2, $3; exit }')
     latest=$(go list -m -f '{{.Version}}' $tool@latest)
     if [ "$current" = "$latest" ]; then
         echo "✅ $bin $current"
     else
         echo "↻ $bin $current → $latest"
-        go install "$tool@latest"
+        go install "$pkg@latest"
     fi
 done
+echo -e "▶️  Clean go cache\n"
+go clean -cache -modcache
 
 if $IS_MAC; then
     echo -e "▶️  Check default config\n"
