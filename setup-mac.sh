@@ -45,6 +45,7 @@ brew install \
      cargo-outdated \
      cargo-update \
      composer \
+     dekit \
      go \
      just \
      mise \

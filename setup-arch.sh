@@ -136,6 +136,7 @@ fi
 yay -S \
      1password \
      1password-cli \
+     dekit-bin \
      google-chrome \
      hunk-bin \
      lazysql \
