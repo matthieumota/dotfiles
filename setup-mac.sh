@@ -29,6 +29,7 @@ brew install \
      lazysql \
      mas \
      mole \
+     ncdu \
      neovim \
      pkgconf \
      ripgrep \
