@@ -29,7 +29,7 @@ if $IS_ARCH; then
     yay
 
     echo -e "▶️  Clean pacman cache\n"
-    yay -Yc
+    yay -Yc --noconfirm
     sudo rm -rf /var/cache/pacman/pkg/download-*(N)
     yes | LC_ALL=C yay -Scc
 fi
