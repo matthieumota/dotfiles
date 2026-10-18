@@ -30,7 +30,8 @@ if $IS_ARCH; then
 
     echo -e "▶️  Clean pacman cache\n"
     yay -Yc
-    yes | yay -Scc
+    sudo rm -rf /var/cache/pacman/pkg/download-*(N)
+    yes | LC_ALL=C yay -Scc
 fi
 
 echo -e "▶️  Check npm update\n"
