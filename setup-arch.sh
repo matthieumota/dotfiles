@@ -99,7 +99,8 @@ sudo pacman -S \
      npm-check-updates \
      php-apcu php-gd php-pgsql php-redis php-sqlite \
      rustup \
-     sqlx-cli
+     sqlx-cli \
+     wasm-pack
 
 # Install Rust
 rustup default stable

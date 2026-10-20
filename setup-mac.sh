@@ -55,7 +55,8 @@ brew install \
      pie \
      python \
      rustup \
-     sqlx-cli
+     sqlx-cli \
+     wasm-pack
 
 # Install Rust
 $(brew --prefix rustup)/bin/rustup default stable
