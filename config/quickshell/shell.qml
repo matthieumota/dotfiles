@@ -3,12 +3,24 @@
 import Quickshell
 
 ShellRoot {
-  Wallpaper {
-  }
+  Variants {
+    model: Quickshell.screens.slice(0, 1)
 
-  Bar {
-  }
+    Scope {
+      id: scope
+      required property ShellScreen modelData
 
-  Notifications {
+      Wallpaper {
+        screen: scope.modelData
+      }
+
+      Bar {
+        screen: scope.modelData
+      }
+
+      Notifications {
+        screen: scope.modelData
+      }
+    }
   }
 }
