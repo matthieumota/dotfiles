@@ -106,7 +106,6 @@ brew install --cask \
      handy \
      meld \
      orbstack \
-     paseo \
      spotify \
      visual-studio-code \
      windows-app

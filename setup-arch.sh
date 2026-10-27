@@ -142,7 +142,6 @@ yay -S \
      hunk-bin \
      lazysql \
      limine-mkinitcpio-hook \
-     paseo-desktop-bin \
      php-pcov \
      symfony-cli-bin \
      visual-studio-code-bin
