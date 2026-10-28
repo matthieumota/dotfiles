@@ -91,6 +91,7 @@ sudo pacman -S \
 sudo pacman -S \
      bacon \
      cargo-edit \
+     cargo-nextest \
      cargo-outdated \
      cargo-update \
      composer \

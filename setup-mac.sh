@@ -43,6 +43,7 @@ brew install \
 brew install \
      bacon \
      cargo-edit \
+     cargo-nextest \
      cargo-outdated \
      cargo-update \
      composer \
