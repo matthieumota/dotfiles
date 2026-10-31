@@ -90,6 +90,7 @@ sudo pacman -S \
 # Development
 sudo pacman -S \
      bacon \
+     bun \
      cargo-edit \
      cargo-nextest \
      cargo-outdated \
@@ -140,6 +141,7 @@ yay -S \
      1password-cli \
      dekit-bin \
      google-chrome \
+     herdr-bin \
      hunk-bin \
      lazysql \
      limine-mkinitcpio-hook \
@@ -163,12 +165,6 @@ curl -fsSL https://gh.io/copilot-install | bash
 curl -fsSL https://opencode.ai/v2/install | bash
 curl -fsSL https://chatgpt.com/codex/install.sh | CODEX_NON_INTERACTIVE=1 sh
 curl -fsSL https://claude.ai/install.sh | bash
-
-# Herdr
-curl -fsSL https://herdr.dev/install.sh | sh
-
-# Bun
-curl -fsSL https://bun.sh/install | bash
 
 # Clean
 yay -Yc

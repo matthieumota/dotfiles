@@ -36,8 +36,6 @@ fi
 
 echo -e "▶️  Check npm update\n"
 ncu -g
-echo -e "▶️  Check bun update\n"
-bun upgrade
 echo -e "▶️  Check composer update\n"
 composer global outdated
 echo -e "▶️  Check mise update\n"
