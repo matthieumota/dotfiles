@@ -100,7 +100,6 @@ brew install --cask \
      ghostty \
      google-chrome \
      google-drive \
-     handy \
      meld \
      orbstack \
      spotify \
