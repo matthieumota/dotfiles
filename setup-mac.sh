@@ -94,6 +94,7 @@ composer global require laravel/installer
 brew install --cask \
      1password \
      1password-cli \
+     anomalyco/tap/hex \
      cyberduck \
      discord \
      font-jetbrains-mono-nerd-font \

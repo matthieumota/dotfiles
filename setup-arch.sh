@@ -83,6 +83,7 @@ sudo pacman -S \
      ttf-jetbrains-mono-nerd \
      wireguard-tools \
      wl-clipboard \
+     wtype \
      xdg-desktop-portal-hyprland \
      yazi \
      zsh
@@ -142,6 +143,7 @@ yay -S \
      dekit-bin \
      google-chrome \
      herdr-bin \
+     hex-bin \
      hunk-bin \
      lazysql \
      limine-mkinitcpio-hook \
