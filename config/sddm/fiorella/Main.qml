@@ -39,6 +39,10 @@ Rectangle {
     selectionColor: "#585b70"
     passwordCharacter: "\u25cf"
 
+    HoverHandler {
+      cursorShape: Qt.IBeamCursor
+    }
+
     Rectangle {
       anchors.fill: parent
       z: -1
