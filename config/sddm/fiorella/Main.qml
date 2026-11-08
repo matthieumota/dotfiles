@@ -1,4 +1,5 @@
 import QtQuick
+import QtQuick.Effects
 
 Rectangle {
   color: config.background ? config.background : "#1e1e2e"
@@ -6,6 +7,31 @@ Rectangle {
   Column {
     anchors.centerIn: parent
     spacing: 20
+
+    Image {
+      source: "file:///etc/sddm/avatar.jpg"
+      width: 128
+      height: 128
+      sourceSize: Qt.size(256, 256)
+      fillMode: Image.PreserveAspectCrop
+      autoTransform: true
+      anchors.horizontalCenter: parent.horizontalCenter
+      visible: status === Image.Ready
+
+      layer.enabled: true
+      layer.effect: MultiEffect {
+        maskEnabled: true
+        maskSource: mask
+      }
+
+      Rectangle {
+        id: mask
+        anchors.fill: parent
+        radius: width / 2
+        layer.enabled: true
+        visible: false
+      }
+    }
 
     Field {
       id: username

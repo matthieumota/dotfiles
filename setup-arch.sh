@@ -201,4 +201,5 @@ echo "$(jq '.attribution = {"commit": "", "pr": ""}' $HOME/.claude/settings.json
 sudo cp -r $HOME/.dotfiles/config/sddm/fiorella /usr/share/sddm/themes/fiorella
 sudo mkdir -p /etc/sddm
 sudo cp $HOME/.dotfiles/config/sddm/hyprland.lua /etc/sddm/hyprland.lua
+[ -f $HOME/Images/Wallpapers/papy.jpg ] && sudo install -m 644 $HOME/Images/Wallpapers/papy.jpg /etc/sddm/avatar.jpg
 sudo cp $HOME/.dotfiles/config/sddm/sddm.conf /etc/sddm.conf
