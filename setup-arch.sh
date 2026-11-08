@@ -199,5 +199,4 @@ echo "$(jq '.attribution = {"commit": "", "pr": ""}' $HOME/.claude/settings.json
 
 # SDDM theme
 sudo cp -r $HOME/.dotfiles/config/sddm/fiorella /usr/share/sddm/themes/fiorella
-sudo mkdir -p /etc/sddm.conf.d
-printf '[Theme]\nCurrent=fiorella\nCursorSize=24\n' | sudo tee /etc/sddm.conf.d/10-theme.conf
+sudo cp $HOME/.dotfiles/config/sddm/sddm.conf /etc/sddm.conf
