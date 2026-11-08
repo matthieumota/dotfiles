@@ -197,6 +197,8 @@ ln -sfn $HOME/.dotfiles/config/agents/AGENTS.md $HOME/.config/opencode/AGENTS.md
 [ -f $HOME/.claude/settings.json ] || echo '{}' > $HOME/.claude/settings.json
 echo "$(jq '.attribution = {"commit": "", "pr": ""}' $HOME/.claude/settings.json)" > $HOME/.claude/settings.json
 
-# SDDM theme
+# SDDM theme, greeter runs in a minimal Hyprland
 sudo cp -r $HOME/.dotfiles/config/sddm/fiorella /usr/share/sddm/themes/fiorella
+sudo mkdir -p /etc/sddm
+sudo cp $HOME/.dotfiles/config/sddm/hyprland.lua /etc/sddm/hyprland.lua
 sudo cp $HOME/.dotfiles/config/sddm/sddm.conf /etc/sddm.conf
