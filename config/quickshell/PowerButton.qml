@@ -36,7 +36,7 @@ Text {
 
       Repeater {
         model: [
-          { label: "Verrouiller", command: ["hyprlock"] },
+          { label: "Verrouiller", command: ["loginctl", "lock-session"] },
           { label: "Veille", command: ["systemctl", "suspend"] },
           { separator: true },
           { label: "Redémarrer", command: ["reboot"] },
