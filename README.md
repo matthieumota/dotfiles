@@ -94,7 +94,7 @@ Boot with an iso on a disk :
 qemu-system-x86_64 -cdrom ~/Téléchargements/archlinux-2024.08.01-x86_64.iso \
     -boot order=d \
     -drive file=test,format=qcow2 \
-    -cpu host -smp 2 -m 2G \
+    -cpu host -smp 4 -m 4G -device virtio-vga-gl -display gtk,gl=on -audio pa,model=hda \
     -netdev tap,id=net0,ifname=tap0,script=no,downscript=no \
     -device virtio-net,netdev=net0 \
     -enable-kvm
@@ -112,7 +112,7 @@ Run guest after installation :
 
 ```bash
 qemu-system-x86_64 -drive file=test,format=qcow2 \
-    -cpu host -smp 2 -m 2G \
+    -cpu host -smp 4 -m 4G -device virtio-vga-gl -display gtk,gl=on -audio pa,model=hda \
     -netdev tap,id=net0,ifname=tap0,script=no,downscript=no \
     -device virtio-net,netdev=net0 \
     -enable-kvm
