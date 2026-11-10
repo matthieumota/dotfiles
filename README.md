@@ -95,9 +95,9 @@ qemu-system-x86_64 -enable-kvm \
     -cpu host -smp 4 -m 4G -device virtio-vga-gl -display gtk,gl=on -audio pa,model=hda \
     -netdev tap,id=net0,ifname=tap0,script=no,downscript=no \
     -device virtio-net,netdev=net0 \
-    -drive file=test,format=qcow2 \
+    -drive file=test,format=qcow2,if=virtio \
     -cdrom ~/Téléchargements/archlinux-2024.08.01-x86_64.iso \
-    -boot order=d
+    -boot once=d
 ```
 
 We can also mount a partition from qcow2 image :
@@ -115,5 +115,5 @@ qemu-system-x86_64 -enable-kvm \
     -cpu host -smp 4 -m 4G -device virtio-vga-gl -display gtk,gl=on -audio pa,model=hda \
     -netdev tap,id=net0,ifname=tap0,script=no,downscript=no \
     -device virtio-net,netdev=net0 \
-    -drive file=test,format=qcow2
+    -drive file=test,format=qcow2,if=virtio
 ```
