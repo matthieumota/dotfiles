@@ -91,13 +91,13 @@ echo 'nameserver 192.168.1.254' | sudo tee /etc/resolv.conf
 Boot with an iso on a disk :
 
 ```bash
-qemu-system-x86_64 -cdrom ~/Téléchargements/archlinux-2024.08.01-x86_64.iso \
-    -boot order=d \
-    -drive file=test,format=qcow2 \
+qemu-system-x86_64 -enable-kvm \
     -cpu host -smp 4 -m 4G -device virtio-vga-gl -display gtk,gl=on -audio pa,model=hda \
     -netdev tap,id=net0,ifname=tap0,script=no,downscript=no \
     -device virtio-net,netdev=net0 \
-    -enable-kvm
+    -drive file=test,format=qcow2 \
+    -cdrom ~/Téléchargements/archlinux-2024.08.01-x86_64.iso \
+    -boot order=d
 ```
 
 We can also mount a partition from qcow2 image :
@@ -111,9 +111,9 @@ sudo qemu-nbd -d /dev/nbd0
 Run guest after installation :
 
 ```bash
-qemu-system-x86_64 -drive file=test,format=qcow2 \
+qemu-system-x86_64 -enable-kvm \
     -cpu host -smp 4 -m 4G -device virtio-vga-gl -display gtk,gl=on -audio pa,model=hda \
     -netdev tap,id=net0,ifname=tap0,script=no,downscript=no \
     -device virtio-net,netdev=net0 \
-    -enable-kvm
+    -drive file=test,format=qcow2
 ```
