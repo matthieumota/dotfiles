@@ -101,6 +101,7 @@ brew install --cask \
      ghostty \
      google-chrome \
      google-drive \
+     herdr-app \
      meld \
      moonlight \
      orbstack \
