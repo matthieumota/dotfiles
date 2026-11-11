@@ -170,6 +170,9 @@ curl -fsSL https://opencode.ai/v2/install | bash
 curl -fsSL https://chatgpt.com/codex/install.sh | CODEX_NON_INTERACTIVE=1 sh
 curl -fsSL https://claude.ai/install.sh | bash
 
+# Terminal browser
+curl -fsSL https://terminal-browser.sh/install | bash
+
 # Clean
 yay -Yc
 yay -Scc
