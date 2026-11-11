@@ -120,6 +120,7 @@ sudo pacman -S \
      discord \
      ghostty \
      meld \
+     moonlight-qt \
      qemu-desktop \
      remmina \
      spotify-launcher \

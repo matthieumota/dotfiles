@@ -102,6 +102,7 @@ brew install --cask \
      google-chrome \
      google-drive \
      meld \
+     moonlight \
      orbstack \
      spotify \
      visual-studio-code \
