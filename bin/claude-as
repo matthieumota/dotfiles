@@ -1,4 +1,8 @@
 #!/bin/sh
 dir=$HOME/.claude-$1
 shift
+mkdir -p $dir
+ln -sfn $HOME/.claude/CLAUDE.md $dir/CLAUDE.md
+[ -f $dir/settings.json ] || echo '{}' > $dir/settings.json
+echo "$(jq '.attribution = {"commit": "", "pr": ""}' $dir/settings.json)" > $dir/settings.json
 CLAUDE_CONFIG_DIR=$dir exec claude "$@"
