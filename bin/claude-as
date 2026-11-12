@@ -1,4 +1,4 @@
 #!/bin/sh
-token=$(cat "$HOME/.config/claude-tokens/$1") || exit 1
+dir=$HOME/.claude-$1
 shift
-CLAUDE_CODE_OAUTH_TOKEN=$token exec claude "$@"
+CLAUDE_CONFIG_DIR=$dir exec claude "$@"
