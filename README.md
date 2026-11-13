@@ -68,7 +68,7 @@ On iOS, scan the QR code printed by `vpn` with the Wireguard app.
 We use QEMU for Virtualization. To create a disk :
 
 ```bash
-qemu-img create -f qcow2 test 10G
+qemu-img create -f qcow2 test.qcow2 20G
 ```
 
 Create a NAT for network :
@@ -91,11 +91,11 @@ echo 'nameserver 192.168.1.254' | sudo tee /etc/resolv.conf
 Boot with an iso on a disk :
 
 ```bash
-qemu-system-x86_64 -enable-kvm \
+qemu-system-x86_64 -enable-kvm -machine q35 \
     -cpu host -smp 4 -m 4G -device virtio-vga-gl -display gtk,gl=on -audio pa,model=hda \
     -netdev tap,id=net0,ifname=tap0,script=no,downscript=no \
     -device virtio-net,netdev=net0 \
-    -drive file=test,format=qcow2,if=virtio \
+    -drive file=test.qcow2,format=qcow2,if=virtio \
     -cdrom ~/Téléchargements/archlinux-2024.08.01-x86_64.iso \
     -boot once=d
 ```
@@ -104,16 +104,32 @@ We can also mount a partition from qcow2 image :
 
 ```bash
 sudo modprobe nbd
-sudo qemu-nbd -c /dev/nbd0 test
+sudo qemu-nbd -c /dev/nbd0 test.qcow2
 sudo qemu-nbd -d /dev/nbd0
 ```
 
 Run guest after installation :
 
 ```bash
-qemu-system-x86_64 -enable-kvm \
+qemu-system-x86_64 -enable-kvm -machine q35 \
     -cpu host -smp 4 -m 4G -device virtio-vga-gl -display gtk,gl=on -audio pa,model=hda \
     -netdev tap,id=net0,ifname=tap0,script=no,downscript=no \
     -device virtio-net,netdev=net0 \
-    -drive file=test,format=qcow2,if=virtio
+    -drive file=test.qcow2,format=qcow2,if=virtio
 ```
+
+An ISO booting in UEFI only, like [Omarchy](https://omarchy.org), needs the OVMF firmware, its code shared and its variables copied for each guest, where it keeps its boot entries :
+
+```bash
+qemu-img create -f qcow2 omarchy.qcow2 50G
+cp /usr/share/edk2/x64/OVMF_VARS.4m.fd omarchy.vars
+qemu-system-x86_64 -enable-kvm -machine q35 \
+    -cpu host -smp 4 -m 8G -device virtio-vga-gl -display gtk,gl=on -audio pa,model=hda \
+    -drive if=pflash,format=raw,readonly=on,file=/usr/share/edk2/x64/OVMF_CODE.4m.fd \
+    -drive if=pflash,format=raw,file=omarchy.vars \
+    -drive file=omarchy.qcow2,format=qcow2,if=virtio \
+    -cdrom ~/Téléchargements/omarchy-4.5.0-x86.iso \
+    -boot once=d
+```
+
+Run it after installation without the last two lines.
