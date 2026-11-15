@@ -1,3 +1,13 @@
+hl.monitor({
+  output   = "DP-1",
+  mode     = "5120x2160@165.06",
+  position = "0x0",
+  -- scale    = 1,
+  scale    = 1.333333,
+  -- scale    = 1.6,
+  -- scale    = 2,
+})
+
 hl.config({
   input = {
     kb_layout  = "us",
