@@ -246,6 +246,10 @@ hl.config({
         background_color         = "rgb(1e1e2e)",
     },
 
+    render = {
+        cm_auto_hdr = 0,
+    },
+
     ecosystem = {
         no_update_news  = true,
         no_donation_nag = true,
