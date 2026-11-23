@@ -145,6 +145,7 @@ yay -S \
      google-chrome \
      herdr-app-bin \
      herdr-bin \
+     herdr-core-bin \
      hex-bin \
      hunk-bin \
      lazysql \
