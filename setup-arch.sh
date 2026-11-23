@@ -143,7 +143,7 @@ yay -S \
      1password-cli \
      dekit-bin \
      google-chrome \
-     herdr-app-desktop-bin \
+     herdr-app-bin \
      herdr-bin \
      hex-bin \
      hunk-bin \
