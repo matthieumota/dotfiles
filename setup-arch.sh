@@ -143,9 +143,7 @@ yay -S \
      1password-cli \
      dekit-bin \
      google-chrome \
-     herdr-app-bin \
      herdr-bin \
-     herdr-core-bin \
      hex-bin \
      hunk-bin \
      lazysql \
@@ -170,6 +168,8 @@ curl -fsSL https://gh.io/copilot-install | bash
 curl -fsSL https://opencode.ai/v2/install | bash
 curl -fsSL https://chatgpt.com/codex/install.sh | CODEX_NON_INTERACTIVE=1 sh
 curl -fsSL https://claude.ai/install.sh | bash
+
+curl -fsSL https://releases.herdr.dev/app/install.sh | sh
 
 # Terminal browser
 curl -fsSL https://terminal-browser.sh/install | bash
